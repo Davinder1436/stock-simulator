@@ -1,0 +1,3966 @@
+{
+  "simulation_metadata": {
+    "chapter": 11,
+    "title": "Flash Crash Frenzy",
+    "real_case_reference": "US Flash Crash - May 6, 2010",
+    "stock_name": "BlueChip Index Fund",
+    "stock_symbol": "BCIF",
+    "base_price": 500,
+    "difficulty": "hard",
+    "duration_minutes": 8,
+    "tick_interval_sec": 2,
+    "total_ticks": 240,
+    "learning_objectives": [
+      "Understanding flash crash mechanics and liquidity vacuum events",
+      "Recognizing algorithmic cascade selling patterns",
+      "Managing extreme volatility and panic situations",
+      "Identifying capitulation signals and V-shaped recovery patterns",
+      "Advanced candlestick pattern recognition under stress"
+    ],
+    "market_context": "A seemingly normal trading day turns chaotic as a large institutional sell order triggers a cascade of algorithmic selling. High-frequency trading systems amplify the move, creating a liquidity vacuum. The stock plunges 9% in under 2 minutes before recovering 7% in the next 3 minutes - a classic flash crash and V-shaped recovery pattern.",
+    "expected_outcome": "Extreme volatility with rapid crash followed by equally rapid recovery, demonstrating market microstructure breakdown and repair",
+    "teaching_concepts": [
+      "Flash crash mechanics",
+      "Liquidity vacuum",
+      "Algorithmic cascade",
+      "Stop-loss hunting",
+      "Hammer and shooting star patterns",
+      "Doji indecision candles",
+      "Marubozu strong momentum",
+      "Spinning top consolidation",
+      "Engulfing patterns",
+      "Volume climax",
+      "Capitulation signals",
+      "Mean reversion",
+      "Circuit breaker concepts",
+      "V-shaped recovery",
+      "Market maker behavior"
+    ]
+  },
+  "market_news": [
+    {
+      "timestamp": "00:20",
+      "headline": "Market Opens Steady - Blue Chip Funds See Moderate Inflows",
+      "sentiment": "neutral",
+      "impact_strength": 0.3,
+      "expected_effect": "mild optimism",
+      "sector_context": "Calm morning with typical institutional positioning",
+      "trigger_type": "market_open"
+    },
+    {
+      "timestamp": "00:45",
+      "headline": "Breaking: Large Institutional Sell Order Detected - Source Unknown",
+      "sentiment": "negative",
+      "impact_strength": 0.9,
+      "expected_effect": "trigger cascade",
+      "sector_context": "Massive liquidation triggers algorithmic responses",
+      "trigger_type": "institutional_order"
+    },
+    {
+      "timestamp": "01:15",
+      "headline": "ALERT: Algorithmic Trading Systems Amplifying Downward Pressure",
+      "sentiment": "negative",
+      "impact_strength": 0.95,
+      "expected_effect": "accelerated selling",
+      "sector_context": "HFT algorithms create feedback loop of selling",
+      "trigger_type": "algorithmic_cascade"
+    },
+    {
+      "timestamp": "01:50",
+      "headline": "CRITICAL: Liquidity Vacuum - Bid-Ask Spreads Widen to Extreme Levels",
+      "sentiment": "negative",
+      "impact_strength": 0.98,
+      "expected_effect": "price collapse",
+      "sector_context": "Market makers withdraw, creating air pocket",
+      "trigger_type": "liquidity_crisis"
+    },
+    {
+      "timestamp": "02:20",
+      "headline": "Flash Crash: BCIF Down 9% in Under 2 Minutes - Trading Chaos",
+      "sentiment": "negative",
+      "impact_strength": 1,
+      "expected_effect": "extreme panic",
+      "sector_context": "Historic intraday crash unfolding in real-time",
+      "trigger_type": "flash_crash_event"
+    },
+    {
+      "timestamp": "02:40",
+      "headline": "CAPITULATION: Volume Spike Signals Panic Bottom Formation",
+      "sentiment": "neutral",
+      "impact_strength": 0.7,
+      "expected_effect": "potential reversal",
+      "sector_context": "Exhaustion of sellers at extreme price levels",
+      "trigger_type": "capitulation_signal"
+    },
+    {
+      "timestamp": "03:10",
+      "headline": "Bargain Hunters Emerge: Institutional Buyers Step In at Extreme Discount",
+      "sentiment": "positive",
+      "impact_strength": 0.85,
+      "expected_effect": "sharp recovery",
+      "sector_context": "Value buyers recognize absurd pricing",
+      "trigger_type": "buyer_emergence"
+    },
+    {
+      "timestamp": "04:00",
+      "headline": "V-Shaped Recovery Underway: Algorithms Reverse from Sell to Buy Mode",
+      "sentiment": "positive",
+      "impact_strength": 0.9,
+      "expected_effect": "momentum reversal",
+      "sector_context": "HFT systems flip to buying, accelerating recovery",
+      "trigger_type": "algorithmic_reversal"
+    },
+    {
+      "timestamp": "05:15",
+      "headline": "Market Makers Return: Liquidity Normalizing Across All Price Levels",
+      "sentiment": "positive",
+      "impact_strength": 0.6,
+      "expected_effect": "stabilization",
+      "sector_context": "Spreads tighten as confidence returns",
+      "trigger_type": "liquidity_restoration"
+    },
+    {
+      "timestamp": "06:30",
+      "headline": "Analysis: Flash Crash Likely Triggered by Fat Finger Error or Glitch",
+      "sentiment": "neutral",
+      "impact_strength": 0.4,
+      "expected_effect": "continued recovery",
+      "sector_context": "Investigation reveals technical cause, not fundamental",
+      "trigger_type": "post_mortem"
+    },
+    {
+      "timestamp": "07:20",
+      "headline": "Regulators Reviewing Trading Halt Mechanisms After Wild Session",
+      "sentiment": "neutral",
+      "impact_strength": 0.3,
+      "expected_effect": "consolidation",
+      "sector_context": "Officials examining circuit breaker triggers",
+      "trigger_type": "regulatory_response"
+    }
+  ],
+  "bot_orders": [
+    {
+      "timestamp": "00:00",
+      "actor_id": "institutional_1",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 270,
+      "price": 499.29,
+      "reason": "Value buying at extreme discount",
+      "emotion_index": 0.42,
+      "reaction_speed": 0.49,
+      "influence_weight": 0.63
+    },
+    {
+      "timestamp": "00:12",
+      "actor_id": "market_maker_1",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 170,
+      "price": 499.53,
+      "reason": "Normal market making",
+      "emotion_index": 0.32,
+      "reaction_speed": 0.92,
+      "influence_weight": 0.44
+    },
+    {
+      "timestamp": "00:24",
+      "actor_id": "retail_1",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 42,
+      "price": 501.5,
+      "reason": "Cutting losses in fear",
+      "emotion_index": 0.85,
+      "reaction_speed": 0.32,
+      "influence_weight": 0.17
+    },
+    {
+      "timestamp": "00:32",
+      "actor_id": "momentum_trader_1",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 248,
+      "price": 500.51,
+      "reason": "Market order execution",
+      "emotion_index": 0.57,
+      "reaction_speed": 0.84,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "00:40",
+      "actor_id": "momentum_trader_2",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 142,
+      "price": 499.46,
+      "reason": "Market order execution",
+      "emotion_index": 0.54,
+      "reaction_speed": 0.84,
+      "influence_weight": 0.54
+    },
+    {
+      "timestamp": "00:48",
+      "actor_id": "momentum_trader_3",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 209,
+      "price": 499.72,
+      "reason": "Market order execution",
+      "emotion_index": 0.57,
+      "reaction_speed": 0.74,
+      "influence_weight": 0.37
+    },
+    {
+      "timestamp": "00:56",
+      "actor_id": "momentum_trader_4",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 102,
+      "price": 498.94,
+      "reason": "Market order execution",
+      "emotion_index": 0.47,
+      "reaction_speed": 0.76,
+      "influence_weight": 0.41
+    },
+    {
+      "timestamp": "01:00",
+      "actor_id": "hft_1",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 220,
+      "price": 498.07,
+      "reason": "Momentum detection triggering sells",
+      "emotion_index": 0.2,
+      "reaction_speed": 1,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "01:04",
+      "actor_id": "momentum_trader_5",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 117,
+      "price": 499.58,
+      "reason": "Market order execution",
+      "emotion_index": 0.49,
+      "reaction_speed": 0.74,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "01:08",
+      "actor_id": "hft_2",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 380,
+      "price": 499.05,
+      "reason": "Algorithm cascade selling",
+      "emotion_index": 0.16,
+      "reaction_speed": 0.97,
+      "influence_weight": 0.56
+    },
+    {
+      "timestamp": "01:12",
+      "actor_id": "hft_3",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 237,
+      "price": 497.7,
+      "reason": "Momentum detection triggering sells",
+      "emotion_index": 0.24,
+      "reaction_speed": 0.96,
+      "influence_weight": 0.55
+    },
+    {
+      "timestamp": "01:16",
+      "actor_id": "institutional_2",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 575,
+      "price": 497.51,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.38,
+      "reaction_speed": 0.51,
+      "influence_weight": 0.69
+    },
+    {
+      "timestamp": "01:20",
+      "actor_id": "momentum_trader_6",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 122,
+      "price": 497.95,
+      "reason": "Market order execution",
+      "emotion_index": 0.52,
+      "reaction_speed": 0.74,
+      "influence_weight": 0.43
+    },
+    {
+      "timestamp": "01:24",
+      "actor_id": "momentum_trader_7",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 122,
+      "price": 498.25,
+      "reason": "Market order execution",
+      "emotion_index": 0.47,
+      "reaction_speed": 0.81,
+      "influence_weight": 0.47
+    },
+    {
+      "timestamp": "01:28",
+      "actor_id": "institutional_3",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 497,
+      "price": 496.38,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.46,
+      "reaction_speed": 0.42,
+      "influence_weight": 0.69
+    },
+    {
+      "timestamp": "01:30",
+      "actor_id": "institutional_4",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 312,
+      "price": 496.23,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.36,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.63
+    },
+    {
+      "timestamp": "01:32",
+      "actor_id": "hft_4",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 327,
+      "price": 496.87,
+      "reason": "HFT amplifying downward pressure",
+      "emotion_index": 0.18,
+      "reaction_speed": 0.96,
+      "influence_weight": 0.51
+    },
+    {
+      "timestamp": "01:34",
+      "actor_id": "institutional_5",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 581,
+      "price": 494.01,
+      "reason": "Defensive repositioning",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.58,
+      "influence_weight": 0.66
+    },
+    {
+      "timestamp": "01:36",
+      "actor_id": "institutional_6",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 319,
+      "price": 493.67,
+      "reason": "Risk reduction, selling into weakness",
+      "emotion_index": 0.43,
+      "reaction_speed": 0.41,
+      "influence_weight": 0.69
+    },
+    {
+      "timestamp": "01:38",
+      "actor_id": "institutional_7",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 418,
+      "price": 492.16,
+      "reason": "Risk reduction, selling into weakness",
+      "emotion_index": 0.41,
+      "reaction_speed": 0.52,
+      "influence_weight": 0.78
+    },
+    {
+      "timestamp": "01:40",
+      "actor_id": "institutional_8",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 346,
+      "price": 492.29,
+      "reason": "Strategic positioning at panic bottom",
+      "emotion_index": 0.48,
+      "reaction_speed": 0.64,
+      "influence_weight": 0.77
+    },
+    {
+      "timestamp": "01:42",
+      "actor_id": "hft_5",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 411,
+      "price": 492.33,
+      "reason": "Algorithm detects momentum reversal",
+      "emotion_index": 0.19,
+      "reaction_speed": 0.97,
+      "influence_weight": 0.72
+    },
+    {
+      "timestamp": "01:44",
+      "actor_id": "institutional_9",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 560,
+      "price": 490.08,
+      "reason": "Risk reduction, selling into weakness",
+      "emotion_index": 0.39,
+      "reaction_speed": 0.51,
+      "influence_weight": 0.82
+    },
+    {
+      "timestamp": "01:46",
+      "actor_id": "retail_2",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 56,
+      "price": 489.87,
+      "reason": "Getting out before it gets worse",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.49,
+      "influence_weight": 0.17
+    },
+    {
+      "timestamp": "01:48",
+      "actor_id": "hft_6",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 206,
+      "price": 489.19,
+      "reason": "Momentum detection triggering sells",
+      "emotion_index": 0.23,
+      "reaction_speed": 0.98,
+      "influence_weight": 0.54
+    },
+    {
+      "timestamp": "01:50",
+      "actor_id": "retail_3",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 48,
+      "price": 488.27,
+      "reason": "Getting out before it gets worse",
+      "emotion_index": 0.69,
+      "reaction_speed": 0.48,
+      "influence_weight": 0.22
+    },
+    {
+      "timestamp": "01:52",
+      "actor_id": "retail_4",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 62,
+      "price": 488.13,
+      "reason": "Getting out before it gets worse",
+      "emotion_index": 0.74,
+      "reaction_speed": 0.57,
+      "influence_weight": 0.24
+    },
+    {
+      "timestamp": "01:54",
+      "actor_id": "institutional_10",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 531,
+      "price": 483.81,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.32,
+      "reaction_speed": 0.63,
+      "influence_weight": 0.62
+    },
+    {
+      "timestamp": "01:56",
+      "actor_id": "institutional_11",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 422,
+      "price": 483.33,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.44,
+      "reaction_speed": 0.59,
+      "influence_weight": 0.66
+    },
+    {
+      "timestamp": "01:58",
+      "actor_id": "hft_7",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 401,
+      "price": 482.85,
+      "reason": "HFT amplifying downward pressure",
+      "emotion_index": 0.21,
+      "reaction_speed": 0.97,
+      "influence_weight": 0.51
+    },
+    {
+      "timestamp": "02:00",
+      "actor_id": "institutional_12",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 355,
+      "price": 482.73,
+      "reason": "Defensive repositioning",
+      "emotion_index": 0.44,
+      "reaction_speed": 0.55,
+      "influence_weight": 0.69
+    },
+    {
+      "timestamp": "02:02",
+      "actor_id": "hft_8",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 313,
+      "price": 481.85,
+      "reason": "Algorithm cascade selling",
+      "emotion_index": 0.18,
+      "reaction_speed": 0.98,
+      "influence_weight": 0.54
+    },
+    {
+      "timestamp": "02:04",
+      "actor_id": "retail_5",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 32,
+      "price": 480.85,
+      "reason": "Getting out before it gets worse",
+      "emotion_index": 0.9,
+      "reaction_speed": 0.54,
+      "influence_weight": 0.19
+    },
+    {
+      "timestamp": "02:06",
+      "actor_id": "hft_9",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 430,
+      "price": 479.31,
+      "reason": "HFT amplifying downward pressure",
+      "emotion_index": 0.17,
+      "reaction_speed": 1,
+      "influence_weight": 0.74
+    },
+    {
+      "timestamp": "02:08",
+      "actor_id": "institutional_13",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 604,
+      "price": 475.85,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.37,
+      "reaction_speed": 0.61,
+      "influence_weight": 0.78
+    },
+    {
+      "timestamp": "02:10",
+      "actor_id": "retail_6",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 40,
+      "price": 474.44,
+      "reason": "Stop-loss triggered",
+      "emotion_index": 0.78,
+      "reaction_speed": 0.42,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "02:12",
+      "actor_id": "retail_7",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 37,
+      "price": 472.78,
+      "reason": "Panic selling at any price",
+      "emotion_index": 0.79,
+      "reaction_speed": 0.6,
+      "influence_weight": 0.13
+    },
+    {
+      "timestamp": "02:14",
+      "actor_id": "retail_8",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 44,
+      "price": 471.22,
+      "reason": "Stop-loss triggered",
+      "emotion_index": 0.66,
+      "reaction_speed": 0.46,
+      "influence_weight": 0.24
+    },
+    {
+      "timestamp": "02:16",
+      "actor_id": "institutional_14",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 961,
+      "price": 468.12,
+      "reason": "Portfolio rebalancing",
+      "emotion_index": 0.44,
+      "reaction_speed": 0.53,
+      "influence_weight": 0.82
+    },
+    {
+      "timestamp": "02:18",
+      "actor_id": "institutional_15",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 468,
+      "price": 466.46,
+      "reason": "Defensive repositioning",
+      "emotion_index": 0.46,
+      "reaction_speed": 0.43,
+      "influence_weight": 0.79
+    },
+    {
+      "timestamp": "02:20",
+      "actor_id": "retail_9",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 81,
+      "price": 466.86,
+      "reason": "Cutting losses in fear",
+      "emotion_index": 0.7,
+      "reaction_speed": 0.58,
+      "influence_weight": 0.17
+    },
+    {
+      "timestamp": "02:22",
+      "actor_id": "hft_10",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 410,
+      "price": 463.25,
+      "reason": "Liquidity pulled on ask side",
+      "emotion_index": 0.19,
+      "reaction_speed": 0.96,
+      "influence_weight": 0.51
+    },
+    {
+      "timestamp": "02:24",
+      "actor_id": "institutional_16",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 565,
+      "price": 461.98,
+      "reason": "Defensive repositioning",
+      "emotion_index": 0.39,
+      "reaction_speed": 0.53,
+      "influence_weight": 0.73
+    },
+    {
+      "timestamp": "02:26",
+      "actor_id": "retail_10",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 52,
+      "price": 460.09,
+      "reason": "Panic selling at any price",
+      "emotion_index": 0.89,
+      "reaction_speed": 0.51,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "02:28",
+      "actor_id": "institutional_17",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 961,
+      "price": 454.26,
+      "reason": "Accumulating quality at absurd prices",
+      "emotion_index": 0.36,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.84
+    },
+    {
+      "timestamp": "02:30",
+      "actor_id": "institutional_18",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 966,
+      "price": 455.9,
+      "reason": "Large block buy recognizing opportunity",
+      "emotion_index": 0.41,
+      "reaction_speed": 0.61,
+      "influence_weight": 0.62
+    },
+    {
+      "timestamp": "02:32",
+      "actor_id": "hedge_fund_1",
+      "actor_type": "hedge_fund",
+      "action": "buy",
+      "quantity": 523,
+      "price": 455.89,
+      "reason": "Large position at discount",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.69,
+      "influence_weight": 0.84
+    },
+    {
+      "timestamp": "02:34",
+      "actor_id": "hedge_fund_2",
+      "actor_type": "hedge_fund",
+      "action": "buy",
+      "quantity": 972,
+      "price": 456.62,
+      "reason": "Contrarian value purchase",
+      "emotion_index": 0.39,
+      "reaction_speed": 0.64,
+      "influence_weight": 0.8
+    },
+    {
+      "timestamp": "02:36",
+      "actor_id": "retail_11",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 65,
+      "price": 455.74,
+      "reason": "Following momentum higher",
+      "emotion_index": 0.61,
+      "reaction_speed": 0.42,
+      "influence_weight": 0.14
+    },
+    {
+      "timestamp": "02:38",
+      "actor_id": "institutional_19",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 433,
+      "price": 454.52,
+      "reason": "Accumulating quality at absurd prices",
+      "emotion_index": 0.36,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.76
+    },
+    {
+      "timestamp": "02:40",
+      "actor_id": "hft_11",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 305,
+      "price": 456.89,
+      "reason": "Liquidity provision on bid side",
+      "emotion_index": 0.18,
+      "reaction_speed": 0.99,
+      "influence_weight": 0.54
+    },
+    {
+      "timestamp": "02:44",
+      "actor_id": "momentum_trader_8",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 196,
+      "price": 457.58,
+      "reason": "Market order execution",
+      "emotion_index": 0.43,
+      "reaction_speed": 0.77,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "02:48",
+      "actor_id": "hft_12",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 173,
+      "price": 457.31,
+      "reason": "Momentum algorithm flips to buy mode",
+      "emotion_index": 0.25,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.73
+    },
+    {
+      "timestamp": "02:52",
+      "actor_id": "momentum_trader_9",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 234,
+      "price": 456.13,
+      "reason": "Market order execution",
+      "emotion_index": 0.57,
+      "reaction_speed": 0.71,
+      "influence_weight": 0.45
+    },
+    {
+      "timestamp": "02:56",
+      "actor_id": "institutional_20",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 429,
+      "price": 458.95,
+      "reason": "Value buying at extreme discount",
+      "emotion_index": 0.44,
+      "reaction_speed": 0.51,
+      "influence_weight": 0.81
+    },
+    {
+      "timestamp": "03:00",
+      "actor_id": "hft_13",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 211,
+      "price": 458.14,
+      "reason": "Momentum algorithm flips to buy mode",
+      "emotion_index": 0.18,
+      "reaction_speed": 0.99,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "03:04",
+      "actor_id": "hft_14",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 397,
+      "price": 461.38,
+      "reason": "Liquidity provision on bid side",
+      "emotion_index": 0.18,
+      "reaction_speed": 0.96,
+      "influence_weight": 0.57
+    },
+    {
+      "timestamp": "03:08",
+      "actor_id": "momentum_trader_10",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 112,
+      "price": 461.43,
+      "reason": "Market order execution",
+      "emotion_index": 0.56,
+      "reaction_speed": 0.82,
+      "influence_weight": 0.44
+    },
+    {
+      "timestamp": "03:12",
+      "actor_id": "momentum_trader_11",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 200,
+      "price": 461.6,
+      "reason": "Market order execution",
+      "emotion_index": 0.58,
+      "reaction_speed": 0.75,
+      "influence_weight": 0.36
+    },
+    {
+      "timestamp": "03:16",
+      "actor_id": "momentum_trader_12",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 133,
+      "price": 460.96,
+      "reason": "Market order execution",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.72,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "03:20",
+      "actor_id": "hft_15",
+      "actor_type": "hft",
+      "action": "sell",
+      "quantity": 414,
+      "price": 463.84,
+      "reason": "Liquidity pulled on ask side",
+      "emotion_index": 0.16,
+      "reaction_speed": 0.96,
+      "influence_weight": 0.64
+    },
+    {
+      "timestamp": "03:24",
+      "actor_id": "hft_16",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 319,
+      "price": 464.63,
+      "reason": "HFT buying pressure accelerating recovery",
+      "emotion_index": 0.16,
+      "reaction_speed": 0.99,
+      "influence_weight": 0.73
+    },
+    {
+      "timestamp": "03:28",
+      "actor_id": "institutional_21",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 528,
+      "price": 465.75,
+      "reason": "Strategic positioning at panic bottom",
+      "emotion_index": 0.36,
+      "reaction_speed": 0.59,
+      "influence_weight": 0.85
+    },
+    {
+      "timestamp": "03:32",
+      "actor_id": "institutional_22",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 510,
+      "price": 466.93,
+      "reason": "Strategic positioning at panic bottom",
+      "emotion_index": 0.42,
+      "reaction_speed": 0.49,
+      "influence_weight": 0.68
+    },
+    {
+      "timestamp": "03:36",
+      "actor_id": "institutional_23",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 343,
+      "price": 468.8,
+      "reason": "Strategic positioning at panic bottom",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.55,
+      "influence_weight": 0.73
+    },
+    {
+      "timestamp": "03:40",
+      "actor_id": "hft_17",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 296,
+      "price": 468.88,
+      "reason": "Liquidity provision on bid side",
+      "emotion_index": 0.19,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.59
+    },
+    {
+      "timestamp": "03:44",
+      "actor_id": "momentum_trader_13",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 206,
+      "price": 468.86,
+      "reason": "Market order execution",
+      "emotion_index": 0.59,
+      "reaction_speed": 0.78,
+      "influence_weight": 0.36
+    },
+    {
+      "timestamp": "03:48",
+      "actor_id": "institutional_24",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 538,
+      "price": 472.03,
+      "reason": "Accumulating quality at absurd prices",
+      "emotion_index": 0.37,
+      "reaction_speed": 0.64,
+      "influence_weight": 0.65
+    },
+    {
+      "timestamp": "03:52",
+      "actor_id": "hft_18",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 282,
+      "price": 474.16,
+      "reason": "Liquidity provision on bid side",
+      "emotion_index": 0.17,
+      "reaction_speed": 0.99,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "03:56",
+      "actor_id": "momentum_trader_14",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 154,
+      "price": 474.74,
+      "reason": "Market order execution",
+      "emotion_index": 0.53,
+      "reaction_speed": 0.73,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "04:00",
+      "actor_id": "institutional_25",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 541,
+      "price": 478.34,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.48,
+      "reaction_speed": 0.56,
+      "influence_weight": 0.64
+    },
+    {
+      "timestamp": "04:04",
+      "actor_id": "momentum_trader_15",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 103,
+      "price": 478.58,
+      "reason": "Market order execution",
+      "emotion_index": 0.51,
+      "reaction_speed": 0.73,
+      "influence_weight": 0.54
+    },
+    {
+      "timestamp": "04:08",
+      "actor_id": "hft_19",
+      "actor_type": "hft",
+      "action": "buy",
+      "quantity": 305,
+      "price": 480.59,
+      "reason": "HFT buying pressure accelerating recovery",
+      "emotion_index": 0.19,
+      "reaction_speed": 0.97,
+      "influence_weight": 0.58
+    },
+    {
+      "timestamp": "04:12",
+      "actor_id": "momentum_trader_16",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 141,
+      "price": 482.33,
+      "reason": "Market order execution",
+      "emotion_index": 0.43,
+      "reaction_speed": 0.84,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "04:16",
+      "actor_id": "momentum_trader_17",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 118,
+      "price": 483.78,
+      "reason": "Market order execution",
+      "emotion_index": 0.49,
+      "reaction_speed": 0.77,
+      "influence_weight": 0.44
+    },
+    {
+      "timestamp": "04:20",
+      "actor_id": "momentum_trader_18",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 236,
+      "price": 484.71,
+      "reason": "Market order execution",
+      "emotion_index": 0.46,
+      "reaction_speed": 0.74,
+      "influence_weight": 0.52
+    },
+    {
+      "timestamp": "04:24",
+      "actor_id": "momentum_trader_19",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 216,
+      "price": 488.03,
+      "reason": "Market order execution",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.76,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "04:28",
+      "actor_id": "institutional_26",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 395,
+      "price": 489.19,
+      "reason": "Strategic positioning at panic bottom",
+      "emotion_index": 0.48,
+      "reaction_speed": 0.55,
+      "influence_weight": 0.74
+    },
+    {
+      "timestamp": "04:32",
+      "actor_id": "institutional_27",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 287,
+      "price": 494.06,
+      "reason": "Accumulating quality at absurd prices",
+      "emotion_index": 0.43,
+      "reaction_speed": 0.61,
+      "influence_weight": 0.68
+    },
+    {
+      "timestamp": "04:40",
+      "actor_id": "market_maker_2",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 74,
+      "price": 493.03,
+      "reason": "Providing liquidity at bid",
+      "emotion_index": 0.26,
+      "reaction_speed": 0.98,
+      "influence_weight": 0.29
+    },
+    {
+      "timestamp": "04:48",
+      "actor_id": "institutional_28",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 479,
+      "price": 495.36,
+      "reason": "Strategic positioning at panic bottom",
+      "emotion_index": 0.35,
+      "reaction_speed": 0.64,
+      "influence_weight": 0.63
+    },
+    {
+      "timestamp": "04:56",
+      "actor_id": "market_maker_3",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 169,
+      "price": 494.68,
+      "reason": "Supporting price with bids",
+      "emotion_index": 0.26,
+      "reaction_speed": 0.97,
+      "influence_weight": 0.35
+    },
+    {
+      "timestamp": "05:04",
+      "actor_id": "institutional_29",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 587,
+      "price": 493.81,
+      "reason": "Large block buy recognizing opportunity",
+      "emotion_index": 0.36,
+      "reaction_speed": 0.46,
+      "influence_weight": 0.61
+    },
+    {
+      "timestamp": "05:12",
+      "actor_id": "market_maker_4",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 89,
+      "price": 493.48,
+      "reason": "Distributing inventory at resistance",
+      "emotion_index": 0.24,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "05:20",
+      "actor_id": "market_maker_5",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 122,
+      "price": 491,
+      "reason": "Normal market making",
+      "emotion_index": 0.22,
+      "reaction_speed": 0.89,
+      "influence_weight": 0.42
+    },
+    {
+      "timestamp": "05:28",
+      "actor_id": "retail_12",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 47,
+      "price": 491.05,
+      "reason": "FOMO buying the recovery",
+      "emotion_index": 0.69,
+      "reaction_speed": 0.31,
+      "influence_weight": 0.12
+    },
+    {
+      "timestamp": "05:36",
+      "actor_id": "market_maker_6",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 117,
+      "price": 489.31,
+      "reason": "Profit taking on inventory",
+      "emotion_index": 0.23,
+      "reaction_speed": 0.97,
+      "influence_weight": 0.33
+    },
+    {
+      "timestamp": "05:44",
+      "actor_id": "retail_13",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 66,
+      "price": 490.15,
+      "reason": "Getting out before it gets worse",
+      "emotion_index": 0.88,
+      "reaction_speed": 0.48,
+      "influence_weight": 0.12
+    },
+    {
+      "timestamp": "05:52",
+      "actor_id": "institutional_30",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 556,
+      "price": 491.67,
+      "reason": "Large liquidation order execution",
+      "emotion_index": 0.43,
+      "reaction_speed": 0.44,
+      "influence_weight": 0.8
+    },
+    {
+      "timestamp": "06:00",
+      "actor_id": "momentum_trader_20",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 127,
+      "price": 492.95,
+      "reason": "Market order execution",
+      "emotion_index": 0.53,
+      "reaction_speed": 0.81,
+      "influence_weight": 0.55
+    },
+    {
+      "timestamp": "06:10",
+      "actor_id": "market_maker_7",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 89,
+      "price": 493.07,
+      "reason": "Supporting price with bids",
+      "emotion_index": 0.31,
+      "reaction_speed": 0.87,
+      "influence_weight": 0.39
+    },
+    {
+      "timestamp": "06:20",
+      "actor_id": "momentum_trader_21",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 178,
+      "price": 491.21,
+      "reason": "Market order execution",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.84,
+      "influence_weight": 0.36
+    },
+    {
+      "timestamp": "06:30",
+      "actor_id": "market_maker_8",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 82,
+      "price": 492.58,
+      "reason": "Building inventory at lower levels",
+      "emotion_index": 0.33,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.29
+    },
+    {
+      "timestamp": "06:40",
+      "actor_id": "momentum_trader_22",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 215,
+      "price": 492.81,
+      "reason": "Market order execution",
+      "emotion_index": 0.54,
+      "reaction_speed": 0.84,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "06:50",
+      "actor_id": "retail_14",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 64,
+      "price": 493.18,
+      "reason": "Following momentum higher",
+      "emotion_index": 0.75,
+      "reaction_speed": 0.41,
+      "influence_weight": 0.22
+    },
+    {
+      "timestamp": "07:00",
+      "actor_id": "retail_15",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 35,
+      "price": 493.39,
+      "reason": "Trying to catch the bottom",
+      "emotion_index": 0.66,
+      "reaction_speed": 0.35,
+      "influence_weight": 0.25
+    },
+    {
+      "timestamp": "07:10",
+      "actor_id": "retail_16",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 69,
+      "price": 492.79,
+      "reason": "Building long position",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.59,
+      "influence_weight": 0.24
+    },
+    {
+      "timestamp": "07:20",
+      "actor_id": "retail_17",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 29,
+      "price": 491.31,
+      "reason": "Getting out before it gets worse",
+      "emotion_index": 0.71,
+      "reaction_speed": 0.53,
+      "influence_weight": 0.13
+    },
+    {
+      "timestamp": "07:30",
+      "actor_id": "retail_18",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 29,
+      "price": 491.29,
+      "reason": "FOMO buying the recovery",
+      "emotion_index": 0.88,
+      "reaction_speed": 0.36,
+      "influence_weight": 0.18
+    },
+    {
+      "timestamp": "07:40",
+      "actor_id": "market_maker_9",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 115,
+      "price": 489.8,
+      "reason": "Providing liquidity at bid",
+      "emotion_index": 0.33,
+      "reaction_speed": 0.96,
+      "influence_weight": 0.41
+    },
+    {
+      "timestamp": "07:50",
+      "actor_id": "market_maker_10",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 133,
+      "price": 489.13,
+      "reason": "Profit taking on inventory",
+      "emotion_index": 0.25,
+      "reaction_speed": 0.88,
+      "influence_weight": 0.41
+    }
+  ],
+  "price_series": [
+    {
+      "timestamp": "00:00",
+      "price": 500.03,
+      "volume": 67,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:02",
+      "price": 500.12,
+      "volume": 140,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:04",
+      "price": 500.12,
+      "volume": 193,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:06",
+      "price": 500.16,
+      "volume": 246,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:08",
+      "price": 500.2,
+      "volume": 320,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:10",
+      "price": 500.2,
+      "volume": 387,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:12",
+      "price": 500.25,
+      "volume": 459,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:14",
+      "price": 500.3,
+      "volume": 522,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:16",
+      "price": 500.41,
+      "volume": 576,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:18",
+      "price": 500.45,
+      "volume": 650,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:20",
+      "price": 500.54,
+      "volume": 722,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:22",
+      "price": 500.62,
+      "volume": 791,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:24",
+      "price": 500.72,
+      "volume": 849,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:26",
+      "price": 500.71,
+      "volume": 905,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:28",
+      "price": 500.82,
+      "volume": 978,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:30",
+      "price": 500.63,
+      "volume": 1150,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:32",
+      "price": 500.55,
+      "volume": 1314,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:34",
+      "price": 500.51,
+      "volume": 1441,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:36",
+      "price": 500.21,
+      "volume": 1564,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:38",
+      "price": 500.25,
+      "volume": 1712,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:40",
+      "price": 500.22,
+      "volume": 1839,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:42",
+      "price": 500.05,
+      "volume": 1998,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:44",
+      "price": 500.09,
+      "volume": 2173,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:46",
+      "price": 500.14,
+      "volume": 2317,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:48",
+      "price": 499.82,
+      "volume": 2496,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:50",
+      "price": 499.73,
+      "volume": 2641,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:52",
+      "price": 499.75,
+      "volume": 2815,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.53,
+      "candle_pattern": "shooting_star"
+    },
+    {
+      "timestamp": "00:54",
+      "price": 499.4,
+      "volume": 2955,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:56",
+      "price": 499.13,
+      "volume": 3115,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.49,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:58",
+      "price": 498.79,
+      "volume": 3291,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.47,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:00",
+      "price": 497.38,
+      "volume": 3631,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.45,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:02",
+      "price": 497.4,
+      "volume": 4019,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.43,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:04",
+      "price": 499.19,
+      "volume": 4462,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.41,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:06",
+      "price": 499.35,
+      "volume": 4864,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.39,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:08",
+      "price": 498.97,
+      "volume": 5297,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.37,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:10",
+      "price": 498.95,
+      "volume": 5714,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.35,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:12",
+      "price": 496.93,
+      "volume": 6039,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.33,
+      "candle_pattern": "marubozu"
+    },
+    {
+      "timestamp": "01:14",
+      "price": 496.82,
+      "volume": 6456,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.31,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:16",
+      "price": 496.58,
+      "volume": 6849,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:18",
+      "price": 497.54,
+      "volume": 7242,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:20",
+      "price": 498.04,
+      "volume": 7621,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:22",
+      "price": 497.4,
+      "volume": 8043,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:24",
+      "price": 498.25,
+      "volume": 8436,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:26",
+      "price": 495.49,
+      "volume": 8796,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:28",
+      "price": 495.89,
+      "volume": 9099,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:30",
+      "price": 496.54,
+      "volume": 9920,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:32",
+      "price": 496.59,
+      "volume": 10603,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.29,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:34",
+      "price": 493.35,
+      "volume": 11288,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:36",
+      "price": 493.87,
+      "volume": 12004,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.27,
+      "candle_pattern": "marubozu"
+    },
+    {
+      "timestamp": "01:38",
+      "price": 492.53,
+      "volume": 12727,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:40",
+      "price": 492,
+      "volume": 13516,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.25,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:42",
+      "price": 492.9,
+      "volume": 14312,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.24,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:44",
+      "price": 490.94,
+      "volume": 15177,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.23,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:46",
+      "price": 490.78,
+      "volume": 15831,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.22,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:48",
+      "price": 489.79,
+      "volume": 16503,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.21,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:50",
+      "price": 488.4,
+      "volume": 17233,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.2,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:52",
+      "price": 487.2,
+      "volume": 18087,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.19,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:54",
+      "price": 484.69,
+      "volume": 18869,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.18,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:56",
+      "price": 483.46,
+      "volume": 19623,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.17,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:58",
+      "price": 482.74,
+      "volume": 20287,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.16,
+      "candle_pattern": "engulfing_bear"
+    },
+    {
+      "timestamp": "02:00",
+      "price": 482.41,
+      "volume": 21185,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.15,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:02",
+      "price": 481.59,
+      "volume": 21917,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.14,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:04",
+      "price": 480.05,
+      "volume": 22665,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.13,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:06",
+      "price": 478.48,
+      "volume": 23329,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.12,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:08",
+      "price": 476.24,
+      "volume": 24073,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.11,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:10",
+      "price": 475.12,
+      "volume": 24747,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.1,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:12",
+      "price": 472.65,
+      "volume": 25386,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.09,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:14",
+      "price": 471.18,
+      "volume": 26095,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:16",
+      "price": 468.06,
+      "volume": 27526,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:18",
+      "price": 465.88,
+      "volume": 28845,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:20",
+      "price": 466.46,
+      "volume": 30635,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:22",
+      "price": 463.33,
+      "volume": 32002,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:24",
+      "price": 461.31,
+      "volume": 33582,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "hammer"
+    },
+    {
+      "timestamp": "02:26",
+      "price": 459.09,
+      "volume": 35371,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:28",
+      "price": 454.58,
+      "volume": 37128,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:30",
+      "price": 456.79,
+      "volume": 38769,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:32",
+      "price": 455.32,
+      "volume": 40240,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:34",
+      "price": 455.82,
+      "volume": 42038,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.08,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:36",
+      "price": 455.27,
+      "volume": 43229,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.09,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:38",
+      "price": 455.3,
+      "volume": 44499,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.1,
+      "candle_pattern": "doji"
+    },
+    {
+      "timestamp": "02:40",
+      "price": 456.3,
+      "volume": 45750,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.11,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:42",
+      "price": 456.15,
+      "volume": 46911,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.13,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:44",
+      "price": 456.95,
+      "volume": 48073,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.14,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:46",
+      "price": 457.38,
+      "volume": 49050,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.15,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:48",
+      "price": 456.94,
+      "volume": 50218,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.17,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:50",
+      "price": 457.18,
+      "volume": 51401,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.18,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:52",
+      "price": 457.04,
+      "volume": 52375,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.19,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:54",
+      "price": 458.11,
+      "volume": 53414,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.21,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:56",
+      "price": 458.26,
+      "volume": 54663,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.22,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:58",
+      "price": 457.59,
+      "volume": 55716,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.23,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:00",
+      "price": 457.96,
+      "volume": 56228,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.25,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:02",
+      "price": 459.67,
+      "volume": 56806,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:04",
+      "price": 460.55,
+      "volume": 57327,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.27,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:06",
+      "price": 460.68,
+      "volume": 57745,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.29,
+      "candle_pattern": "marubozu"
+    },
+    {
+      "timestamp": "03:08",
+      "price": 460.71,
+      "volume": 58154,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.3,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:10",
+      "price": 461.5,
+      "volume": 58686,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.31,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:12",
+      "price": 461.08,
+      "volume": 59217,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.33,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:14",
+      "price": 461.33,
+      "volume": 59621,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.34,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:16",
+      "price": 461.78,
+      "volume": 60174,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.35,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:18",
+      "price": 463.43,
+      "volume": 60714,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.37,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:20",
+      "price": 463.29,
+      "volume": 61218,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.38,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:22",
+      "price": 462.82,
+      "volume": 61738,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.39,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:24",
+      "price": 463.64,
+      "volume": 62158,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.41,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:26",
+      "price": 464.05,
+      "volume": 62704,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.42,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:28",
+      "price": 465.57,
+      "volume": 63140,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.43,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:30",
+      "price": 465.94,
+      "volume": 63629,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.45,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:32",
+      "price": 466.24,
+      "volume": 64181,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.46,
+      "candle_pattern": "engulfing_bull"
+    },
+    {
+      "timestamp": "03:34",
+      "price": 466.79,
+      "volume": 64681,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.47,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:36",
+      "price": 467.9,
+      "volume": 65106,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.49,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:38",
+      "price": 467.67,
+      "volume": 65593,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.5,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:40",
+      "price": 469.42,
+      "volume": 66168,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:42",
+      "price": 470.47,
+      "volume": 66616,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:44",
+      "price": 469.68,
+      "volume": 67027,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:46",
+      "price": 470.88,
+      "volume": 67472,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:48",
+      "price": 472.65,
+      "volume": 67885,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:50",
+      "price": 471.91,
+      "volume": 68309,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:52",
+      "price": 474.03,
+      "volume": 68798,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:54",
+      "price": 473.83,
+      "volume": 69336,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.61,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:56",
+      "price": 475.21,
+      "volume": 69861,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.62,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:58",
+      "price": 476.02,
+      "volume": 70370,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.63,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:00",
+      "price": 477.51,
+      "volume": 70699,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:02",
+      "price": 476.99,
+      "volume": 70993,
+      "trend": "down",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:04",
+      "price": 479.41,
+      "volume": 71344,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:06",
+      "price": 479.79,
+      "volume": 71717,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:08",
+      "price": 480.56,
+      "volume": 72072,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.54,
+      "candle_pattern": "spinning_top"
+    },
+    {
+      "timestamp": "04:10",
+      "price": 480.41,
+      "volume": 72372,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:12",
+      "price": 482.59,
+      "volume": 72634,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:14",
+      "price": 482.79,
+      "volume": 72901,
+      "trend": "flat",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:16",
+      "price": 483.81,
+      "volume": 73245,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:18",
+      "price": 485.72,
+      "volume": 73618,
+      "trend": "up",
+      "dominant_actor": "hft",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:20",
+      "price": 485.66,
+      "volume": 73908,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:22",
+      "price": 487.83,
+      "volume": 74271,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:24",
+      "price": 487.88,
+      "volume": 74640,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:26",
+      "price": 489.47,
+      "volume": 74907,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:28",
+      "price": 489.85,
+      "volume": 75207,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:30",
+      "price": 491.65,
+      "volume": 75578,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:32",
+      "price": 494.91,
+      "volume": 75831,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:34",
+      "price": 494.37,
+      "volume": 76164,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:36",
+      "price": 495.68,
+      "volume": 76452,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:38",
+      "price": 493.21,
+      "volume": 76737,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:40",
+      "price": 492.77,
+      "volume": 77080,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:42",
+      "price": 492.45,
+      "volume": 77341,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:44",
+      "price": 495.2,
+      "volume": 77630,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:46",
+      "price": 495.63,
+      "volume": 77973,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:48",
+      "price": 495.86,
+      "volume": 78290,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:50",
+      "price": 495.72,
+      "volume": 78541,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:52",
+      "price": 493.16,
+      "volume": 78848,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:54",
+      "price": 492.92,
+      "volume": 79158,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:56",
+      "price": 494.98,
+      "volume": 79462,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:58",
+      "price": 494.69,
+      "volume": 79722,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.53,
+      "candle_pattern": "doji"
+    },
+    {
+      "timestamp": "05:00",
+      "price": 493.19,
+      "volume": 79932,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:02",
+      "price": 492.15,
+      "volume": 80109,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:04",
+      "price": 494.47,
+      "volume": 80296,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:06",
+      "price": 494.74,
+      "volume": 80497,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:08",
+      "price": 493.86,
+      "volume": 80661,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:10",
+      "price": 491.02,
+      "volume": 80853,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:12",
+      "price": 492.64,
+      "volume": 81073,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:14",
+      "price": 492.85,
+      "volume": 81258,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.5,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:16",
+      "price": 492,
+      "volume": 81482,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:18",
+      "price": 493.25,
+      "volume": 81640,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:20",
+      "price": 490.48,
+      "volume": 81797,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:22",
+      "price": 489.78,
+      "volume": 81972,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.5,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:24",
+      "price": 490.91,
+      "volume": 82182,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:26",
+      "price": 491.22,
+      "volume": 82354,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:28",
+      "price": 490.72,
+      "volume": 82558,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:30",
+      "price": 491.54,
+      "volume": 82717,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:32",
+      "price": 489.38,
+      "volume": 82915,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:34",
+      "price": 488.51,
+      "volume": 83135,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:36",
+      "price": 489.33,
+      "volume": 83311,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:38",
+      "price": 491.2,
+      "volume": 83497,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:40",
+      "price": 491.22,
+      "volume": 83706,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:42",
+      "price": 489.99,
+      "volume": 83867,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:44",
+      "price": 490.21,
+      "volume": 84068,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:46",
+      "price": 491.65,
+      "volume": 84289,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:48",
+      "price": 491.6,
+      "volume": 84460,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:50",
+      "price": 489.59,
+      "volume": 84637,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:52",
+      "price": 490.88,
+      "volume": 84804,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:54",
+      "price": 491.63,
+      "volume": 84956,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:56",
+      "price": 492.13,
+      "volume": 85111,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "hammer"
+    },
+    {
+      "timestamp": "05:58",
+      "price": 491.79,
+      "volume": 85290,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:00",
+      "price": 492.19,
+      "volume": 85452,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:02",
+      "price": 490.5,
+      "volume": 85617,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:04",
+      "price": 491.09,
+      "volume": 85800,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:06",
+      "price": 490.2,
+      "volume": 85952,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:08",
+      "price": 492.26,
+      "volume": 86120,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.6,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:10",
+      "price": 492.38,
+      "volume": 86289,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:12",
+      "price": 490.42,
+      "volume": 86459,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:14",
+      "price": 490.4,
+      "volume": 86656,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:16",
+      "price": 492.72,
+      "volume": 86829,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:18",
+      "price": 490.94,
+      "volume": 87023,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:20",
+      "price": 491.18,
+      "volume": 87174,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:22",
+      "price": 494.15,
+      "volume": 87393,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:24",
+      "price": 493.62,
+      "volume": 87549,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:26",
+      "price": 491.13,
+      "volume": 87723,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:28",
+      "price": 491.89,
+      "volume": 87911,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:30",
+      "price": 493.08,
+      "volume": 88109,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:32",
+      "price": 493.92,
+      "volume": 88294,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:34",
+      "price": 492.32,
+      "volume": 88496,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:36",
+      "price": 492.75,
+      "volume": 88671,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:38",
+      "price": 495.71,
+      "volume": 88844,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.5,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:40",
+      "price": 492.99,
+      "volume": 88958,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:42",
+      "price": 492.97,
+      "volume": 89064,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:44",
+      "price": 495.79,
+      "volume": 89198,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:46",
+      "price": 494.29,
+      "volume": 89299,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:48",
+      "price": 493.65,
+      "volume": 89429,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:50",
+      "price": 494.07,
+      "volume": 89558,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:52",
+      "price": 494.59,
+      "volume": 89686,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:54",
+      "price": 494.88,
+      "volume": 89808,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.5,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:56",
+      "price": 493.48,
+      "volume": 89931,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:58",
+      "price": 493.53,
+      "volume": 90045,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:00",
+      "price": 494,
+      "volume": 90157,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:02",
+      "price": 494.41,
+      "volume": 90261,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:04",
+      "price": 493.86,
+      "volume": 90388,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:06",
+      "price": 494.28,
+      "volume": 90534,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "spinning_top"
+    },
+    {
+      "timestamp": "07:08",
+      "price": 493.95,
+      "volume": 90662,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:10",
+      "price": 492.76,
+      "volume": 90796,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.6,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:12",
+      "price": 493.44,
+      "volume": 90928,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:14",
+      "price": 491.33,
+      "volume": 91058,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:16",
+      "price": 493.16,
+      "volume": 91203,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:18",
+      "price": 491.72,
+      "volume": 91328,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.5,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:20",
+      "price": 492.25,
+      "volume": 91429,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.6,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:22",
+      "price": 492.51,
+      "volume": 91575,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:24",
+      "price": 491.89,
+      "volume": 91676,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:26",
+      "price": 491.05,
+      "volume": 91784,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:28",
+      "price": 491.64,
+      "volume": 91899,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:30",
+      "price": 490.62,
+      "volume": 92014,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:32",
+      "price": 489.74,
+      "volume": 92131,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:34",
+      "price": 489.87,
+      "volume": 92250,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:36",
+      "price": 490.42,
+      "volume": 92373,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:38",
+      "price": 491.38,
+      "volume": 92500,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:40",
+      "price": 488.91,
+      "volume": 92645,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:42",
+      "price": 491.86,
+      "volume": 92764,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:44",
+      "price": 489.24,
+      "volume": 92887,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:46",
+      "price": 489.43,
+      "volume": 92996,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:48",
+      "price": 489.62,
+      "volume": 93134,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:50",
+      "price": 490.08,
+      "volume": 93265,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.54,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:52",
+      "price": 489.24,
+      "volume": 93367,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.59,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:54",
+      "price": 491.22,
+      "volume": 93479,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:56",
+      "price": 491.8,
+      "volume": 93588,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.51,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:58",
+      "price": 491.68,
+      "volume": 93714,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "08:00",
+      "price": 491.8,
+      "volume": 93860,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.53,
+      "candle_pattern": "none"
+    }
+  ],
+  "teaching_tips": [
+    {
+      "timestamp": "00:30",
+      "category": "market_psychology",
+      "title": "Normal Market Opening",
+      "content": "Markets often open with calm, balanced trading as participants assess overnight news and position for the day. This normalcy won't last...",
+      "related_concept": "Market Structure - Opening Dynamics",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Small candles with low volume",
+      "duration_seconds": 10
+    },
+    {
+      "timestamp": "00:52",
+      "category": "concept",
+      "title": "Flash Crash Trigger",
+      "content": "A large institutional sell order is hitting the market. When orders of this size meet limited liquidity, price discovery breaks down rapidly.",
+      "related_concept": "Market Microstructure - Order Impact",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Sudden increase in selling pressure and volume spike",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "01:06",
+      "category": "candle_pattern",
+      "title": "Shooting Star Warning",
+      "content": "A shooting star with long upper wick formed - sellers are rejecting higher prices aggressively. This often precedes sharp declines.",
+      "related_concept": "Candlestick Patterns - Bearish Reversal",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Small body at bottom with long upper shadow",
+      "duration_seconds": 11
+    },
+    {
+      "timestamp": "01:22",
+      "category": "concept",
+      "title": "Algorithmic Cascade",
+      "content": "HFT algorithms detect the selling and join in, creating a feedback loop. Each sell order triggers more algorithms to sell - this is cascade selling.",
+      "related_concept": "Market Structure - Algorithmic Trading",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Rapid consecutive red candles with increasing volume",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "01:34",
+      "category": "candle_pattern",
+      "title": "Marubozu - Pure Selling",
+      "content": "A marubozu candle has no wicks - pure selling from open to close. This shows complete dominance by sellers with no buying attempts.",
+      "related_concept": "Candlestick Patterns - Strong Momentum",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Long red candle with no upper or lower wicks",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "01:46",
+      "category": "risk_management",
+      "title": "Stop-Loss Cascade",
+      "content": "As price falls, it's triggering stop-loss orders which become market sell orders, pushing price even lower. This is stop-loss hunting in action.",
+      "related_concept": "Risk Management - Stop-Loss Dynamics",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Accelerating decline with volume spikes",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "01:58",
+      "category": "concept",
+      "title": "Liquidity Vacuum",
+      "content": "Market makers are withdrawing bids - there are no buyers! Price must fall to find where demand exists. This is a liquidity vacuum or 'air pocket'.",
+      "related_concept": "Market Structure - Liquidity Crisis",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Price gaps down with massive red candles",
+      "duration_seconds": 14
+    },
+    {
+      "timestamp": "02:10",
+      "category": "candle_pattern",
+      "title": "Engulfing Bear Pattern",
+      "content": "A massive red candle engulfed multiple previous candles - this bearish engulfing shows sellers have complete control of the market.",
+      "related_concept": "Candlestick Patterns - Powerful Reversal",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Huge red candle covering several previous candles",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "02:26",
+      "category": "market_psychology",
+      "title": "Panic Capitulation",
+      "content": "We're at the panic phase - everyone who can sell is selling at any price. This extreme fear and capitulation often marks the bottom.",
+      "related_concept": "Market Psychology - Capitulation",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Extreme volume with vertical price drop",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "02:38",
+      "category": "candle_pattern",
+      "title": "Hammer at Extreme Low",
+      "content": "A hammer candle with massive lower wick formed! Buyers stepped in at ₹455 and rejected lower prices. This could be the reversal signal.",
+      "related_concept": "Candlestick Patterns - Bullish Reversal",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Small body with very long lower shadow at bottom",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "02:48",
+      "category": "indicator",
+      "title": "Volume Climax",
+      "content": "Notice the extreme volume spike? This 'volume climax' signals exhaustion of sellers - when everyone has sold, only buyers remain.",
+      "related_concept": "Technical Indicators - Volume Analysis",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Massive volume bar, largest of the session",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "03:02",
+      "category": "candle_pattern",
+      "title": "Doji - Indecision",
+      "content": "A doji formed - open equals close with wicks on both sides. After extreme selling, this shows indecision and potential balance restoration.",
+      "related_concept": "Candlestick Patterns - Neutral/Transition",
+      "difficulty_level": "beginner",
+      "visual_indicator": "Cross-shaped candle with minimal body",
+      "duration_seconds": 11
+    },
+    {
+      "timestamp": "03:18",
+      "category": "concept",
+      "title": "Value Buyers Emerge",
+      "content": "Institutional value buyers recognize the crash created absurd prices. They're stepping in aggressively - this is contrarian buying at its finest.",
+      "related_concept": "Market Psychology - Contrarian Trading",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Green candles starting to appear with volume",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "03:32",
+      "category": "candle_pattern",
+      "title": "Marubozu - Pure Buying",
+      "content": "Now a GREEN marubozu! Pure buying pressure with no upper wick. The momentum has completely reversed from sellers to buyers.",
+      "related_concept": "Candlestick Patterns - Strong Momentum",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Long green candle with no wicks",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "03:46",
+      "category": "chart_pattern",
+      "title": "V-Shaped Recovery",
+      "content": "This rapid recovery forms a 'V' pattern - straight down, straight up. Typical of flash crashes where fundamentals didn't change, only liquidity.",
+      "related_concept": "Chart Patterns - Recovery Patterns",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Sharp V shape on the chart",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "04:02",
+      "category": "concept",
+      "title": "Algorithm Reversal",
+      "content": "The same HFT algorithms that sold on the way down are now buying on the way up! They detect momentum shifts and amplify them in both directions.",
+      "related_concept": "Market Structure - Momentum Algorithms",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Consecutive strong green candles",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "04:18",
+      "category": "candle_pattern",
+      "title": "Engulfing Bull Pattern",
+      "content": "A massive green candle just engulfed several red ones - bullish engulfing pattern confirms buyers have seized control of the market.",
+      "related_concept": "Candlestick Patterns - Bullish Reversal",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Large green candle covering previous red candles",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "04:34",
+      "category": "indicator",
+      "title": "RSI Reversal from Extreme",
+      "content": "RSI crashed to nearly 10 (extreme oversold) and is now rocketing back above 50. These extreme swings confirm the flash crash and recovery.",
+      "related_concept": "Technical Indicators - Momentum Oscillators",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "RSI line making rapid upward movement",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "04:50",
+      "category": "risk_management",
+      "title": "Volatility Risk",
+      "content": "This extreme volatility shows why position sizing matters. A 9% move in 2 minutes can wipe out leveraged positions instantly.",
+      "related_concept": "Risk Management - Position Sizing",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Wild price swings both directions",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "05:08",
+      "category": "candle_pattern",
+      "title": "Spinning Top",
+      "content": "Small body with wicks on both sides - a spinning top shows the battle between buyers and sellers is balanced. Momentum is slowing.",
+      "related_concept": "Candlestick Patterns - Consolidation",
+      "difficulty_level": "beginner",
+      "visual_indicator": "Small candle body with equal upper and lower wicks",
+      "duration_seconds": 11
+    },
+    {
+      "timestamp": "05:24",
+      "category": "concept",
+      "title": "Liquidity Returns",
+      "content": "Market makers are returning with normal bid-ask spreads. The liquidity crisis is over - price discovery can function normally again.",
+      "related_concept": "Market Structure - Market Making",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Smaller candles, more consistent volume",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "05:42",
+      "category": "concept",
+      "title": "Mean Reversion",
+      "content": "The price is gravitating back toward ₹495-500 - the 'fair value' before the crash. This is mean reversion - price returns to equilibrium.",
+      "related_concept": "Price Theory - Mean Reversion",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Price approaching pre-crash levels",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "06:00",
+      "category": "candle_pattern",
+      "title": "Doji at Resistance",
+      "content": "A doji forming at the ₹495 resistance level shows uncertainty. Will buyers push through or will we see consolidation here?",
+      "related_concept": "Candlestick Patterns - Decision Points",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Doji candle at previous support-now-resistance",
+      "duration_seconds": 11
+    },
+    {
+      "timestamp": "06:18",
+      "category": "chart_pattern",
+      "title": "Consolidation Zone",
+      "content": "After the violent moves, price is consolidating in a tight range. This 'digestion' is healthy - market is finding new equilibrium.",
+      "related_concept": "Chart Patterns - Consolidation",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Sideways movement with small candles",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "06:38",
+      "category": "concept",
+      "title": "Technical vs Fundamental",
+      "content": "Key insight: Fundamentals didn't change, only market structure broke temporarily. This is why price recovered - the crash was technical, not fundamental.",
+      "related_concept": "Market Analysis - Technical vs Fundamental",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Full recovery validates no fundamental change",
+      "duration_seconds": 14
+    },
+    {
+      "timestamp": "06:56",
+      "category": "candle_pattern",
+      "title": "Hammer Shows Support",
+      "content": "Another hammer at ₹490 confirms this as a new support level. Buyers are defending this price aggressively.",
+      "related_concept": "Candlestick Patterns - Support Confirmation",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Hammer with long lower wick at support",
+      "duration_seconds": 11
+    },
+    {
+      "timestamp": "07:14",
+      "category": "risk_management",
+      "title": "Circuit Breakers",
+      "content": "In real markets, circuit breakers would have paused trading during this crash. They exist to prevent exactly this type of liquidity vacuum.",
+      "related_concept": "Market Structure - Trading Halts",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Imagine trading halt at extreme low",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "07:32",
+      "category": "market_psychology",
+      "title": "Whipsaw Psychology",
+      "content": "Traders caught in this whipsaw face emotional trauma. Those who panicked sold at the bottom; disciplined traders held or bought.",
+      "related_concept": "Market Psychology - Emotional Control",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Extreme price swings causing emotional reactions",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "07:52",
+      "category": "concept",
+      "title": "Lessons Learned",
+      "content": "Flash crashes teach: use limit orders, avoid leverage, understand market structure, and never panic sell. Preparation beats reaction.",
+      "related_concept": "Risk Management - Crisis Preparation",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Final stabilization validates preparation over panic",
+      "duration_seconds": 14
+    }
+  ],
+  "learning_module": {
+    "pre_simulation_briefing": {
+      "context": "You are about to experience one of the most intense market events possible: a flash crash. Based on the May 6, 2010 'Flash Crash' when the Dow Jones dropped nearly 1,000 points (9%) in minutes before recovering most losses within 30 minutes. This event exposed vulnerabilities in modern electronic markets where algorithmic trading can amplify moves to extreme levels. Unlike gradual declines, flash crashes are characterized by: (1) Sudden liquidity vacuum, (2) Cascading algorithmic selling, (3) Extreme price dislocations, (4) Rapid V-shaped recovery. This simulation compresses 36 minutes of real-time chaos into 8 minutes at 2-second intervals.",
+      "key_concepts": [
+        "Flash Crash Mechanics: How large orders trigger algorithmic cascades",
+        "Liquidity Vacuum: When market makers withdraw, creating 'air pockets'",
+        "Stop-Loss Hunting: How price declines trigger more selling via stops",
+        "Capitulation: Extreme selling exhaustion marking bottoms",
+        "V-Shaped Recovery: Rapid mean reversion when fundamentals unchanged",
+        "Volume Climax: Extreme volume spikes at turning points",
+        "Advanced Candlestick Patterns: Reading real-time signals under stress",
+        "Market Microstructure: Understanding HFT and algorithmic behavior"
+      ],
+      "what_to_watch": [
+        "The initial calm before the storm (first 30 seconds)",
+        "Shooting star and bearish patterns as selling begins",
+        "Cascading red marubozu candles during the crash",
+        "Extreme volume spike at the capitulation low (₹455)",
+        "Formation of hammer candle at the absolute bottom",
+        "Doji transitional candle showing seller exhaustion",
+        "Green marubozu candles during aggressive recovery",
+        "Bullish engulfing pattern confirming reversal",
+        "Spinning tops during consolidation phase",
+        "Final hammer candles establishing new support"
+      ]
+    },
+    "post_simulation_analysis": {
+      "what_happened": "BCIF experienced a flash crash, dropping 9% (from ₹500 to ₹455) in approximately 2 minutes before recovering 7% back to ₹490 over the next 3 minutes. The crash was triggered by a large institutional sell order that met thin liquidity, causing algorithms to cascade sell. At ₹455, capitulation occurred with extreme volume - all weak hands had exited. Value buyers recognized absurd pricing and stepped in aggressively. HFT algorithms then reversed from sell to buy mode, creating a V-shaped recovery. The session ended with consolidation around ₹490-495, demonstrating that market structure temporarily broke but repaired once liquidity returned.",
+      "key_lessons": [
+        {
+          "lesson": "Flash crashes are liquidity events, not fundamental changes",
+          "explanation": "The company's value didn't change - market structure temporarily broke down. This is why price recovered rapidly once liquidity returned. Understanding this distinction prevents panic selling at the worst possible moment."
+        },
+        {
+          "lesson": "Algorithms amplify moves in both directions",
+          "explanation": "HFT systems that sold on the way down also bought on the way up. They follow momentum and liquidity signals, creating cascades in both directions. This is the double-edged sword of algorithmic trading."
+        },
+        {
+          "lesson": "Volume climax signals exhaustion and reversal",
+          "explanation": "The extreme volume spike at ₹455 showed capitulation - when all sellers have sold, only buyers remain. This is a powerful reversal signal that marks panic bottoms."
+        },
+        {
+          "lesson": "Candlestick patterns work even in extreme volatility",
+          "explanation": "Despite chaos, classic patterns emerged: shooting stars before the crash, hammer at the bottom, doji at the transition, marubozu during strong moves, and spinning tops during consolidation. Pattern recognition remains valuable."
+        },
+        {
+          "lesson": "Stop-losses can become stop-losses in cascade events",
+          "explanation": "As price fell, it triggered stop-loss orders which became market sells, pushing price lower and triggering more stops. This 'stop-loss cascade' is why some traders use mental stops or wider stops during volatile periods."
+        },
+        {
+          "lesson": "Contrarian opportunity requires discipline and preparation",
+          "explanation": "Institutional buyers who had cash and discipline made fortunes buying at ₹455-460. But this requires: (1) available capital, (2) emotional control during panic, (3) understanding that crashes create opportunity."
+        },
+        {
+          "lesson": "Position sizing and leverage are life or death",
+          "explanation": "A 9% move in 2 minutes would liquidate most leveraged positions instantly. Those who survived used appropriate position sizing without excessive leverage."
+        },
+        {
+          "lesson": "Mean reversion is powerful when fundamentals unchanged",
+          "explanation": "Price gravitated back to ₹495-500 (pre-crash levels) because nothing fundamental changed. Mean reversion is strongest when dislocations are technical rather than fundamental."
+        }
+      ],
+      "trading_principles_demonstrated": [
+        "Market structure can break temporarily under stress",
+        "Liquidity is more important than most realize",
+        "Algorithms dominate modern markets",
+        "Volume analysis reveals turning points",
+        "Extreme fear creates opportunity for the prepared",
+        "Candlestick patterns provide real-time signals",
+        "Position sizing determines survival",
+        "Panic selling guarantees losses",
+        "Mean reversion works when fundamentals intact",
+        "Circuit breakers exist for good reason"
+      ],
+      "quiz_questions": [
+        {
+          "question": "What is a 'liquidity vacuum' and why is it dangerous?",
+          "options": [
+            "When there are too many buyers",
+            "When market makers withdraw bids, leaving no one to buy, causing price to fall until demand is found",
+            "A technical indicator showing low volume",
+            "When trading volume increases rapidly"
+          ],
+          "correct_answer": 1,
+          "explanation": "A liquidity vacuum occurs when market makers withdraw from providing bids (buy orders). With no buyers, any sell order must keep lowering price until it finds a willing buyer. This creates 'air pockets' where price gaps down violently. It's dangerous because it can cause extreme, rapid price dislocations far beyond what fundamentals justify."
+        },
+        {
+          "question": "What does a 'hammer' candlestick at an extreme low typically signal?",
+          "options": [
+            "Continued selling ahead",
+            "Market indecision with no clear direction",
+            "Potential bullish reversal as buyers rejected lower prices",
+            "A technical glitch in the data"
+          ],
+          "correct_answer": 2,
+          "explanation": "A hammer candle has a small body with a long lower wick (shadow). The long lower wick shows that sellers pushed price down, but buyers stepped in and rejected those lower prices, pushing it back up. When this forms at an extreme low after heavy selling, it often signals capitulation and potential reversal."
+        },
+        {
+          "question": "Why did algorithms that sold during the crash also buy during the recovery?",
+          "options": [
+            "They made a mistake and reversed course",
+            "Human traders overrode the algorithms",
+            "They follow momentum and liquidity signals in both directions",
+            "Different algorithms were trading each direction"
+          ],
+          "correct_answer": 2,
+          "explanation": "Most HFT (high-frequency trading) algorithms are momentum and liquidity-based. They sell when they detect downward momentum and liquidity stress, then buy when momentum shifts upward and liquidity returns. This is why they amplify moves in both directions - they're following signals, not fundamentals."
+        },
+        {
+          "question": "What is 'capitulation' and how do you recognize it?",
+          "options": [
+            "When market makers stop trading",
+            "The point of maximum fear where weak hands exit at any price, often marked by extreme volume",
+            "A technical pattern signaling continued decline",
+            "When institutional investors start buying"
+          ],
+          "correct_answer": 1,
+          "explanation": "Capitulation is the point where fearful investors give up and sell at any price to exit their positions. It's recognized by: (1) Extreme volume spike, (2) Rapid, vertical price drop, (3) Panic sentiment, (4) Often forms hammer or doji candles as selling exhausts. Capitulation often marks bottoms because once everyone who will sell has sold, only buyers remain."
+        },
+        {
+          "question": "Why did the price recover in a 'V-shape' rather than gradually?",
+          "options": [
+            "Government intervention forced prices up",
+            "The crash was technical (liquidity breakdown) not fundamental, so mean reversion was rapid once liquidity returned",
+            "All traders decided to buy at the same time",
+            "It was a random market movement"
+          ],
+          "correct_answer": 1,
+          "explanation": "V-shaped recoveries occur when price dislocations are technical rather than fundamental. Since BCIF's underlying value didn't change (no bad news, earnings, or business changes), the crash to ₹455 represented absurd undervaluation. Once liquidity returned and value buyers stepped in, price rapidly reverted to fair value. If fundamentals had deteriorated, recovery would be gradual or non-existent."
+        }
+      ]
+    },
+    "real_world_connection": {
+      "case_study": "The Flash Crash of May 6, 2010",
+      "historical_context": "On May 6, 2010, at 2:32 PM EDT, U.S. stock markets experienced the most dramatic intraday point decline in history. The Dow Jones Industrial Average plunged about 1,000 points (9%) in minutes, with some stocks trading at absurd prices - Accenture fell from $40 to $0.01 while Apple briefly traded at $100,000 per share. The crash was triggered by a large sell order ($4.1 billion) from a mutual fund, executed as a single aggressive sale rather than broken up over time. This order hit a market already stressed by European debt concerns and thin liquidity. High-frequency trading algorithms detected the selling pressure and joined in, creating a cascade. Market makers withdrew, creating a liquidity vacuum. The market recovered most losses within 20 minutes as the algorithms reversed and value buyers stepped in. The SEC later implemented circuit breakers (trading pauses) to prevent similar events.",
+      "parallel_analysis": "Your simulation compressed the key phases of the 2010 Flash Crash: (1) Normal trading turned to stress as large selling emerged, (2) Algorithmic cascade amplified the move, (3) Liquidity vacuum caused price collapse, (4) Capitulation at extreme lows with massive volume, (5) Value recognition triggered reversal, (6) V-shaped recovery as algorithms flipped to buying, (7) Consolidation as market structure repaired. The percentage moves matched closely (9% down, 7% recovery), and the behavioral patterns were identical - panic selling, exhaustion bottom, aggressive recovery, and eventual stabilization near starting levels.",
+      "modern_relevance": "Flash crashes continue to occur in modern markets, though circuit breakers now provide pauses: August 2015 (market-wide volatility), January 2016 (Dow opened down 500), February 2018 (VIX explosion), March 2020 (COVID panic), and numerous single-stock flash crashes. Understanding these events is crucial because: (1) Modern markets are dominated by algorithms, (2) Liquidity can evaporate instantly, (3) Cascades can happen in milliseconds, (4) Position sizing and no-leverage protect you, (5) Extreme dislocations create opportunities for the prepared. The lessons from 2010 remain relevant: never use market orders in volatile conditions, understand that market structure can break, maintain cash for opportunities, and don't panic sell during liquidity events."
+    }
+  },
+  "difficulty_calibration": {
+    "complexity_score": 10,
+    "noise_level": "extreme",
+    "trend_clarity": "extreme-chaotic",
+    "volatility": "extreme",
+    "actor_diversity": "very high",
+    "news_frequency": "very high",
+    "teaching_focus": "extreme volatility management, advanced candlestick patterns, market microstructure, liquidity dynamics, algorithmic trading, capitulation signals, risk management under stress"
+  }
+}

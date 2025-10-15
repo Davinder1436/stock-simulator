@@ -1,0 +1,1608 @@
+{
+  "simulation_metadata": {
+    "chapter": 6,
+    "title": "The Inflation Scare",
+    "real_case_reference": "US CPI Spike - June 2022",
+    "stock_name": "GrowthTech Solutions",
+    "stock_symbol": "GRTH",
+    "base_price": 300.0,
+    "difficulty": "medium",
+    "duration_minutes": 8,
+    "tick_interval_sec": 5,
+    "total_ticks": 96,
+    "learning_objectives": [
+      "Understanding macro economic triggers and market reactions",
+      "How inflation concerns impact growth stocks",
+      "Defensive rotation during economic uncertainty",
+      "Managing volatility with technical indicators"
+    ],
+    "market_context": "A high-growth technology company faces headwinds as inflation data comes in hotter than expected. Market participants reassess valuations and risk appetite, leading to increased volatility and sector rotation from growth to value stocks.",
+    "expected_outcome": "Initial sharp decline followed by consolidation and partial recovery attempts, demonstrating increased volatility typical of macro-driven selloffs",
+    "teaching_concepts": [
+      "Bearish engulfing patterns",
+      "RSI oversold conditions",
+      "Moving average support/resistance",
+      "Volume analysis during selloffs",
+      "Risk-off sentiment indicators"
+    ]
+  },
+  "market_news": [
+    {
+      "timestamp": "00:30",
+      "headline": "Breaking: US CPI Data Shows 8.6% Annual Inflation - Highest in 40 Years",
+      "sentiment": "negative",
+      "impact_strength": 0.8,
+      "expected_effect": "sharp decline",
+      "sector_context": "Growth stocks particularly vulnerable to rising rates environment",
+      "trigger_type": "macro_data"
+    },
+    {
+      "timestamp": "02:45",
+      "headline": "Fed Officials Signal More Aggressive Rate Hikes Coming",
+      "sentiment": "negative",
+      "impact_strength": 0.7,
+      "expected_effect": "continued selling pressure",
+      "sector_context": "Technology sector faces multiple compression as discount rates rise",
+      "trigger_type": "central_bank_commentary"
+    },
+    {
+      "timestamp": "05:00",
+      "headline": "Bargain Hunters Emerge as GRTH Tests Key Support Level",
+      "sentiment": "neutral",
+      "impact_strength": 0.4,
+      "expected_effect": "stabilization attempt",
+      "sector_context": "Value investors see opportunity in growth stock weakness",
+      "trigger_type": "technical_level"
+    },
+    {
+      "timestamp": "06:30",
+      "headline": "Analysts Warn: Tech Valuations Still Not Attractive at Current Rates",
+      "sentiment": "negative",
+      "impact_strength": 0.5,
+      "expected_effect": "renewed selling",
+      "sector_context": "Fundamental reassessment ongoing across technology sector",
+      "trigger_type": "analyst_commentary"
+    }
+  ],
+  "bot_orders": [
+    {
+      "timestamp": "00:05",
+      "actor_id": "momentum_trader_01",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 80,
+      "price": 300.3,
+      "reason": "Early morning strength, adding to swing position",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.75,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "00:15",
+      "actor_id": "retail_investor_01",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 35,
+      "price": 300.5,
+      "reason": "Buying the morning dip, optimistic on tech",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "00:25",
+      "actor_id": "market_maker_01",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 60,
+      "price": 300.8,
+      "reason": "Providing liquidity at resistance, maintaining spread",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.3
+    },
+    {
+      "timestamp": "00:40",
+      "actor_id": "algorithmic_trader_01",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 250,
+      "price": 298.5,
+      "reason": "Macro data trigger - immediate risk-off positioning",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.7
+    },
+    {
+      "timestamp": "00:45",
+      "actor_id": "fund_manager_01",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 400,
+      "price": 297.2,
+      "reason": "Inflation spike requires portfolio rebalancing to defensive",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.6,
+      "influence_weight": 0.8
+    },
+    {
+      "timestamp": "00:55",
+      "actor_id": "retail_investor_02",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 50,
+      "price": 296.0,
+      "reason": "Panic selling on news, protecting capital",
+      "emotion_index": 0.85,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "01:05",
+      "actor_id": "momentum_trader_02",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 180,
+      "price": 294.8,
+      "reason": "Trend reversal confirmed, cutting losses",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.8,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "01:15",
+      "actor_id": "hedge_fund_01",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 350,
+      "price": 293.5,
+      "reason": "Defensive rotation - selling growth, buying value",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.65,
+      "influence_weight": 0.7
+    },
+    {
+      "timestamp": "01:25",
+      "actor_id": "retail_investor_03",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 40,
+      "price": 292.8,
+      "reason": "Stop-loss triggered, forced exit",
+      "emotion_index": 0.8,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.15
+    },
+    {
+      "timestamp": "01:35",
+      "actor_id": "market_maker_02",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 100,
+      "price": 292.0,
+      "reason": "Building inventory at oversold levels",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "01:50",
+      "actor_id": "long_term_investor_01",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 200,
+      "price": 291.5,
+      "reason": "Quality company at discount, adding to core position",
+      "emotion_index": 0.35,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "02:05",
+      "actor_id": "retail_investor_04",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 30,
+      "price": 292.2,
+      "reason": "Attempting to catch the falling knife",
+      "emotion_index": 0.7,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "02:20",
+      "actor_id": "swing_trader_01",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 120,
+      "price": 293.0,
+      "reason": "Bounce from support, scalping opportunity",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.75,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "02:35",
+      "actor_id": "retail_investor_05",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 45,
+      "price": 293.8,
+      "reason": "Buying what I think is the bottom",
+      "emotion_index": 0.65,
+      "reaction_speed": 0.45,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "02:50",
+      "actor_id": "algorithmic_trader_02",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 200,
+      "price": 293.0,
+      "reason": "Fed hawkish commentary - resuming risk-off",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.65
+    },
+    {
+      "timestamp": "03:00",
+      "actor_id": "fund_manager_02",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 300,
+      "price": 291.5,
+      "reason": "Rate hike expectations increasing, reducing exposure",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.55,
+      "influence_weight": 0.75
+    },
+    {
+      "timestamp": "03:15",
+      "actor_id": "retail_investor_06",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 55,
+      "price": 290.2,
+      "reason": "Second wave of panic, cutting losses deeper",
+      "emotion_index": 0.9,
+      "reaction_speed": 0.6,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "03:30",
+      "actor_id": "momentum_trader_03",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 150,
+      "price": 289.0,
+      "reason": "Breakdown below key support, shorting the weakness",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.85,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "03:45",
+      "actor_id": "hedge_fund_02",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 280,
+      "price": 288.0,
+      "reason": "Technical breakdown confirms fundamental concerns",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.6,
+      "influence_weight": 0.7
+    },
+    {
+      "timestamp": "04:00",
+      "actor_id": "market_maker_03",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 90,
+      "price": 287.5,
+      "reason": "Extreme oversold, providing liquidity",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.35
+    },
+    {
+      "timestamp": "04:20",
+      "actor_id": "contrarian_investor_01",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 250,
+      "price": 287.8,
+      "reason": "Panic selling creates opportunity, accumulating",
+      "emotion_index": 0.35,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.65
+    },
+    {
+      "timestamp": "04:40",
+      "actor_id": "retail_investor_07",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 35,
+      "price": 288.5,
+      "reason": "RSI extremely oversold, expecting bounce",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "05:00",
+      "actor_id": "swing_trader_02",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 140,
+      "price": 289.0,
+      "reason": "Technical bounce from major support level",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.7,
+      "influence_weight": 0.45
+    },
+    {
+      "timestamp": "05:15",
+      "actor_id": "long_term_investor_02",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 220,
+      "price": 289.8,
+      "reason": "Dollar-cost averaging into quality at lower prices",
+      "emotion_index": 0.35,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "05:30",
+      "actor_id": "retail_investor_08",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 40,
+      "price": 290.5,
+      "reason": "News mentions bargain hunters, joining the bounce",
+      "emotion_index": 0.65,
+      "reaction_speed": 0.55,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "05:50",
+      "actor_id": "momentum_trader_04",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 130,
+      "price": 291.2,
+      "reason": "Short-term oversold bounce underway",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.75,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "06:10",
+      "actor_id": "retail_investor_09",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 50,
+      "price": 292.0,
+      "reason": "Recovery momentum building, FOMO kicking in",
+      "emotion_index": 0.7,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "06:25",
+      "actor_id": "market_maker_04",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 80,
+      "price": 292.5,
+      "reason": "Taking profit on inventory, resistance ahead",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.3
+    },
+    {
+      "timestamp": "06:40",
+      "actor_id": "algorithmic_trader_03",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 160,
+      "price": 291.8,
+      "reason": "Analyst warnings trigger fresh selling algorithm",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.95,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "06:55",
+      "actor_id": "hedge_fund_03",
+      "actor_type": "institutional",
+      "action": "sell",
+      "quantity": 270,
+      "price": 290.5,
+      "reason": "Valuation concerns persist, selling the bounce",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.65,
+      "influence_weight": 0.7
+    },
+    {
+      "timestamp": "07:10",
+      "actor_id": "retail_investor_10",
+      "actor_type": "retail",
+      "action": "sell",
+      "quantity": 45,
+      "price": 289.5,
+      "reason": "Failed bounce confirms weakness, exiting position",
+      "emotion_index": 0.75,
+      "reaction_speed": 0.55,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "07:25",
+      "actor_id": "momentum_trader_05",
+      "actor_type": "momentum_trader",
+      "action": "sell",
+      "quantity": 110,
+      "price": 288.8,
+      "reason": "Dead cat bounce complete, resuming short",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.8,
+      "influence_weight": 0.45
+    },
+    {
+      "timestamp": "07:40",
+      "actor_id": "contrarian_investor_02",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 200,
+      "price": 288.5,
+      "reason": "Building position through volatility",
+      "emotion_index": 0.35,
+      "reaction_speed": 0.45,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "07:55",
+      "actor_id": "market_maker_05",
+      "actor_type": "market_maker",
+      "action": "buy",
+      "quantity": 70,
+      "price": 288.8,
+      "reason": "End of day stabilization, closing spreads",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.3
+    }
+  ],
+  "price_series": [
+    {
+      "timestamp": "00:00",
+      "price": 300.0,
+      "volume": 0,
+      "trend": "flat",
+      "dominant_actor": "none",
+      "sentiment_index": 0.55,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:05",
+      "price": 300.3,
+      "volume": 80,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.56,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:10",
+      "price": 300.4,
+      "volume": 95,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.57,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:15",
+      "price": 300.5,
+      "volume": 130,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:20",
+      "price": 300.7,
+      "volume": 160,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.58,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:25",
+      "price": 300.6,
+      "volume": 220,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.57,
+      "candle_pattern": "spinning_top"
+    },
+    {
+      "timestamp": "00:30",
+      "price": 300.2,
+      "volume": 250,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.52,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:35",
+      "price": 299.5,
+      "volume": 280,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.48,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:40",
+      "price": 298.5,
+      "volume": 530,
+      "trend": "down",
+      "dominant_actor": "algorithmic",
+      "sentiment_index": 0.42,
+      "candle_pattern": "marubozu"
+    },
+    {
+      "timestamp": "00:45",
+      "price": 297.2,
+      "volume": 930,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.38,
+      "candle_pattern": "marubozu"
+    },
+    {
+      "timestamp": "00:50",
+      "price": 296.5,
+      "volume": 1010,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.35,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "00:55",
+      "price": 296.0,
+      "volume": 1060,
+      "trend": "down",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.33,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:00",
+      "price": 295.2,
+      "volume": 1100,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.31,
+      "candle_pattern": "engulfing_bear"
+    },
+    {
+      "timestamp": "01:05",
+      "price": 294.8,
+      "volume": 1280,
+      "trend": "down",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.30,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:10",
+      "price": 294.0,
+      "volume": 1330,
+      "trend": "down",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:15",
+      "price": 293.5,
+      "volume": 1680,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.27,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:20",
+      "price": 293.0,
+      "volume": 1730,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:25",
+      "price": 292.8,
+      "volume": 1770,
+      "trend": "down",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.25,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:30",
+      "price": 292.3,
+      "volume": 1810,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.24,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:35",
+      "price": 292.0,
+      "volume": 1910,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.25,
+      "candle_pattern": "doji"
+    },
+    {
+      "timestamp": "01:40",
+      "price": 291.8,
+      "volume": 1940,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:45",
+      "price": 291.5,
+      "volume": 1980,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.27,
+      "candle_pattern": "hammer"
+    },
+    {
+      "timestamp": "01:50",
+      "price": 291.5,
+      "volume": 2180,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "01:55",
+      "price": 291.8,
+      "volume": 2220,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.30,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:00",
+      "price": 292.0,
+      "volume": 2250,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.31,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:05",
+      "price": 292.2,
+      "volume": 2280,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.32,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:10",
+      "price": 292.5,
+      "volume": 2320,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.33,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:15",
+      "price": 292.8,
+      "volume": 2360,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.34,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:20",
+      "price": 293.0,
+      "volume": 2480,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.35,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:25",
+      "price": 293.4,
+      "volume": 2530,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.36,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:30",
+      "price": 293.6,
+      "volume": 2570,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.37,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:35",
+      "price": 293.8,
+      "volume": 2615,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.38,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:40",
+      "price": 294.0,
+      "volume": 2660,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.39,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:45",
+      "price": 293.8,
+      "volume": 2700,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.37,
+      "candle_pattern": "shooting_star"
+    },
+    {
+      "timestamp": "02:50",
+      "price": 293.0,
+      "volume": 2900,
+      "trend": "down",
+      "dominant_actor": "algorithmic",
+      "sentiment_index": 0.34,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "02:55",
+      "price": 292.2,
+      "volume": 2950,
+      "trend": "down",
+      "dominant_actor": "algorithmic",
+      "sentiment_index": 0.32,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:00",
+      "price": 291.5,
+      "volume": 3250,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.30,
+      "candle_pattern": "marubozu"
+    },
+    {
+      "timestamp": "03:05",
+      "price": 290.8,
+      "volume": 3300,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:10",
+      "price": 290.4,
+      "volume": 3350,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.27,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:15",
+      "price": 290.2,
+      "volume": 3405,
+      "trend": "down",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:20",
+      "price": 289.5,
+      "volume": 3450,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.24,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:25",
+      "price": 289.2,
+      "volume": 3500,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.23,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:30",
+      "price": 289.0,
+      "volume": 3650,
+      "trend": "down",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.22,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:35",
+      "price": 288.5,
+      "volume": 3710,
+      "trend": "down",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.21,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:40",
+      "price": 288.2,
+      "volume": 3760,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.20,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:45",
+      "price": 288.0,
+      "volume": 4040,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.19,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:50",
+      "price": 287.8,
+      "volume": 4090,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.18,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "03:55",
+      "price": 287.6,
+      "volume": 4130,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.18,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:00",
+      "price": 287.5,
+      "volume": 4220,
+      "trend": "flat",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.19,
+      "candle_pattern": "doji"
+    },
+    {
+      "timestamp": "04:05",
+      "price": 287.6,
+      "volume": 4250,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.20,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:10",
+      "price": 287.7,
+      "volume": 4280,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.21,
+      "candle_pattern": "hammer"
+    },
+    {
+      "timestamp": "04:15",
+      "price": 287.8,
+      "volume": 4320,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.22,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:20",
+      "price": 287.8,
+      "volume": 4570,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.23,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:25",
+      "price": 288.0,
+      "volume": 4620,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.24,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:30",
+      "price": 288.2,
+      "volume": 4660,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.25,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:35",
+      "price": 288.4,
+      "volume": 4700,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:40",
+      "price": 288.5,
+      "volume": 4735,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.27,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:45",
+      "price": 288.7,
+      "volume": 4780,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:50",
+      "price": 288.8,
+      "volume": 4820,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.29,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "04:55",
+      "price": 289.0,
+      "volume": 4860,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.30,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:00",
+      "price": 289.0,
+      "volume": 5000,
+      "trend": "flat",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.31,
+      "candle_pattern": "spinning_top"
+    },
+    {
+      "timestamp": "05:05",
+      "price": 289.3,
+      "volume": 5050,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.32,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:10",
+      "price": 289.5,
+      "volume": 5100,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.33,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:15",
+      "price": 289.8,
+      "volume": 5320,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.34,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:20",
+      "price": 290.0,
+      "volume": 5370,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.35,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:25",
+      "price": 290.3,
+      "volume": 5420,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.36,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:30",
+      "price": 290.5,
+      "volume": 5460,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.37,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:35",
+      "price": 290.7,
+      "volume": 5510,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.38,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:40",
+      "price": 290.9,
+      "volume": 5560,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.39,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:45",
+      "price": 291.0,
+      "volume": 5610,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.40,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:50",
+      "price": 291.2,
+      "volume": 5740,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.41,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "05:55",
+      "price": 291.5,
+      "volume": 5800,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.42,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:00",
+      "price": 291.7,
+      "volume": 5850,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.43,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:05",
+      "price": 291.8,
+      "volume": 5900,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.43,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:10",
+      "price": 292.0,
+      "volume": 5950,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.44,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:15",
+      "price": 292.2,
+      "volume": 6000,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.45,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:20",
+      "price": 292.4,
+      "volume": 6050,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.45,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:25",
+      "price": 292.5,
+      "volume": 6130,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.45,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:30",
+      "price": 292.3,
+      "volume": 6180,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.43,
+      "candle_pattern": "shooting_star"
+    },
+    {
+      "timestamp": "06:35",
+      "price": 292.0,
+      "volume": 6230,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.42,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:40",
+      "price": 291.8,
+      "volume": 6390,
+      "trend": "down",
+      "dominant_actor": "algorithmic",
+      "sentiment_index": 0.40,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:45",
+      "price": 291.5,
+      "volume": 6450,
+      "trend": "down",
+      "dominant_actor": "algorithmic",
+      "sentiment_index": 0.38,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:50",
+      "price": 291.0,
+      "volume": 6520,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.36,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "06:55",
+      "price": 290.5,
+      "volume": 6790,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.34,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:00",
+      "price": 290.0,
+      "volume": 6850,
+      "trend": "down",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.32,
+      "candle_pattern": "engulfing_bear"
+    },
+    {
+      "timestamp": "07:05",
+      "price": 289.7,
+      "volume": 6900,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.31,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:10",
+      "price": 289.5,
+      "volume": 6945,
+      "trend": "down",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.30,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:15",
+      "price": 289.2,
+      "volume": 7000,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.29,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:20",
+      "price": 289.0,
+      "volume": 7050,
+      "trend": "down",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:25",
+      "price": 288.8,
+      "volume": 7160,
+      "trend": "down",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.27,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:30",
+      "price": 288.6,
+      "volume": 7220,
+      "trend": "down",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.26,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:35",
+      "price": 288.5,
+      "volume": 7270,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.27,
+      "candle_pattern": "doji"
+    },
+    {
+      "timestamp": "07:40",
+      "price": 288.5,
+      "volume": 7470,
+      "trend": "flat",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.28,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:45",
+      "price": 288.6,
+      "volume": 7520,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.29,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:50",
+      "price": 288.7,
+      "volume": 7570,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.30,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "07:55",
+      "price": 288.8,
+      "volume": 7640,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.31,
+      "candle_pattern": "none"
+    },
+    {
+      "timestamp": "08:00",
+      "price": 289.0,
+      "volume": 7700,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.32,
+      "candle_pattern": "hammer"
+    }
+  ],
+  "teaching_tips": [
+    {
+      "timestamp": "00:35",
+      "category": "market_psychology",
+      "title": "News Impact on Growth Stocks",
+      "content": "Notice how inflation news immediately impacts growth stocks. Higher rates mean future earnings are worth less today - this is called 'multiple compression'.",
+      "related_concept": "Macro Economics - Interest Rate Sensitivity",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Watch the sharp red candle after news breaks",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "01:10",
+      "category": "candle_pattern",
+      "title": "Bearish Engulfing Pattern",
+      "content": "A large red candle completely covering the previous green candle shows strong selling pressure - this is a bearish engulfing pattern, signaling potential trend reversal.",
+      "related_concept": "Candlestick Patterns - Reversal Signals",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Red candle body engulfs previous green candle",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "01:50",
+      "category": "candle_pattern",
+      "title": "Hammer at Support",
+      "content": "A hammer candle with long lower wick shows buyers rejected lower prices. When it forms at a support level, it can signal a potential bounce.",
+      "related_concept": "Candlestick Patterns - Reversal Signals",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Small body with long lower shadow at support",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "02:30",
+      "category": "concept",
+      "title": "Dead Cat Bounce",
+      "content": "After a sharp decline, a small recovery is common - traders call this a 'dead cat bounce'. It's often temporary unless fundamentals improve.",
+      "related_concept": "Price Action - Counter-Trend Moves",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Short-lived recovery after steep decline",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "02:50",
+      "category": "candle_pattern",
+      "title": "Shooting Star Warning",
+      "content": "A shooting star with long upper wick at resistance shows sellers rejected higher prices - often precedes continued selling.",
+      "related_concept": "Candlestick Patterns - Reversal Signals",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Small body at bottom, long upper shadow",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "03:20",
+      "category": "indicator",
+      "title": "Volume Surge on Breakdown",
+      "content": "Notice volume spiking during the decline? High volume on down moves confirms selling pressure is real, not just noise.",
+      "related_concept": "Technical Indicators - Volume Analysis",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Volume bars expanding during red candles",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "04:05",
+      "category": "indicator",
+      "title": "RSI Oversold",
+      "content": "RSI has dropped below 30 - this indicates oversold conditions. While selling pressure is extreme, it can signal a potential bounce opportunity.",
+      "related_concept": "Technical Indicators - Momentum",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "RSI indicator below 30 line",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "04:15",
+      "category": "candle_pattern",
+      "title": "Hammer Reversal Signal",
+      "content": "Another hammer forming after extreme oversold conditions. Multiple hammers at support strengthen the reversal signal.",
+      "related_concept": "Candlestick Patterns - Confirmation",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Second hammer with long lower wick",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "05:10",
+      "category": "concept",
+      "title": "Support Level",
+      "content": "Price is bouncing from ₹287.50 - this becomes a support level where buyers see value and step in to buy.",
+      "related_concept": "Price Action - Support and Resistance",
+      "difficulty_level": "beginner",
+      "visual_indicator": "Horizontal line where price bounced twice",
+      "duration_seconds": 11
+    },
+    {
+      "timestamp": "06:00",
+      "category": "risk_management",
+      "title": "Volatile Market Caution",
+      "content": "In highly volatile conditions like this, use wider stop-losses to avoid getting whipsawed. Reduce position sizes to manage risk.",
+      "related_concept": "Risk Management - Position Sizing",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Large price swings up and down",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "06:35",
+      "category": "candle_pattern",
+      "title": "Failed Breakout",
+      "content": "A shooting star at resistance shows the breakout attempt failed. Sellers defending the ₹292.50 level successfully.",
+      "related_concept": "Chart Patterns - Failed Breakouts",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Price rejection at resistance with long upper wick",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "07:05",
+      "category": "candle_pattern",
+      "title": "Bearish Engulfing Returns",
+      "content": "Another bearish engulfing pattern confirms sellers are in control. The recovery attempt has been rejected.",
+      "related_concept": "Candlestick Patterns - Trend Confirmation",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Large red candle engulfing green candles",
+      "duration_seconds": 12
+    },
+    {
+      "timestamp": "07:40",
+      "category": "market_psychology",
+      "title": "Capitulation Signs",
+      "content": "After extreme selling and multiple failed rallies, traders may be giving up - this 'capitulation' often marks bottoms.",
+      "related_concept": "Market Psychology - Sentiment Extremes",
+      "difficulty_level": "advanced",
+      "visual_indicator": "Price stabilizing after prolonged decline",
+      "duration_seconds": 13
+    },
+    {
+      "timestamp": "08:00",
+      "category": "concept",
+      "title": "Session Close Analysis",
+      "content": "The day ends with a hammer at support - suggesting buyers may be stepping back in. Watch for follow-through tomorrow.",
+      "related_concept": "Price Action - Daily Close Significance",
+      "difficulty_level": "intermediate",
+      "visual_indicator": "Final candle showing hammer formation",
+      "duration_seconds": 12
+    }
+  ],
+  "learning_module": {
+    "pre_simulation_briefing": {
+      "context": "You are about to experience a macro-driven selloff - a scenario where economic news (inflation data) triggers broad market reassessment. This mirrors the June 2022 CPI shock when hot inflation data caused a 4%+ selloff in the Nasdaq, with growth stocks hit hardest. Unlike the calm anticipation rally in Chapter 1, this demonstrates how markets react to negative macro surprises.",
+      "key_concepts": [
+        "Macro Triggers: How economic data instantly impacts stock prices",
+        "Multiple Compression: Growth stocks fall harder when rates rise",
+        "Defensive Rotation: Money flows from growth to value in risk-off periods",
+        "Oversold Bounces: Technical rallies during downtrends",
+        "Volume Confirmation: High volume validates the selling pressure"
+      ],
+      "what_to_watch": [
+        "The immediate sharp drop following inflation news",
+        "Volume surging during the selloff (confirming real selling)",
+        "Formation of bearish candlestick patterns (engulfing, shooting star)",
+        "Multiple failed bounce attempts showing weak buying conviction",
+        "RSI dropping into oversold territory (below 30)",
+        "How each negative news item accelerates the decline"
+      ]
+    },
+    "post_simulation_analysis": {
+      "what_happened": "The stock fell approximately 3.7% (from ₹300 to ₹289) over the 8-minute simulation, demonstrating a classic macro-driven selloff. Initial inflation news triggered algorithmic and institutional selling. A brief oversold bounce occurred around ₹287.50, but fresh Fed commentary renewed selling pressure. The session ended with signs of stabilization but no clear reversal.",
+      "key_lessons": [
+        {
+          "lesson": "Macro news trumps company fundamentals short-term",
+          "explanation": "Even strong companies can fall sharply when macro headwinds (inflation, rates) dominate sentiment. The fundamentals didn't change, but the valuation framework did."
+        },
+        {
+          "lesson": "Growth stocks are rate-sensitive",
+          "explanation": "Technology and growth stocks fall harder in rising rate environments because their valuations are based on distant future earnings, which are worth less when discounted at higher rates."
+        },
+        {
+          "lesson": "Dead cat bounces are common",
+          "explanation": "After sharp declines, technical oversold conditions often trigger brief rallies. These are 'dead cat bounces' - short-lived unless fundamentals improve."
+        },
+        {
+          "lesson": "Volume validates price moves",
+          "explanation": "The high volume during selloffs confirmed this wasn't just noise - it was real institutional selling pressure."
+        },
+        {
+          "lesson": "Multiple failed bounces signal weak hands",
+          "explanation": "Each attempt to recover was met with renewed selling, showing buyers lacked conviction without fundamental improvement."
+        }
+      ],
+      "trading_principles_demonstrated": [
+        "Don't fight the Fed (or macro trends)",
+        "Volume confirms price direction",
+        "Oversold doesn't mean bottom",
+        "Failed rallies are continuation signals",
+        "Respect risk-off sentiment",
+        "Use wider stops in volatile markets"
+      ],
+      "quiz_questions": [
+        {
+          "question": "Why do growth stocks like GRTH fall harder during inflation scares?",
+          "options": [
+            "They have higher debt levels",
+            "Future earnings are worth less when discounted at higher rates",
+            "They have lower profit margins",
+            "Retail investors sell them first"
+          ],
+          "correct_answer": 1,
+          "explanation": "Growth stocks derive most value from future earnings. When interest rates rise (to fight inflation), those future cash flows are worth less in today's dollars - this is called 'multiple compression'."
+        },
+        {
+          "question": "What is a 'dead cat bounce' in trading?",
+          "options": [
+            "A sustained recovery after a decline",
+            "A small temporary rally during a downtrend",
+            "A pattern that signals a bottom",
+            "A technical indicator"
+          ],
+          "correct_answer": 1,
+          "explanation": "A dead cat bounce is a brief recovery during a downtrend, often triggered by technical oversold conditions. It's usually temporary and followed by renewed selling."
+        },
+        {
+          "question": "How did volume behavior confirm the selling pressure in this simulation?",
+          "options": [
+            "Volume decreased during declines",
+            "Volume was unchanged throughout",
+            "Volume surged during the sharp selloffs",
+            "Volume only increased during bounces"
+          ],
+          "correct_answer": 2,
+          "explanation": "High volume during price declines confirms that the selling is real and significant. It shows many participants are actively exiting positions, not just a few trades moving the price."
+        },
+        {
+          "question": "What does RSI dropping below 30 indicate?",
+          "options": [
+            "The stock will definitely go up",
+            "Oversold conditions - potential for bounce but not guaranteed",
+            "The trend has reversed",
+            "It's time to sell"
+          ],
+          "correct_answer": 1,
+          "explanation": "RSI below 30 indicates oversold conditions, meaning selling pressure has been extreme. While this can precede a bounce, it doesn't guarantee one - the trend can remain oversold for extended periods."
+        }
+      ]
+    },
+    "real_world_connection": {
+      "case_study": "US Markets - June 10, 2022 CPI Shock",
+      "historical_context": "On June 10, 2022, the US reported CPI inflation of 8.6% year-over-year - higher than the expected 8.3%. This shock caused the Nasdaq to drop 3.5% in a single day, with high-growth tech stocks falling 5-7%. The news forced investors to reprice risk and rotation from growth to value accelerated. Companies like Netflix, Meta, and Tesla saw even steeper declines as their future earnings were reassessed at higher discount rates.",
+      "parallel_analysis": "Your simulation compressed this real-world macro shock into 8 minutes. The same forces were at play: sudden negative macro news → algorithmic selling → institutional repositioning → retail panic → oversold bounce → renewed selling on additional negative commentary. The percentage moves were smaller but the behavioral patterns were identical.",
+      "modern_relevance": "Macro-driven selloffs remain a constant threat in modern markets. Whether it's inflation data, Fed speeches, geopolitical events, or economic indicators, understanding how markets process negative macro news is crucial. The 2022 bear market taught investors that 'buying the dip' doesn't work when fundamentals (rate environment) have shifted. This pattern repeats: during COVID crash (March 2020), 2018 rate hike fears, and the 2008 financial crisis."
+    }
+  },
+  "difficulty_calibration": {
+    "complexity_score": 6,
+    "noise_level": "medium",
+    "trend_clarity": "medium",
+    "volatility": "medium-high",
+    "actor_diversity": "moderate-high",
+    "news_frequency": "medium",
+    "teaching_focus": "macro impacts, volatility management, candlestick patterns, technical indicators"
+  }
+}

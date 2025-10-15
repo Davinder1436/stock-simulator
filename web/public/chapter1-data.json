@@ -1,0 +1,793 @@
+{
+  "simulation_metadata": {
+    "chapter": 1,
+    "title": "The Calm Before the Rally",
+    "real_case_reference": "Apple iPhone Launch Hype - September 2007",
+    "stock_name": "TechNova Corp",
+    "stock_symbol": "TCNV",
+    "base_price": 100.0,
+    "difficulty": "easy",
+    "duration_minutes": 8,
+    "tick_interval_sec": 10,
+    "total_ticks": 48,
+    "learning_objectives": [
+      "Understanding sentiment pricing before real fundamentals appear",
+      "How anticipation builds market momentum",
+      "Role of retail investors in pre-event rallies",
+      "Basic trend identification and momentum trading"
+    ],
+    "market_context": "A promising tech company is about to unveil a revolutionary consumer product. Market sentiment is cautiously optimistic, with gradual accumulation by early believers and momentum traders.",
+    "expected_outcome": "Mild upward trend with small pullbacks, volume increasing gradually as event approaches"
+  },
+  "market_news": [
+    {
+      "timestamp": "00:30",
+      "headline": "TechNova Corp Confirms Product Launch Event for Tomorrow",
+      "sentiment": "positive",
+      "impact_strength": 0.3,
+      "expected_effect": "mild uptrend",
+      "sector_context": "Technology sector showing strength on innovation hopes",
+      "trigger_type": "announcement"
+    },
+    {
+      "timestamp": "03:00",
+      "headline": "Industry Analysts Express Cautious Optimism on TechNova's Innovation",
+      "sentiment": "positive",
+      "impact_strength": 0.4,
+      "expected_effect": "uptrend acceleration",
+      "sector_context": "Tech valuations remain reasonable compared to sector peers",
+      "trigger_type": "analyst_commentary"
+    },
+    {
+      "timestamp": "06:00",
+      "headline": "Early Reviews Hint at Game-Changing Features in Upcoming Product",
+      "sentiment": "positive",
+      "impact_strength": 0.5,
+      "expected_effect": "uptrend with volume spike",
+      "sector_context": "Consumer electronics demand remains robust",
+      "trigger_type": "leak_rumor"
+    }
+  ],
+  "bot_orders": [
+    {
+      "timestamp": "00:10",
+      "actor_id": "retail_investor_01",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 50,
+      "price": 100.2,
+      "reason": "Early position building on product launch anticipation",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.3,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "00:20",
+      "actor_id": "retail_investor_02",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 30,
+      "price": 100.3,
+      "reason": "Following social media buzz about upcoming launch",
+      "emotion_index": 0.65,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.15
+    },
+    {
+      "timestamp": "00:50",
+      "actor_id": "momentum_trader_01",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 150,
+      "price": 100.8,
+      "reason": "Reacting to official announcement, entering swing position",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.8,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "01:00",
+      "actor_id": "long_term_investor_01",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 200,
+      "price": 101.0,
+      "reason": "Fundamental thesis remains strong, adding to core position",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.3,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "01:30",
+      "actor_id": "retail_investor_03",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 40,
+      "price": 101.3,
+      "reason": "FOMO - don't want to miss the rally",
+      "emotion_index": 0.7,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "01:50",
+      "actor_id": "market_maker_01",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 80,
+      "price": 101.5,
+      "reason": "Providing liquidity at resistance level",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.3
+    },
+    {
+      "timestamp": "02:10",
+      "actor_id": "retail_investor_04",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 35,
+      "price": 101.2,
+      "reason": "Buying the small dip",
+      "emotion_index": 0.55,
+      "reaction_speed": 0.6,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "02:40",
+      "actor_id": "momentum_trader_02",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 120,
+      "price": 101.4,
+      "reason": "Technical breakout above 101, trend confirmation",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.8,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "03:20",
+      "actor_id": "fund_manager_01",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 250,
+      "price": 102.2,
+      "reason": "Analyst upgrades justify higher allocation",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "03:40",
+      "actor_id": "retail_investor_05",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 45,
+      "price": 102.5,
+      "reason": "Momentum building, joining the trend",
+      "emotion_index": 0.65,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "04:00",
+      "actor_id": "retail_investor_06",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 25,
+      "price": 102.7,
+      "reason": "Small investment on strong positive sentiment",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.15
+    },
+    {
+      "timestamp": "04:20",
+      "actor_id": "market_maker_02",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 70,
+      "price": 102.9,
+      "reason": "Taking profit on inventory, maintaining spread",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.3
+    },
+    {
+      "timestamp": "04:50",
+      "actor_id": "momentum_trader_03",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 100,
+      "price": 102.6,
+      "reason": "Buying consolidation before next leg up",
+      "emotion_index": 0.5,
+      "reaction_speed": 0.7,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "05:20",
+      "actor_id": "retail_investor_07",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 30,
+      "price": 102.8,
+      "reason": "Following the trend, confident in near-term gains",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "05:40",
+      "actor_id": "long_term_investor_02",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 180,
+      "price": 103.0,
+      "reason": "Building position ahead of potential breakout event",
+      "emotion_index": 0.4,
+      "reaction_speed": 0.4,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "06:20",
+      "actor_id": "momentum_trader_04",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 160,
+      "price": 103.8,
+      "reason": "Early leak rumors triggering aggressive accumulation",
+      "emotion_index": 0.6,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.5
+    },
+    {
+      "timestamp": "06:40",
+      "actor_id": "retail_investor_08",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 50,
+      "price": 104.0,
+      "reason": "News of game-changing features - must participate",
+      "emotion_index": 0.75,
+      "reaction_speed": 0.6,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "06:50",
+      "actor_id": "fund_manager_02",
+      "actor_type": "institutional",
+      "action": "buy",
+      "quantity": 220,
+      "price": 104.2,
+      "reason": "Strong product indicators warrant increased exposure",
+      "emotion_index": 0.45,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.6
+    },
+    {
+      "timestamp": "07:10",
+      "actor_id": "retail_investor_09",
+      "actor_type": "retail",
+      "action": "buy",
+      "quantity": 35,
+      "price": 104.5,
+      "reason": "Catching the wave, positive sentiment everywhere",
+      "emotion_index": 0.7,
+      "reaction_speed": 0.5,
+      "influence_weight": 0.2
+    },
+    {
+      "timestamp": "07:30",
+      "actor_id": "momentum_trader_05",
+      "actor_type": "momentum_trader",
+      "action": "buy",
+      "quantity": 130,
+      "price": 104.7,
+      "reason": "Volume confirming strong bullish move",
+      "emotion_index": 0.55,
+      "reaction_speed": 0.8,
+      "influence_weight": 0.4
+    },
+    {
+      "timestamp": "07:50",
+      "actor_id": "market_maker_03",
+      "actor_type": "market_maker",
+      "action": "sell",
+      "quantity": 60,
+      "price": 105.0,
+      "reason": "Profit-taking at psychological resistance",
+      "emotion_index": 0.3,
+      "reaction_speed": 0.9,
+      "influence_weight": 0.3
+    }
+  ],
+  "price_series": [
+    {
+      "timestamp": "00:00",
+      "price": 100.0,
+      "volume": 0,
+      "trend": "flat",
+      "dominant_actor": "none",
+      "sentiment_index": 0.5
+    },
+    {
+      "timestamp": "00:10",
+      "price": 100.2,
+      "volume": 50,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.52
+    },
+    {
+      "timestamp": "00:20",
+      "price": 100.3,
+      "volume": 80,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.53
+    },
+    {
+      "timestamp": "00:30",
+      "price": 100.5,
+      "volume": 120,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.55
+    },
+    {
+      "timestamp": "00:40",
+      "price": 100.6,
+      "volume": 150,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.56
+    },
+    {
+      "timestamp": "00:50",
+      "price": 100.8,
+      "volume": 300,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.58
+    },
+    {
+      "timestamp": "01:00",
+      "price": 101.0,
+      "volume": 500,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.6
+    },
+    {
+      "timestamp": "01:10",
+      "price": 101.2,
+      "volume": 540,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.61
+    },
+    {
+      "timestamp": "01:20",
+      "price": 101.3,
+      "volume": 580,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.62
+    },
+    {
+      "timestamp": "01:30",
+      "price": 101.3,
+      "volume": 620,
+      "trend": "flat",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.62
+    },
+    {
+      "timestamp": "01:40",
+      "price": 101.4,
+      "volume": 650,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.63
+    },
+    {
+      "timestamp": "01:50",
+      "price": 101.3,
+      "volume": 730,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.61
+    },
+    {
+      "timestamp": "02:00",
+      "price": 101.2,
+      "volume": 760,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.6
+    },
+    {
+      "timestamp": "02:10",
+      "price": 101.2,
+      "volume": 795,
+      "trend": "flat",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.61
+    },
+    {
+      "timestamp": "02:20",
+      "price": 101.3,
+      "volume": 820,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.62
+    },
+    {
+      "timestamp": "02:30",
+      "price": 101.4,
+      "volume": 850,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.63
+    },
+    {
+      "timestamp": "02:40",
+      "price": 101.4,
+      "volume": 970,
+      "trend": "flat",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.64
+    },
+    {
+      "timestamp": "02:50",
+      "price": 101.6,
+      "volume": 1000,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.65
+    },
+    {
+      "timestamp": "03:00",
+      "price": 101.8,
+      "volume": 1050,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.66
+    },
+    {
+      "timestamp": "03:10",
+      "price": 102.0,
+      "volume": 1080,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.67
+    },
+    {
+      "timestamp": "03:20",
+      "price": 102.2,
+      "volume": 1330,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.68
+    },
+    {
+      "timestamp": "03:30",
+      "price": 102.4,
+      "volume": 1360,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.69
+    },
+    {
+      "timestamp": "03:40",
+      "price": 102.5,
+      "volume": 1405,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.7
+    },
+    {
+      "timestamp": "03:50",
+      "price": 102.6,
+      "volume": 1430,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.7
+    },
+    {
+      "timestamp": "04:00",
+      "price": 102.7,
+      "volume": 1455,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.71
+    },
+    {
+      "timestamp": "04:10",
+      "price": 102.8,
+      "volume": 1480,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.71
+    },
+    {
+      "timestamp": "04:20",
+      "price": 102.7,
+      "volume": 1550,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.7
+    },
+    {
+      "timestamp": "04:30",
+      "price": 102.6,
+      "volume": 1570,
+      "trend": "down",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.69
+    },
+    {
+      "timestamp": "04:40",
+      "price": 102.6,
+      "volume": 1590,
+      "trend": "flat",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.69
+    },
+    {
+      "timestamp": "04:50",
+      "price": 102.6,
+      "volume": 1690,
+      "trend": "flat",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.7
+    },
+    {
+      "timestamp": "05:00",
+      "price": 102.7,
+      "volume": 1720,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.71
+    },
+    {
+      "timestamp": "05:10",
+      "price": 102.8,
+      "volume": 1740,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.72
+    },
+    {
+      "timestamp": "05:20",
+      "price": 102.8,
+      "volume": 1770,
+      "trend": "flat",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.72
+    },
+    {
+      "timestamp": "05:30",
+      "price": 102.9,
+      "volume": 1790,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.73
+    },
+    {
+      "timestamp": "05:40",
+      "price": 103.0,
+      "volume": 1970,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.74
+    },
+    {
+      "timestamp": "05:50",
+      "price": 103.2,
+      "volume": 2000,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.75
+    },
+    {
+      "timestamp": "06:00",
+      "price": 103.4,
+      "volume": 2050,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.76
+    },
+    {
+      "timestamp": "06:10",
+      "price": 103.6,
+      "volume": 2080,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.77
+    },
+    {
+      "timestamp": "06:20",
+      "price": 103.8,
+      "volume": 2240,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.78
+    },
+    {
+      "timestamp": "06:30",
+      "price": 104.0,
+      "volume": 2270,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.79
+    },
+    {
+      "timestamp": "06:40",
+      "price": 104.0,
+      "volume": 2320,
+      "trend": "flat",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.79
+    },
+    {
+      "timestamp": "06:50",
+      "price": 104.2,
+      "volume": 2540,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.8
+    },
+    {
+      "timestamp": "07:00",
+      "price": 104.4,
+      "volume": 2570,
+      "trend": "up",
+      "dominant_actor": "institutional",
+      "sentiment_index": 0.81
+    },
+    {
+      "timestamp": "07:10",
+      "price": 104.5,
+      "volume": 2605,
+      "trend": "up",
+      "dominant_actor": "retail",
+      "sentiment_index": 0.82
+    },
+    {
+      "timestamp": "07:20",
+      "price": 104.6,
+      "volume": 2630,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.82
+    },
+    {
+      "timestamp": "07:30",
+      "price": 104.7,
+      "volume": 2760,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.83
+    },
+    {
+      "timestamp": "07:40",
+      "price": 104.8,
+      "volume": 2790,
+      "trend": "up",
+      "dominant_actor": "momentum_trader",
+      "sentiment_index": 0.83
+    },
+    {
+      "timestamp": "07:50",
+      "price": 104.9,
+      "volume": 2850,
+      "trend": "up",
+      "dominant_actor": "market_maker",
+      "sentiment_index": 0.84
+    },
+    {
+      "timestamp": "08:00",
+      "price": 105.0,
+      "volume": 2870,
+      "trend": "up",
+      "dominant_actor": "mixed",
+      "sentiment_index": 0.85
+    }
+  ],
+  "learning_module": {
+    "pre_simulation_briefing": {
+      "context": "You are about to experience a classic 'anticipation rally' - a market phenomenon where prices rise not on actual results, but on expectations of future good news. This mirrors the real-world behavior seen before Apple's first iPhone launch in 2007, when the stock climbed steadily on hype alone.",
+      "key_concepts": [
+        "Sentiment Pricing: Markets price in expectations before events occur",
+        "Momentum Building: Gradual accumulation creates upward pressure",
+        "Volume Confirmation: Increasing volume validates the trend",
+        "News Catalysts: Each positive news item reinforces the bullish narrative"
+      ],
+      "what_to_watch": [
+        "How price responds to each news announcement",
+        "The gradual increase in trading volume as confidence builds",
+        "Small pullbacks (profit-taking) that get bought up quickly",
+        "Different actor types entering at different price levels"
+      ]
+    },
+    "post_simulation_analysis": {
+      "what_happened": "The stock rose approximately 5% over the 8-minute simulation, demonstrating a classic anticipation-driven rally. Retail investors led the early buying, followed by momentum traders and finally institutional investors as confidence grew.",
+      "key_lessons": [
+        {
+          "lesson": "Markets are forward-looking",
+          "explanation": "Prices rose before any actual product was released, purely on expectation and sentiment"
+        },
+        {
+          "lesson": "News timing matters",
+          "explanation": "Each positive news item came at strategic moments, preventing any significant pullback"
+        },
+        {
+          "lesson": "Volume tells a story",
+          "explanation": "Trading volume increased progressively, showing growing conviction and participation"
+        },
+        {
+          "lesson": "Different actors have different strategies",
+          "explanation": "Retail bought early on hope, momentum traders confirmed the trend, institutions added size as risk decreased"
+        }
+      ],
+      "trading_principles_demonstrated": [
+        "Buy the rumor, sell the news (positioning before events)",
+        "Follow the volume (higher volume = stronger moves)",
+        "Identify trend early (early buyers got better prices)",
+        "Understand market psychology (optimism builds momentum)"
+      ],
+      "quiz_questions": [
+        {
+          "question": "Why did the price start rising before the product was actually launched?",
+          "options": [
+            "Market manipulation",
+            "Markets price in future expectations",
+            "Random fluctuation",
+            "Insider trading"
+          ],
+          "correct_answer": 1,
+          "explanation": "Markets are forward-looking and price in expectations of future events, which is why stocks often move on anticipation rather than actual results."
+        },
+        {
+          "question": "What role did increasing volume play in this rally?",
+          "options": [
+            "It had no significance",
+            "It showed decreasing interest",
+            "It confirmed the strength and conviction of the uptrend",
+            "It indicated market manipulation"
+          ],
+          "correct_answer": 2,
+          "explanation": "Increasing volume alongside rising prices confirms that more participants are joining the move, validating the trend's strength."
+        },
+        {
+          "question": "Who typically enters a position first in an anticipation rally?",
+          "options": [
+            "Institutional investors",
+            "Market makers",
+            "Retail investors and early speculators",
+            "Hedge funds"
+          ],
+          "correct_answer": 2,
+          "explanation": "Retail investors and speculators often enter first based on hope and sentiment, while institutions wait for more confirmation before committing capital."
+        }
+      ]
+    },
+    "real_world_connection": {
+      "case_study": "Apple Inc. (AAPL) - iPhone Launch 2007",
+      "historical_context": "In the months leading up to the first iPhone launch on June 29, 2007, Apple's stock rose from around $84 in January to $122 by launch day - a 45% gain driven almost entirely by anticipation. The market correctly predicted that the iPhone would be revolutionary, and investors positioned accordingly before seeing actual sales data.",
+      "parallel_analysis": "Your simulation mirrors this on a micro-scale. The same psychological forces that drove Apple's months-long rally were compressed into 8 minutes of your metaverse market. Real investors faced the same decisions: Buy early on speculation? Wait for confirmation? How much conviction to have?",
+      "modern_relevance": "This pattern repeats constantly in modern markets: Tesla before delivery numbers, pharma stocks before FDA approvals, tech stocks before earnings. Understanding anticipation-driven moves is crucial for any investor."
+    }
+  },
+  "difficulty_calibration": {
+    "complexity_score": 2,
+    "noise_level": "low",
+    "trend_clarity": "high",
+    "volatility": "low",
+    "actor_diversity": "moderate",
+    "news_frequency": "low",
+    "teaching_focus": "foundational concepts"
+  }
+}
