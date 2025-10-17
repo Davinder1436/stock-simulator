@@ -1,0 +1,1083 @@
+{
+  "chapterInfo": {
+    "chapterId": "longterm-chapter-1",
+    "title": "Introduction to Long-Term Investing",
+    "subtitle": "Learn the Power of SIP and Compounding",
+    "duration": 60,
+    "timeScale": "1 minute = 1 month",
+    "totalMonths": 60,
+    "difficulty": "Beginner",
+    "objectives": [
+      "Understand Systematic Investment Plans (SIP)",
+      "Experience the power of compounding",
+      "Learn about market volatility and staying invested",
+      "Build discipline in regular investing"
+    ],
+    "initialSetup": {
+      "userProfile": {
+        "name": "New Investor",
+        "age": 25,
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "initialSavings": 50000,
+        "emergencyFund": 0,
+        "riskProfile": "moderate"
+      },
+      "goalToAchieve": {
+        "targetAmount": 1500000,
+        "purpose": "Build Investment Corpus",
+        "timeframe": "5 years"
+      }
+    }
+  },
+  "availableInvestmentOptions": [
+    {
+      "id": "nifty50-index",
+      "name": "Nifty 50 Index Fund",
+      "type": "equity",
+      "category": "large-cap",
+      "description": "Tracks India's top 50 companies. Low risk for equity, good for beginners.",
+      "minInvestment": 500,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "stcg": "15% if sold before 1 year",
+        "ltcg": "10% on gains above ₹1 lakh after 1 year"
+      },
+      "historicalReturn": "12% annually",
+      "riskLevel": "moderate",
+      "liquidity": "high"
+    },
+    {
+      "id": "savings-account",
+      "name": "Savings Account",
+      "type": "cash",
+      "category": "liquid",
+      "description": "Emergency fund. Instant access, minimal returns.",
+      "minInvestment": 0,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "interest": "Taxed as per income slab"
+      },
+      "historicalReturn": "3-4% annually",
+      "riskLevel": "none",
+      "liquidity": "instant"
+    },
+    {
+      "id": "fixed-deposit",
+      "name": "Fixed Deposit",
+      "type": "debt",
+      "category": "fixed-income",
+      "description": "Guaranteed returns. Low risk, suitable for emergency fund.",
+      "minInvestment": 10000,
+      "lockInPeriod": 12,
+      "taxImplication": {
+        "interest": "Taxed as per income slab, TDS applicable"
+      },
+      "historicalReturn": "6-7% annually",
+      "riskLevel": "very-low",
+      "liquidity": "low"
+    }
+  ],
+  "timeline": [
+    {
+      "month": 0,
+      "timestamp": "0:00",
+      "realDate": "January 2021",
+      "events": [
+        {
+          "type": "simulation-start",
+          "title": "Welcome to Long-Term Investing!",
+          "description": "You're 25 years old with your first job. You earn ₹50,000/month and after expenses, you have ₹20,000 to invest. You also have ₹50,000 in savings.",
+          "impact": "none",
+          "teachingMoment": {
+            "concept": "Starting Early",
+            "explanation": "Starting to invest at 25 gives you 35+ years for wealth creation. Even small amounts invested early can grow significantly due to compounding.",
+            "tip": "The best time to start investing was yesterday. The second best time is today!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Emergency Fund First",
+          "description": "Before investing, build an emergency fund covering 6 months of expenses (₹1,80,000 for you).",
+          "teachingMoment": {
+            "concept": "Emergency Fund",
+            "explanation": "An emergency fund protects you from selling investments during emergencies. Keep it in liquid assets like savings account or short-term FDs.",
+            "actionRequired": "Allocate ₹50,000 to savings account as emergency fund starter",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14000,
+        "nifty50Change": 0,
+        "fdRate": 6.5,
+        "inflationRate": 4.5,
+        "goldPrice": 48000,
+        "sentiment": "neutral"
+      },
+      "userFinancials": {
+        "totalInvested": 0,
+        "currentValue": 0,
+        "cashAvailable": 50000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 50000,
+          "nifty50": 0,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 1,
+      "timestamp": "1:00",
+      "realDate": "February 2021",
+      "events": [
+        {
+          "type": "teaching",
+          "title": "Understanding SIP (Systematic Investment Plan)",
+          "description": "SIP means investing a fixed amount regularly (monthly). This builds discipline and uses 'rupee cost averaging'.",
+          "teachingMoment": {
+            "concept": "SIP & Rupee Cost Averaging",
+            "explanation": "When you invest the same amount monthly, you buy more units when prices are low and fewer when prices are high. This averages out your cost over time.",
+            "example": "If you invest ₹10,000/month: At ₹100/unit you get 100 units, at ₹50/unit you get 200 units. Average cost = ₹66.67/unit!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "decision-prompt",
+          "title": "Start Your First SIP",
+          "description": "You have ₹20,000 available this month. How much do you want to invest in Nifty 50 Index Fund?",
+          "options": [
+            "₹5,000/month SIP",
+            "₹10,000/month SIP",
+            "₹15,000/month SIP"
+          ],
+          "recommendation": "₹10,000/month leaves you ₹10,000 for emergency fund building"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14200,
+        "nifty50Change": 1.43,
+        "fdRate": 6.5,
+        "inflationRate": 4.5,
+        "goldPrice": 48200,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Indian markets rally on positive economic data",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 10000,
+        "currentValue": 10143,
+        "returns": 143,
+        "returnsPercentage": 1.43,
+        "cashAvailable": 40000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 40000,
+          "nifty50": 10143,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 2,
+      "timestamp": "2:00",
+      "realDate": "March 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Market Continues Upward Trend",
+          "description": "Your SIP continues automatically. Markets are up 2.5%.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14555,
+        "nifty50Change": 2.5,
+        "fdRate": 6.5,
+        "inflationRate": 4.6,
+        "goldPrice": 47800,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Vaccination drive accelerates, economic recovery expected",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 20000,
+        "currentValue": 21150,
+        "returns": 1150,
+        "returnsPercentage": 5.75,
+        "cashAvailable": 50000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 50000,
+          "nifty50": 21150,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 3,
+      "timestamp": "3:00",
+      "realDate": "April 2021",
+      "events": [
+        {
+          "type": "market-correction",
+          "title": "Market Correction - Don't Panic!",
+          "description": "Second wave of COVID-19 causes market to drop 5%. Your portfolio value has decreased.",
+          "impact": "negative",
+          "teachingMoment": {
+            "concept": "Market Volatility",
+            "explanation": "Markets go up and down. This is normal! Short-term volatility is noise for long-term investors. DON'T STOP YOUR SIP!",
+            "tip": "In fact, buying during dips means you get more units for the same amount. This is rupee cost averaging in action!",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 13827,
+        "nifty50Change": -5.0,
+        "fdRate": 6.5,
+        "inflationRate": 4.8,
+        "goldPrice": 48500,
+        "sentiment": "negative"
+      },
+      "news": [
+        {
+          "headline": "COVID-19 second wave hits India, markets tumble",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bearish"
+        },
+        {
+          "headline": "Gold prices rise as investors seek safe haven",
+          "impact": "positive",
+          "affectedAssets": ["gold"],
+          "sentiment": "neutral"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 30000,
+        "currentValue": 29350,
+        "returns": -650,
+        "returnsPercentage": -2.17,
+        "cashAvailable": 60000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 60000,
+          "nifty50": 29350,
+          "fd": 0
+        },
+        "milestone": {
+          "type": "challenge",
+          "message": "Your first test! Portfolio is in red. Remember - stay invested!",
+          "badge": "volatility-survivor"
+        }
+      }
+    },
+    {
+      "month": 4,
+      "timestamp": "4:00",
+      "realDate": "May 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Recovery Begins",
+          "description": "Markets show signs of recovery. Your SIP bought more units during the dip!",
+          "impact": "positive"
+        },
+        {
+          "type": "teaching",
+          "title": "The Silver Lining of Market Dips",
+          "teachingMoment": {
+            "concept": "Buying the Dip",
+            "explanation": "Last month when markets fell, your ₹10,000 bought MORE units than before. This is why SIP works - you automatically buy more when prices are low!",
+            "calculation": "Month 2: ₹10,000 at ₹14,555 = 0.687 units\nMonth 3: ₹10,000 at ₹13,827 = 0.723 units\nYou got 5% more units for the same money!",
+            "popupTiming": "after-market-update"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14244,
+        "nifty50Change": 3.0,
+        "fdRate": 6.5,
+        "inflationRate": 5.0,
+        "goldPrice": 48200,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Markets recover as COVID cases decline",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 40000,
+        "currentValue": 41200,
+        "returns": 1200,
+        "returnsPercentage": 3.0,
+        "cashAvailable": 70000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 70000,
+          "nifty50": 41200,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 5,
+      "timestamp": "5:00",
+      "realDate": "June 2021",
+      "events": [
+        {
+          "type": "personal-event",
+          "title": "Emergency Fund Milestone",
+          "description": "Your savings have reached ₹80,000! You're building a safety net.",
+          "teachingMoment": {
+            "concept": "Emergency Fund Progress",
+            "explanation": "You're targeting ₹1,80,000 (6 months of expenses). You're 44% there! Once complete, you can invest more aggressively.",
+            "tip": "Consider moving some emergency fund to FD for better returns while maintaining liquidity.",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14530,
+        "nifty50Change": 2.0,
+        "fdRate": 6.5,
+        "inflationRate": 4.9,
+        "goldPrice": 48000,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "RBI maintains accommodative stance, rates unchanged",
+          "impact": "neutral",
+          "affectedAssets": ["nifty50-index", "fixed-deposit"],
+          "sentiment": "neutral"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 50000,
+        "currentValue": 52500,
+        "returns": 2500,
+        "returnsPercentage": 5.0,
+        "cashAvailable": 80000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 80000,
+          "nifty50": 52500,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 6,
+      "timestamp": "6:00",
+      "realDate": "July 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Steady Growth Continues",
+          "description": "Markets show healthy growth. Your SIP discipline is paying off.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14965,
+        "nifty50Change": 3.0,
+        "fdRate": 6.5,
+        "inflationRate": 5.1,
+        "goldPrice": 47800,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Corporate earnings beat estimates, market optimism rises",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 60000,
+        "currentValue": 64800,
+        "returns": 4800,
+        "returnsPercentage": 8.0,
+        "cashAvailable": 90000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 90000,
+          "nifty50": 64800,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 12,
+      "timestamp": "12:00",
+      "realDate": "January 2022",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "First Year Complete! 🎉",
+          "description": "You've successfully invested for 1 year through SIP. Your portfolio has grown!",
+          "teachingMoment": {
+            "concept": "Power of Staying Invested",
+            "explanation": "Despite market volatility in Month 3, you stayed invested. Result: ₹1,20,000 invested is now worth ₹1,32,000!",
+            "stats": {
+              "totalInvested": 120000,
+              "currentValue": 132000,
+              "absoluteReturns": 12000,
+              "returnsPercentage": 10.0,
+              "xirr": "~12% annualized"
+            },
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Understanding Returns - XIRR",
+          "teachingMoment": {
+            "concept": "XIRR (Extended Internal Rate of Return)",
+            "explanation": "XIRR calculates your actual returns considering the timing of each investment. It's better than simple percentage for SIP.",
+            "comparison": "Simple average might show 10%, but XIRR shows your money actually grew at 12% annual rate!",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 15400,
+        "nifty50Change": 2.8,
+        "fdRate": 6.5,
+        "inflationRate": 5.2,
+        "goldPrice": 48500,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Budget 2022 focuses on infrastructure, markets rally",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 120000,
+        "currentValue": 132000,
+        "returns": 12000,
+        "returnsPercentage": 10.0,
+        "xirr": 12.3,
+        "cashAvailable": 150000,
+        "monthlyIncome": 50000,
+        "monthlyExpenses": 30000,
+        "portfolioBreakdown": {
+          "savings": 150000,
+          "nifty50": 132000,
+          "fd": 0
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "1 Year Investor Badge Earned!",
+          "badge": "one-year-milestone"
+        }
+      }
+    },
+    {
+      "month": 18,
+      "timestamp": "18:00",
+      "realDate": "July 2022",
+      "events": [
+        {
+          "type": "personal-event",
+          "title": "Salary Increment! 🎊",
+          "description": "Great news! You received a 10% salary hike. New salary: ₹55,000/month.",
+          "teachingMoment": {
+            "concept": "Increase SIP with Income",
+            "explanation": "When your income increases, increase your SIP too! This accelerates wealth creation without affecting your lifestyle.",
+            "recommendation": "Consider increasing SIP from ₹10,000 to ₹12,000",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "decision-prompt",
+          "title": "Increase Your SIP?",
+          "description": "With your new salary, you can invest more. Increase SIP amount?",
+          "options": [
+            "Keep at ₹10,000",
+            "Increase to ₹12,000",
+            "Increase to ₹15,000"
+          ],
+          "recommendation": "₹12,000 balances growth and lifestyle"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 15800,
+        "nifty50Change": 1.5,
+        "fdRate": 6.8,
+        "inflationRate": 6.5,
+        "goldPrice": 50000,
+        "sentiment": "neutral"
+      },
+      "news": [
+        {
+          "headline": "Inflation concerns rise globally, RBI hikes rates",
+          "impact": "neutral",
+          "affectedAssets": ["nifty50-index", "fixed-deposit"],
+          "sentiment": "cautious"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 180000,
+        "currentValue": 198000,
+        "returns": 18000,
+        "returnsPercentage": 10.0,
+        "xirr": 11.8,
+        "cashAvailable": 180000,
+        "monthlyIncome": 55000,
+        "monthlyExpenses": 32000,
+        "portfolioBreakdown": {
+          "savings": 180000,
+          "nifty50": 198000,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 24,
+      "timestamp": "24:00",
+      "realDate": "January 2023",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "2 Years Complete! 🏆",
+          "description": "You've been a disciplined investor for 2 years. Time to review your journey.",
+          "teachingMoment": {
+            "concept": "The Compounding Effect",
+            "explanation": "Notice how your returns are accelerating? That's compounding! Your returns are now earning returns.",
+            "stats": {
+              "totalInvested": 252000,
+              "currentValue": 285000,
+              "absoluteReturns": 33000,
+              "returnsPercentage": 13.1,
+              "xirr": "~12.8% annualized"
+            },
+            "visualization": "Year 1: ₹12,000 returns\nYear 2: ₹21,000 returns\nCompounding in action!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Emergency Fund Complete!",
+          "description": "Your savings have crossed ₹1,80,000. Emergency fund goal achieved!",
+          "teachingMoment": {
+            "concept": "Next Level Investing",
+            "explanation": "With emergency fund complete, you can now explore other investment options for better diversification.",
+            "tip": "In Chapter 2, you'll learn about diversifying into debt funds, gold, and tax-saving instruments.",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 16500,
+        "nifty50Change": 3.2,
+        "fdRate": 7.0,
+        "inflationRate": 6.0,
+        "goldPrice": 51000,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Indian economy shows resilience, markets hit new highs",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 252000,
+        "currentValue": 285000,
+        "returns": 33000,
+        "returnsPercentage": 13.1,
+        "xirr": 12.8,
+        "cashAvailable": 220000,
+        "monthlyIncome": 55000,
+        "monthlyExpenses": 32000,
+        "portfolioBreakdown": {
+          "savings": 220000,
+          "nifty50": 285000,
+          "fd": 0
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "2 Year Investor & Emergency Fund Master!",
+          "badge": "two-year-milestone"
+        }
+      }
+    },
+    {
+      "month": 36,
+      "timestamp": "36:00",
+      "realDate": "January 2024",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "3 Years of Disciplined Investing! 🌟",
+          "description": "You're halfway through your 5-year journey. Your patience is paying off!",
+          "teachingMoment": {
+            "concept": "Long-Term Wealth Creation",
+            "explanation": "You've invested ₹3,96,000 and it's now worth ₹4,75,000. That's ₹79,000 in returns!",
+            "stats": {
+              "totalInvested": 396000,
+              "currentValue": 475000,
+              "absoluteReturns": 79000,
+              "returnsPercentage": 19.9,
+              "xirr": "~13.2% annualized"
+            },
+            "insight": "Notice how returns grow faster over time? Year 3 alone added ₹46,000 in returns!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Understanding LTCG Benefits",
+          "teachingMoment": {
+            "concept": "Long-Term Capital Gains (LTCG)",
+            "explanation": "Since you've held equity for more than 1 year, gains above ₹1 lakh are taxed at only 10% (vs 15% for short-term).",
+            "taxSaving": "If you sold now, you'd pay tax on ₹79,000 - ₹1,00,000 = ₹0! First ₹1 lakh is tax-free.",
+            "tip": "But you're staying invested, which is even better for long-term wealth!",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 17200,
+        "nifty50Change": 2.5,
+        "fdRate": 7.2,
+        "inflationRate": 5.5,
+        "goldPrice": 52000,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Elections boost market confidence, Nifty at record highs",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 396000,
+        "currentValue": 475000,
+        "returns": 79000,
+        "returnsPercentage": 19.9,
+        "xirr": 13.2,
+        "cashAvailable": 290000,
+        "monthlyIncome": 55000,
+        "monthlyExpenses": 33000,
+        "portfolioBreakdown": {
+          "savings": 290000,
+          "nifty50": 475000,
+          "fd": 0
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "3 Year Veteran Investor!",
+          "badge": "three-year-milestone"
+        }
+      }
+    },
+    {
+      "month": 42,
+      "timestamp": "42:00",
+      "realDate": "July 2024",
+      "events": [
+        {
+          "type": "market-correction",
+          "title": "Market Correction - Stay Calm!",
+          "description": "Global uncertainties cause a 8% market correction. Remember your learnings!",
+          "impact": "negative",
+          "teachingMoment": {
+            "concept": "Volatility is Normal",
+            "explanation": "You've seen this before in Month 3! This time you're experienced. DON'T STOP SIP!",
+            "perspective": "Your portfolio dropped ₹45,000 in value, but you're still up ₹52,000 overall!",
+            "action": "Actually, this is a buying opportunity. More units for same money!",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 15824,
+        "nifty50Change": -8.0,
+        "fdRate": 7.2,
+        "inflationRate": 5.8,
+        "goldPrice": 54000,
+        "sentiment": "negative"
+      },
+      "news": [
+        {
+          "headline": "Global recession fears trigger selloff in emerging markets",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bearish"
+        },
+        {
+          "headline": "Safe haven demand pushes gold to new highs",
+          "impact": "positive",
+          "affectedAssets": ["gold"],
+          "sentiment": "neutral"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 468000,
+        "currentValue": 520000,
+        "returns": 52000,
+        "returnsPercentage": 11.1,
+        "xirr": 12.5,
+        "cashAvailable": 320000,
+        "monthlyIncome": 55000,
+        "monthlyExpenses": 33000,
+        "portfolioBreakdown": {
+          "savings": 320000,
+          "nifty50": 520000,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 48,
+      "timestamp": "48:00",
+      "realDate": "January 2025",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "4 Years Complete! Almost There! 💪",
+          "description": "Just 1 year to go! Markets recovered from the correction.",
+          "teachingMoment": {
+            "concept": "Markets Always Recover",
+            "explanation": "Remember the correction in Month 42? Market is already back! This is why you stay invested.",
+            "stats": {
+              "totalInvested": 540000,
+              "currentValue": 640000,
+              "absoluteReturns": 100000,
+              "returnsPercentage": 18.5,
+              "xirr": "~13.5% annualized"
+            },
+            "insight": "You've crossed ₹1 lakh in returns! That's ₹8,333/month passive income if you continue!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "personal-event",
+          "title": "Another Salary Hike!",
+          "description": "Your career is progressing! New salary: ₹60,000/month (9% raise).",
+          "teachingMoment": {
+            "concept": "Lifestyle Inflation vs Investment Growth",
+            "explanation": "As income grows, many increase expenses proportionally. Instead, increase investments!",
+            "recommendation": "Keep expenses modest, increase SIP to ₹14,000",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 17600,
+        "nifty50Change": 4.2,
+        "fdRate": 7.5,
+        "inflationRate": 5.2,
+        "goldPrice": 53500,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Economic recovery strong, corporate profits surge",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 540000,
+        "currentValue": 640000,
+        "returns": 100000,
+        "returnsPercentage": 18.5,
+        "xirr": 13.5,
+        "cashAvailable": 360000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 34000,
+        "portfolioBreakdown": {
+          "savings": 360000,
+          "nifty50": 640000,
+          "fd": 0
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "4 Year Marathon Runner!",
+          "badge": "four-year-milestone"
+        }
+      }
+    },
+    {
+      "month": 60,
+      "timestamp": "60:00",
+      "realDate": "January 2026",
+      "events": [
+        {
+          "type": "simulation-end",
+          "title": "🎉 5 YEARS COMPLETE! CONGRATULATIONS! 🎉",
+          "description": "You've successfully completed your first long-term investment journey!",
+          "teachingMoment": {
+            "concept": "The Power of Discipline & Compounding",
+            "explanation": "Let's see what you achieved by staying disciplined for 5 years:",
+            "finalStats": {
+              "totalInvested": 708000,
+              "currentValue": 890000,
+              "absoluteReturns": 182000,
+              "returnsPercentage": 25.7,
+              "xirr": "~14.2% annualized",
+              "goalAchievement": "59.3% of ₹15,00,000 goal"
+            },
+            "insights": [
+              "You stayed invested through 2 major corrections",
+              "Your SIP bought more units during dips (rupee cost averaging)",
+              "Last year alone, you earned ₹82,000 in returns!",
+              "If you continue for 5 more years, you'll have ₹35+ lakhs!"
+            ],
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "chapter-summary",
+          "title": "Chapter 1 Summary",
+          "keyLearnings": [
+            "SIP builds discipline and uses rupee cost averaging",
+            "Market volatility is normal - don't panic sell",
+            "Compounding accelerates returns over time",
+            "Start early, stay invested, increase with income",
+            "Emergency fund first, then aggressive investing",
+            "LTCG tax benefits for holdings >1 year"
+          ],
+          "achievements": [
+            "5-Year Investor Badge",
+            "Volatility Survivor (2 corrections)",
+            "Disciplined SIP Investor",
+            "₹1.82 Lakh Returns Achieved"
+          ],
+          "nextSteps": "In Chapter 2, you'll learn to diversify across asset classes: debt, gold, international equity, and tax-saving instruments!"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 18300,
+        "nifty50Change": 3.0,
+        "fdRate": 7.5,
+        "inflationRate": 4.8,
+        "goldPrice": 54000,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Indian markets among best performers globally",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 708000,
+        "currentValue": 890000,
+        "returns": 182000,
+        "returnsPercentage": 25.7,
+        "xirr": 14.2,
+        "cashAvailable": 420000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 34000,
+        "portfolioBreakdown": {
+          "savings": 420000,
+          "nifty50": 890000,
+          "fd": 0
+        },
+        "totalNetWorth": 1310000,
+        "milestone": {
+          "type": "completion",
+          "message": "Chapter 1 Mastered! 🏆",
+          "badge": "chapter-1-complete"
+        }
+      }
+    }
+  ],
+  "quiz": {
+    "title": "Chapter 1 Quiz: Test Your Knowledge",
+    "passingScore": 7,
+    "totalQuestions": 10,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does SIP stand for?",
+        "options": [
+          "Stock Investment Plan",
+          "Systematic Investment Plan",
+          "Simple Interest Program",
+          "Savings Investment Portfolio"
+        ],
+        "correctAnswer": 1,
+        "explanation": "SIP stands for Systematic Investment Plan - a method of investing fixed amounts regularly (usually monthly) in mutual funds or index funds."
+      },
+      {
+        "id": 2,
+        "question": "What is the main benefit of rupee cost averaging?",
+        "options": [
+          "Guarantees higher returns",
+          "Eliminates all market risk",
+          "Averages out purchase cost by buying more units when prices are low",
+          "Always buys at the lowest price"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Rupee cost averaging means investing a fixed amount regularly, which automatically buys more units when prices are low and fewer when high, averaging out your cost."
+      },
+      {
+        "id": 3,
+        "question": "What should you do when markets correct or fall significantly?",
+        "options": [
+          "Immediately stop your SIP to prevent losses",
+          "Sell all investments and wait for recovery",
+          "Stay invested and continue your SIP",
+          "Move all money to gold"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Market corrections are normal. Continuing your SIP during downturns is beneficial as you buy more units at lower prices. Historical data shows markets always recover over the long term."
+      },
+      {
+        "id": 4,
+        "question": "What is the recommended emergency fund size?",
+        "options": [
+          "1 month of expenses",
+          "3 months of expenses",
+          "6 months of expenses",
+          "12 months of expenses"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An emergency fund should cover 6 months of expenses, providing adequate cushion for unexpected situations without needing to liquidate investments."
+      },
+      {
+        "id": 5,
+        "question": "For equity investments held for more than 1 year, how much LTCG is tax-free?",
+        "options": [
+          "₹50,000",
+          "₹1,00,000",
+          "₹1,50,000",
+          "₹2,00,000"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Long-term capital gains (LTCG) up to ₹1,00,000 per year are tax-free for equity investments held for more than 1 year. Gains above this are taxed at 10%."
+      },
+      {
+        "id": 6,
+        "question": "What happens to your returns due to compounding over time?",
+        "options": [
+          "They remain constant",
+          "They decrease gradually",
+          "They accelerate as returns earn returns",
+          "They become unpredictable"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Compounding means your returns start earning returns, creating an accelerating growth effect. This is why long-term investing is so powerful."
+      },
+      {
+        "id": 7,
+        "question": "What should you do when your income increases?",
+        "options": [
+          "Increase expenses proportionally",
+          "Stop SIP and enjoy life",
+          "Increase SIP amount to accelerate wealth creation",
+          "Keep everything the same"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Increasing your SIP with income growth helps accelerate wealth creation without affecting your current lifestyle, avoiding lifestyle inflation."
+      },
+      {
+        "id": 8,
+        "question": "What is XIRR?",
+        "options": [
+          "A type of mutual fund",
+          "A measure of actual returns considering timing of investments",
+          "A tax-saving scheme",
+          "A stock market index"
+        ],
+        "correctAnswer": 1,
+        "explanation": "XIRR (Extended Internal Rate of Return) calculates your actual annualized returns considering the timing and amount of each investment, making it ideal for SIP evaluation."
+      },
+      {
+        "id": 9,
+        "question": "Why is starting to invest early (at age 25) beneficial?",
+        "options": [
+          "Markets are better when you're young",
+          "More time for compounding to work its magic",
+          "Lower taxes when young",
+          "Investment options are limited for older people"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Starting early gives you more time for compounding. Even small amounts invested early can grow significantly over 30-40 years, making it easier to build substantial wealth."
+      },
+      {
+        "id": 10,
+        "question": "What was the key lesson from the Month 3 market correction in this chapter?",
+        "options": [
+          "Always sell before corrections",
+          "Market timing is easy",
+          "Staying invested through volatility leads to recovery and better long-term returns",
+          "Corrections can be completely avoided"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The correction in Month 3 demonstrated that while markets can fall temporarily, staying invested and continuing SIP allows you to benefit from the recovery and long-term growth."
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "scoreCalculation": {
+      "disciplineScore": "Consistency in SIP (no missed months)",
+      "returnScore": "Based on XIRR achieved",
+      "knowledgeScore": "Quiz performance",
+      "resilience": "Behavior during corrections",
+      "finalGrade": "Combination of all factors"
+    },
+    "benchmarks": {
+      "excellent": {
+        "xirr": ">13%",
+        "disciplineRate": "100%",
+        "quizScore": "9-10/10"
+      },
+      "good": {
+        "xirr": "11-13%",
+        "disciplineRate": "90-100%",
+        "quizScore": "7-8/10"
+      },
+      "needsImprovement": {
+        "xirr": "<11%",
+        "disciplineRate": "<90%",
+        "quizScore": "<7/10"
+      }
+    }
+  }
+}

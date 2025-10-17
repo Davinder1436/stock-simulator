@@ -1,0 +1,253 @@
+'use client';
+
+import React from 'react';
+import { useLongTermSimulation } from '@/context/LongTermSimulationContext';
+import {
+  Newspaper,
+  TrendingUp,
+  TrendingDown,
+  AlertCircle,
+  Lightbulb,
+  Calendar,
+  Award,
+} from 'lucide-react';
+
+export const LongTermNewsFeed: React.FC = () => {
+  const { currentMonthData, state } = useLongTermSimulation();
+
+  if (!currentMonthData) return null;
+
+  const { events, news, realDate } = currentMonthData;
+
+  return (
+    <div className="space-y-4">
+      {/* Current Date Display */}
+      <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-4 text-white shadow-lg">
+        <div className="flex items-center gap-2">
+          <Calendar className="w-5 h-5" />
+          <div>
+            <div className="text-sm font-medium text-purple-100">Current Period</div>
+            <div className="text-xl font-bold">{realDate}</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Events Section */}
+      {events && events.length > 0 && (
+        <div className="space-y-3">
+          {events.map((event, idx) => (
+            <div
+              key={idx}
+              className={`rounded-lg p-4 border-l-4 shadow-sm ${getEventStyle(
+                event.type
+              )}`}
+            >
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0 mt-1">{getEventIcon(event.type)}</div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <h3 className="font-semibold text-sm">{event.title}</h3>
+                    {event.type === 'milestone' && (
+                      <Award className="w-4 h-4 text-yellow-500" />
+                    )}
+                  </div>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                    {event.description}
+                  </p>
+
+                  {/* Teaching Moment */}
+                  {event.teachingMoment && (
+                    <div className="mt-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
+                      <div className="flex items-start gap-2">
+                        <Lightbulb className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                        <div>
+                          <div className="text-xs font-semibold text-blue-900 dark:text-blue-200 mb-1">
+                            💡 {event.teachingMoment.concept}
+                          </div>
+                          <p className="text-xs text-blue-800 dark:text-blue-300">
+                            {event.teachingMoment.explanation}
+                          </p>
+                          {event.teachingMoment.tip && (
+                            <div className="mt-2 text-xs italic text-blue-700 dark:text-blue-400">
+                              💡 Tip: {event.teachingMoment.tip}
+                            </div>
+                          )}
+                          {event.teachingMoment.example && (
+                            <div className="mt-2 bg-white dark:bg-gray-800 rounded p-2 text-xs text-gray-700 dark:text-gray-300">
+                              <strong>Example:</strong> {event.teachingMoment.example}
+                            </div>
+                          )}
+                          {event.teachingMoment.calculation && (
+                            <div className="mt-2 bg-white dark:bg-gray-800 rounded p-2 font-mono text-xs text-gray-700 dark:text-gray-300 whitespace-pre-line">
+                              {event.teachingMoment.calculation}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Decision Options */}
+                  {event.options && event.options.length > 0 && (
+                    <div className="mt-3 space-y-2">
+                      <div className="text-xs font-medium text-gray-600 dark:text-gray-400">
+                        Choose an option:
+                      </div>
+                      {event.options.map((option, optIdx) => (
+                        <button
+                          key={optIdx}
+                          className="w-full text-left px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors text-sm"
+                        >
+                          {option}
+                        </button>
+                      ))}
+                      {event.recommendation && (
+                        <div className="text-xs text-green-600 dark:text-green-400 mt-1">
+                          ✓ Recommended: {event.recommendation}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Market News Section */}
+      {news && news.length > 0 && (
+        <div>
+          <div className="flex items-center gap-2 mb-3">
+            <Newspaper className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+            <h3 className="font-semibold text-gray-900 dark:text-white">Market News</h3>
+          </div>
+          <div className="space-y-2">
+            {news.map((item, idx) => (
+              <div
+                key={idx}
+                className={`bg-white dark:bg-gray-800 rounded-lg p-4 border-l-4 shadow-sm ${getNewsImpactStyle(
+                  item.impact
+                )}`}
+              >
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {getNewsImpactIcon(item.impact)}
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-1">
+                      {item.headline}
+                    </h4>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span
+                        className={`text-xs px-2 py-0.5 rounded-full font-medium ${getSentimentBadgeStyle(
+                          item.sentiment
+                        )}`}
+                      >
+                        {item.sentiment}
+                      </span>
+                      {item.affectedAssets.length > 0 && (
+                        <span className="text-xs text-gray-500 dark:text-gray-400">
+                          Affects: {item.affectedAssets.join(', ')}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Empty State */}
+      {(!events || events.length === 0) && (!news || news.length === 0) && (
+        <div className="bg-white dark:bg-gray-800 rounded-lg p-8 text-center border border-gray-200 dark:border-gray-700">
+          <Newspaper className="w-12 h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" />
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            No events or news for this period
+          </p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+function getEventStyle(eventType: string): string {
+  switch (eventType) {
+    case 'simulation-start':
+      return 'bg-blue-50 dark:bg-blue-900/20 border-blue-500';
+    case 'teaching':
+      return 'bg-purple-50 dark:bg-purple-900/20 border-purple-500';
+    case 'milestone':
+      return 'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-500';
+    case 'market-correction':
+      return 'bg-red-50 dark:bg-red-900/20 border-red-500';
+    case 'market-movement':
+      return 'bg-green-50 dark:bg-green-900/20 border-green-500';
+    case 'personal-event':
+      return 'bg-indigo-50 dark:bg-indigo-900/20 border-indigo-500';
+    case 'decision-prompt':
+      return 'bg-orange-50 dark:bg-orange-900/20 border-orange-500';
+    case 'simulation-end':
+      return 'bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 border-green-500';
+    default:
+      return 'bg-gray-50 dark:bg-gray-800 border-gray-300';
+  }
+}
+
+function getEventIcon(eventType: string): React.ReactNode {
+  const iconClass = 'w-5 h-5';
+  switch (eventType) {
+    case 'simulation-start':
+      return <Calendar className={`${iconClass} text-blue-600`} />;
+    case 'teaching':
+      return <Lightbulb className={`${iconClass} text-purple-600`} />;
+    case 'milestone':
+      return <Award className={`${iconClass} text-yellow-600`} />;
+    case 'market-correction':
+      return <TrendingDown className={`${iconClass} text-red-600`} />;
+    case 'market-movement':
+      return <TrendingUp className={`${iconClass} text-green-600`} />;
+    case 'personal-event':
+      return <AlertCircle className={`${iconClass} text-indigo-600`} />;
+    case 'decision-prompt':
+      return <AlertCircle className={`${iconClass} text-orange-600`} />;
+    default:
+      return <Newspaper className={`${iconClass} text-gray-600`} />;
+  }
+}
+
+function getNewsImpactStyle(impact: string): string {
+  switch (impact.toLowerCase()) {
+    case 'positive':
+      return 'border-green-500';
+    case 'negative':
+      return 'border-red-500';
+    default:
+      return 'border-gray-300 dark:border-gray-600';
+  }
+}
+
+function getNewsImpactIcon(impact: string): React.ReactNode {
+  const iconClass = 'w-5 h-5';
+  switch (impact.toLowerCase()) {
+    case 'positive':
+      return <TrendingUp className={`${iconClass} text-green-600`} />;
+    case 'negative':
+      return <TrendingDown className={`${iconClass} text-red-600`} />;
+    default:
+      return <Newspaper className={`${iconClass} text-gray-600`} />;
+  }
+}
+
+function getSentimentBadgeStyle(sentiment: string): string {
+  switch (sentiment.toLowerCase()) {
+    case 'bullish':
+      return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+    case 'bearish':
+      return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
+    default:
+      return 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
+  }
+}

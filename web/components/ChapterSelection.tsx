@@ -1,7 +1,8 @@
 'use client';
 
 import { ChapterInfo } from '@/types/simulation';
-import { BookOpen, TrendingUp, Zap, Target } from 'lucide-react';
+import { BookOpen, TrendingUp, Zap, Target, Clock } from 'lucide-react';
+import Link from 'next/link';
 
 const chapters: ChapterInfo[] = [
   {
@@ -69,9 +70,23 @@ export default function ChapterSelection({ onSelectChapter }: ChapterSelectionPr
             </div>
             <h1 className="text-5xl font-bold text-white">Dhaniverse Market Simulator</h1>
           </div>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-lg mb-4">
             Learn stock trading through immersive, data-driven simulations
           </p>
+          
+          {/* Mode Selection */}
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <div className="px-4 py-2 bg-blue-500/20 border border-blue-500 rounded-lg text-blue-400 font-medium">
+              Intraday Trading (Active)
+            </div>
+            <Link href="/longterm">
+              <div className="px-4 py-2 bg-market-card border border-market-border hover:border-purple-500 rounded-lg text-gray-300 hover:text-purple-400 font-medium transition-all cursor-pointer flex items-center gap-2">
+                <Clock size={18} />
+                <span>Long-Term Investing</span>
+                <span className="text-xs bg-purple-500 text-white px-2 py-0.5 rounded-full">NEW</span>
+              </div>
+            </Link>
+          </div>
         </div>
 
         {/* Chapter Cards */}

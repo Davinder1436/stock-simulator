@@ -1,0 +1,1245 @@
+{
+  "chapterInfo": {
+    "chapterId": "longterm-chapter-2",
+    "title": "Multi-Asset Allocation & Diversification",
+    "subtitle": "Equities + FDs + Gold",
+    "duration": 60,
+    "timeScale": "1 minute = 1 month",
+    "totalMonths": 60,
+    "difficulty": "Beginner",
+    "objectives": [
+      "Understand asset diversification strategies",
+      "Learn correlation between asset classes",
+      "Master portfolio rebalancing techniques",
+      "Experience hedging with gold during volatility",
+      "Optimize tax efficiency across instruments"
+    ],
+    "initialSetup": {
+      "userProfile": {
+        "name": "Growing Investor",
+        "age": 27,
+        "monthlySalary": 60000,
+        "monthlyExpenses": 35000,
+        "availableToInvest": 25000,
+        "initialSavings": 100000,
+        "emergencyFund": 180000,
+        "riskProfile": "moderate-aggressive"
+      },
+      "goalToAchieve": {
+        "targetAmount": 2000000,
+        "purpose": "Diversified Wealth Creation",
+        "timeframe": "5 years"
+      }
+    }
+  },
+  "availableInvestmentOptions": [
+    {
+      "id": "nifty50-index",
+      "name": "Nifty 50 Index Fund",
+      "type": "equity",
+      "category": "large-cap",
+      "description": "India's top 50 companies. Core equity holding for stability.",
+      "minInvestment": 500,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "stcg": "15% if sold before 1 year",
+        "ltcg": "10% on gains above ₹1 lakh after 1 year"
+      },
+      "historicalReturn": "12% annually",
+      "riskLevel": "moderate",
+      "liquidity": "high",
+      "correlation": {
+        "midcap": 0.85,
+        "gold": -0.2,
+        "fd": 0.1
+      }
+    },
+    {
+      "id": "midcap-fund",
+      "name": "Mid Cap Mutual Fund",
+      "type": "equity",
+      "category": "mid-cap",
+      "description": "Higher growth potential with moderate risk. Good for long-term wealth.",
+      "minInvestment": 1000,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "stcg": "15% if sold before 1 year",
+        "ltcg": "10% on gains above ₹1 lakh after 1 year"
+      },
+      "historicalReturn": "14-16% annually",
+      "riskLevel": "moderate-high",
+      "liquidity": "high",
+      "correlation": {
+        "largecap": 0.85,
+        "gold": -0.15,
+        "fd": 0.05
+      }
+    },
+    {
+      "id": "gold-etf",
+      "name": "Gold ETF",
+      "type": "commodity",
+      "category": "alternative",
+      "description": "Hedge against inflation and market volatility. Portfolio stabilizer.",
+      "minInvestment": 500,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "stcg": "As per income slab if sold before 3 years",
+        "ltcg": "20% with indexation after 3 years"
+      },
+      "historicalReturn": "8-10% annually",
+      "riskLevel": "low",
+      "liquidity": "high",
+      "correlation": {
+        "equity": -0.2,
+        "fd": 0.3
+      }
+    },
+    {
+      "id": "fixed-deposit",
+      "name": "Fixed Deposit (5-year)",
+      "type": "debt",
+      "category": "fixed-income",
+      "description": "Guaranteed returns. Safety net portion of portfolio.",
+      "minInvestment": 10000,
+      "lockInPeriod": 12,
+      "taxImplication": {
+        "interest": "Taxed as per income slab, TDS applicable"
+      },
+      "historicalReturn": "6.5-7.5% annually",
+      "riskLevel": "very-low",
+      "liquidity": "low",
+      "correlation": {
+        "equity": 0.1,
+        "gold": 0.3
+      }
+    },
+    {
+      "id": "savings-account",
+      "name": "Savings Account",
+      "type": "cash",
+      "category": "liquid",
+      "description": "Emergency fund and liquidity buffer.",
+      "minInvestment": 0,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "interest": "Taxed as per income slab"
+      },
+      "historicalReturn": "3-4% annually",
+      "riskLevel": "none",
+      "liquidity": "instant",
+      "correlation": {}
+    }
+  ],
+  "timeline": [
+    {
+      "month": 0,
+      "timestamp": "0:00",
+      "realDate": "January 2021",
+      "events": [
+        {
+          "type": "simulation-start",
+          "title": "Welcome to Multi-Asset Investing!",
+          "description": "You've mastered SIP basics in Chapter 1. Now you have ₹1,00,000 to allocate and ₹25,000/month to invest. Your emergency fund (₹1,80,000) is already secured.",
+          "impact": "none",
+          "teachingMoment": {
+            "concept": "Asset Allocation Strategy",
+            "explanation": "Don't put all eggs in one basket! Diversification across asset classes reduces risk while maintaining returns. Different assets perform differently in various market conditions.",
+            "tip": "A common starting allocation: 60% Equity (40% Large Cap + 20% Mid Cap), 20% Gold, 20% FD/Debt",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Understanding Asset Correlation",
+          "description": "Assets that move differently (negative correlation) protect your portfolio during volatility.",
+          "teachingMoment": {
+            "concept": "Correlation & Diversification",
+            "explanation": "When stocks fall, gold often rises (negative correlation). FDs stay stable. This balance smoothens your returns over time.",
+            "example": "If equity drops 20%, but gold rises 15% and FD stays stable, your overall portfolio impact is minimal.",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14000,
+        "nifty50Change": 0,
+        "midcapIndex": 22000,
+        "midcapChange": 0,
+        "goldPrice": 48000,
+        "goldChange": 0,
+        "fdRate": 6.5,
+        "inflationRate": 4.5,
+        "sentiment": "neutral"
+      },
+      "userFinancials": {
+        "totalInvested": 0,
+        "currentValue": 0,
+        "returns": 0,
+        "returnsPercentage": 0,
+        "cashAvailable": 100000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 100000,
+          "nifty50": 0,
+          "midcap": 0,
+          "gold": 0,
+          "fd": 0
+        }
+      }
+    },
+    {
+      "month": 1,
+      "timestamp": "1:00",
+      "realDate": "February 2021",
+      "events": [
+        {
+          "type": "decision-prompt",
+          "title": "Initial Portfolio Allocation",
+          "description": "You have ₹1,00,000 lumpsum + ₹25,000 monthly. How will you allocate?",
+          "options": [
+            "Conservative: 50% Equity, 30% Gold, 20% FD",
+            "Balanced: 60% Equity, 20% Gold, 20% FD (Recommended)",
+            "Aggressive: 70% Equity, 15% Gold, 15% FD"
+          ],
+          "recommendation": "Balanced allocation provides optimal risk-return tradeoff"
+        },
+        {
+          "type": "teaching",
+          "title": "Lumpsum vs SIP Strategy",
+          "teachingMoment": {
+            "concept": "Hybrid Investment Approach",
+            "explanation": "Invest lumpsum in stable assets (FD, Gold) and do SIP in volatile assets (Equity) to average out market fluctuations.",
+            "recommendation": "Lumpsum: 50% FD + 50% Gold. SIP: 70% Equity (40% Large + 30% Mid) + 30% Gold",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14280,
+        "nifty50Change": 2.0,
+        "midcapIndex": 22440,
+        "midcapChange": 2.0,
+        "goldPrice": 48240,
+        "goldChange": 0.5,
+        "fdRate": 6.5,
+        "inflationRate": 4.6,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Markets rally on positive economic outlook",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 115000,
+        "currentValue": 117250,
+        "returns": 2250,
+        "returnsPercentage": 1.96,
+        "cashAvailable": 10000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 10000,
+          "nifty50": 40800,
+          "midcap": 23460,
+          "gold": 30120,
+          "fd": 22870
+        }
+      }
+    },
+    {
+      "month": 2,
+      "timestamp": "2:00",
+      "realDate": "March 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Equities Surge, Gold Dips",
+          "description": "Equity markets rally 3.5%. Gold falls 2% as investors move to stocks.",
+          "impact": "mixed",
+          "teachingMoment": {
+            "concept": "Asset Rotation",
+            "explanation": "When one asset class performs well, others may lag. This is why diversification matters - you capture gains from winners while losers don't hurt as much.",
+            "popupTiming": "after-market-update"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14780,
+        "nifty50Change": 3.5,
+        "midcapIndex": 23230,
+        "midcapChange": 3.5,
+        "goldPrice": 47275,
+        "goldChange": -2.0,
+        "fdRate": 6.5,
+        "inflationRate": 4.7,
+        "sentiment": "bullish"
+      },
+      "news": [
+        {
+          "headline": "Vaccine rollout accelerates, market optimism grows",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        },
+        {
+          "headline": "Gold weakens as risk appetite increases",
+          "impact": "negative",
+          "affectedAssets": ["gold-etf"],
+          "sentiment": "neutral"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 140000,
+        "currentValue": 146890,
+        "returns": 6890,
+        "returnsPercentage": 4.92,
+        "cashAvailable": 10000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 10000,
+          "nifty50": 62730,
+          "midcap": 36345,
+          "gold": 36665,
+          "fd": 23150
+        }
+      }
+    },
+    {
+      "month": 3,
+      "timestamp": "3:00",
+      "realDate": "April 2021",
+      "events": [
+        {
+          "type": "market-correction",
+          "title": "COVID Second Wave - Market Correction",
+          "description": "Equity markets drop 6% on pandemic fears. Gold surges 4% as safe haven!",
+          "impact": "negative",
+          "teachingMoment": {
+            "concept": "Negative Correlation in Action",
+            "explanation": "See how gold is protecting your portfolio? While equities fell 6%, gold rose 4%. Your diversified portfolio dropped only ~2-3% instead of 6%!",
+            "insight": "This is the power of diversification. Pure equity investors lost 6%, but you lost much less.",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 13893,
+        "nifty50Change": -6.0,
+        "midcapIndex": 21836,
+        "midcapChange": -6.0,
+        "goldPrice": 49166,
+        "goldChange": 4.0,
+        "fdRate": 6.5,
+        "inflationRate": 5.0,
+        "sentiment": "bearish"
+      },
+      "news": [
+        {
+          "headline": "COVID-19 second wave hits hard, markets tumble",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bearish"
+        },
+        {
+          "headline": "Gold shines as safe haven amid uncertainty",
+          "impact": "positive",
+          "affectedAssets": ["gold-etf"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 165000,
+        "currentValue": 163450,
+        "returns": -1550,
+        "returnsPercentage": -0.94,
+        "cashAvailable": 10000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 10000,
+          "nifty50": 68425,
+          "midcap": 39890,
+          "gold": 44545,
+          "fd": 23590
+        },
+        "milestone": {
+          "type": "learning",
+          "message": "Portfolio protected by diversification!",
+          "badge": "diversification-defender"
+        }
+      }
+    },
+    {
+      "month": 4,
+      "timestamp": "4:00",
+      "realDate": "May 2021",
+      "events": [
+        {
+          "type": "teaching",
+          "title": "Should You Rebalance?",
+          "description": "Your target was 60% equity, 20% gold, 20% debt. Current allocation has drifted.",
+          "teachingMoment": {
+            "concept": "Portfolio Rebalancing",
+            "explanation": "Over time, winners grow and losers shrink, changing your asset allocation. Rebalancing means selling winners and buying losers to maintain target allocation.",
+            "recommendation": "Rebalance annually or when allocation drifts by 5-10%. For now, continue SIP as planned - it naturally rebalances.",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "market-movement",
+          "title": "Market Recovery Begins",
+          "description": "Equities bounce back 4%. Gold stabilizes.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14449,
+        "nifty50Change": 4.0,
+        "midcapIndex": 22709,
+        "midcapChange": 4.0,
+        "goldPrice": 49658,
+        "goldChange": 1.0,
+        "fdRate": 6.5,
+        "inflationRate": 5.2,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Markets recover as COVID cases decline",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 190000,
+        "currentValue": 195680,
+        "returns": 5680,
+        "returnsPercentage": 2.99,
+        "cashAvailable": 10000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 10000,
+          "nifty50": 89520,
+          "midcap": 52145,
+          "gold": 52985,
+          "fd": 24030
+        }
+      }
+    },
+    {
+      "month": 6,
+      "timestamp": "6:00",
+      "realDate": "July 2021",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "6 Months Complete - Portfolio Review",
+          "description": "Great progress! Your diversified portfolio is performing well.",
+          "teachingMoment": {
+            "concept": "Risk-Adjusted Returns",
+            "explanation": "You've earned 3-5% in 6 months with much lower volatility than pure equity. Diversification reduced your downside risk significantly!",
+            "stats": {
+              "portfolioReturn": "3.2%",
+              "maxDrawdown": "-0.94% (vs -6% in pure equity)",
+              "sharpeRatio": "Better risk-adjusted returns"
+            },
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14880,
+        "nifty50Change": 3.0,
+        "midcapIndex": 23390,
+        "midcapChange": 3.0,
+        "goldPrice": 50155,
+        "goldChange": 1.0,
+        "fdRate": 6.8,
+        "inflationRate": 5.3,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "RBI maintains accommodative stance, FD rates edge up",
+          "impact": "positive",
+          "affectedAssets": ["fixed-deposit"],
+          "sentiment": "neutral"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 215000,
+        "currentValue": 222150,
+        "returns": 7150,
+        "returnsPercentage": 3.33,
+        "xirr": 6.8,
+        "cashAvailable": 10000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 10000,
+          "nifty50": 111675,
+          "midcap": 65030,
+          "gold": 60770,
+          "fd": 24675
+        }
+      }
+    },
+    {
+      "month": 12,
+      "timestamp": "12:00",
+      "realDate": "January 2022",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "First Year Complete! 🎉",
+          "description": "You've successfully built a diversified portfolio over 1 year!",
+          "teachingMoment": {
+            "concept": "The Benefits of Diversification",
+            "explanation": "Compare your results: Multi-asset portfolio gave you stable 8-10% returns with much lower volatility than Chapter 1's pure equity approach.",
+            "stats": {
+              "totalInvested": 340000,
+              "currentValue": 370500,
+              "absoluteReturns": 30500,
+              "returnsPercentage": 8.97,
+              "xirr": "~10.2% annualized"
+            },
+            "insight": "Diversification = Better sleep at night + Competitive returns!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Tax Implications Across Assets",
+          "teachingMoment": {
+            "concept": "Multi-Asset Tax Optimization",
+            "explanation": "Different assets have different tax rules. Equity LTCG after 1 year = 10% above ₹1L. Gold LTCG after 3 years = 20% with indexation. FD interest = As per slab.",
+            "tip": "Hold equity for 1+ years, gold for 3+ years for tax efficiency. Plan redemptions accordingly!",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 16100,
+        "nifty50Change": 2.5,
+        "midcapIndex": 25310,
+        "midcapChange": 2.8,
+        "goldPrice": 51580,
+        "goldChange": 1.5,
+        "fdRate": 7.0,
+        "inflationRate": 5.5,
+        "sentiment": "bullish"
+      },
+      "news": [
+        {
+          "headline": "Budget 2022 boosts infrastructure, markets rally",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 340000,
+        "currentValue": 370500,
+        "returns": 30500,
+        "returnsPercentage": 8.97,
+        "xirr": 10.2,
+        "cashAvailable": 10000,
+        "monthlyIncome": 60000,
+        "monthlyExpenses": 35000,
+        "portfolioBreakdown": {
+          "savings": 10000,
+          "nifty50": 182560,
+          "midcap": 106425,
+          "gold": 95890,
+          "fd": 25625
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "Multi-Asset Master - 1 Year!",
+          "badge": "one-year-diversified"
+        }
+      }
+    },
+    {
+      "month": 18,
+      "timestamp": "18:00",
+      "realDate": "July 2022",
+      "events": [
+        {
+          "type": "personal-event",
+          "title": "Salary Increment + Bonus! 🎊",
+          "description": "Great performance review! Salary increases to ₹72,000/month + ₹50,000 bonus.",
+          "teachingMoment": {
+            "concept": "Windfall Investment Strategy",
+            "explanation": "Got a bonus? Don't spend it all! Use the 50-30-20 rule: 50% invest, 30% save for goals, 20% enjoy.",
+            "recommendation": "Invest ₹25k bonus in underperforming assets (rebalancing opportunity), ₹15k for goals, ₹10k to celebrate!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "decision-prompt",
+          "title": "How to Use Your Bonus?",
+          "options": [
+            "Invest all ₹50k (maximize returns)",
+            "50-30-20 split: ₹25k invest, ₹15k save, ₹10k spend (Recommended)",
+            "Save all for emergency"
+          ],
+          "recommendation": "Balanced approach - invest bonus in underweight assets to rebalance"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 16610,
+        "nifty50Change": 1.2,
+        "midcapIndex": 25820,
+        "midcapChange": 0.8,
+        "goldPrice": 52550,
+        "goldChange": 0.5,
+        "fdRate": 7.2,
+        "inflationRate": 6.8,
+        "sentiment": "neutral"
+      },
+      "news": [
+        {
+          "headline": "Inflation concerns rise, RBI hikes rates",
+          "impact": "neutral",
+          "affectedAssets": ["nifty50-index", "fixed-deposit"],
+          "sentiment": "cautious"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 515000,
+        "currentValue": 571250,
+        "returns": 56250,
+        "returnsPercentage": 10.92,
+        "xirr": 11.5,
+        "cashAvailable": 35000,
+        "monthlyIncome": 72000,
+        "monthlyExpenses": 37000,
+        "portfolioBreakdown": {
+          "savings": 35000,
+          "nifty50": 284320,
+          "midcap": 165885,
+          "gold": 147545,
+          "fd": 26500
+        }
+      }
+    },
+    {
+      "month": 24,
+      "timestamp": "24:00",
+      "realDate": "January 2023",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "2 Years Complete! 🏆",
+          "description": "Excellent discipline! Your multi-asset strategy is paying off.",
+          "teachingMoment": {
+            "concept": "Long-Term Wealth Compounding",
+            "explanation": "Notice the acceleration? Year 1 returns: ₹30k. Year 2 returns: ₹45k. Your returns are earning returns!",
+            "stats": {
+              "totalInvested": 665000,
+              "currentValue": 740000,
+              "absoluteReturns": 75000,
+              "returnsPercentage": 11.28,
+              "xirr": "~11.8% annualized"
+            },
+            "visualization": "Year 1: ₹30k returns\nYear 2: ₹45k returns\nCompounding + Diversification = Wealth!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Time to Rebalance Your Portfolio",
+          "description": "Your allocation has drifted. Let's bring it back to target.",
+          "teachingMoment": {
+            "concept": "Annual Rebalancing",
+            "explanation": "Winners (equity) have grown to 65% vs target 60%. Sell 5% equity, buy underweight assets (gold/FD). This locks in profits and maintains risk profile.",
+            "actionRequired": "Consider selling ₹35k from equity and buying ₹20k gold + ₹15k FD",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 17450,
+        "nifty50Change": 2.8,
+        "midcapIndex": 27250,
+        "midcapChange": 3.2,
+        "goldPrice": 54080,
+        "goldChange": 1.8,
+        "fdRate": 7.5,
+        "inflationRate": 6.2,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Indian economy shows strong resilience, markets hit new highs",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 665000,
+        "currentValue": 740000,
+        "returns": 75000,
+        "returnsPercentage": 11.28,
+        "xirr": 11.8,
+        "cashAvailable": 45000,
+        "monthlyIncome": 72000,
+        "monthlyExpenses": 37000,
+        "portfolioBreakdown": {
+          "savings": 45000,
+          "nifty50": 389625,
+          "midcap": 227450,
+          "gold": 189400,
+          "fd": 28525
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "2-Year Diversification Champion!",
+          "badge": "two-year-balanced"
+        }
+      }
+    },
+    {
+      "month": 30,
+      "timestamp": "30:00",
+      "realDate": "July 2023",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Mid Cap Surge!",
+          "description": "Mid cap stocks outperform! +8% growth this month.",
+          "impact": "positive",
+          "teachingMoment": {
+            "concept": "Asset Class Performance Cycles",
+            "explanation": "Different asset classes lead at different times. Mid caps had a great run! This is why you hold multiple assets - you capture these outperformance periods.",
+            "popupTiming": "after-market-update"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 17980,
+        "nifty50Change": 1.5,
+        "midcapIndex": 29430,
+        "midcapChange": 8.0,
+        "goldPrice": 54620,
+        "goldChange": 0.5,
+        "fdRate": 7.5,
+        "inflationRate": 5.8,
+        "sentiment": "bullish"
+      },
+      "news": [
+        {
+          "headline": "Mid cap rally continues, sector rotation in play",
+          "impact": "positive",
+          "affectedAssets": ["midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 815000,
+        "currentValue": 925450,
+        "returns": 110450,
+        "returnsPercentage": 13.55,
+        "xirr": 12.5,
+        "cashAvailable": 50000,
+        "monthlyIncome": 72000,
+        "monthlyExpenses": 37000,
+        "portfolioBreakdown": {
+          "savings": 50000,
+          "nifty50": 477580,
+          "midcap": 308340,
+          "gold": 219155,
+          "fd": 29375
+        }
+      }
+    },
+    {
+      "month": 36,
+      "timestamp": "36:00",
+      "realDate": "January 2024",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "3 Years - Halfway There! 🌟",
+          "description": "Exceptional progress! Your diversified approach has paid off handsomely.",
+          "teachingMoment": {
+            "concept": "Multi-Asset Wealth Creation",
+            "explanation": "₹9,65,000 invested is now worth ₹11,25,000. That's ₹1,60,000 in returns!",
+            "stats": {
+              "totalInvested": 965000,
+              "currentValue": 1125000,
+              "absoluteReturns": 160000,
+              "returnsPercentage": 16.58,
+              "xirr": "~12.8% annualized"
+            },
+            "insight": "Your diversified portfolio weathered volatility better than pure equity, with comparable returns!",
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "teaching",
+          "title": "Comparing Asset Class Performance",
+          "description": "Let's review how each asset performed over 3 years.",
+          "teachingMoment": {
+            "concept": "Asset Class Analysis",
+            "explanation": "Large Cap: ~12% annual | Mid Cap: ~14% annual | Gold: ~9% annual | FD: ~7% annual",
+            "insight": "Equities led returns, gold provided stability, FDs gave safety. Perfect balance!",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 18560,
+        "nifty50Change": 2.2,
+        "midcapIndex": 30380,
+        "midcapChange": 2.5,
+        "goldPrice": 55680,
+        "goldChange": 1.2,
+        "fdRate": 7.8,
+        "inflationRate": 5.5,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Election rally begins, market optimism peaks",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 965000,
+        "currentValue": 1125000,
+        "returns": 160000,
+        "returnsPercentage": 16.58,
+        "xirr": 12.8,
+        "cashAvailable": 55000,
+        "monthlyIncome": 72000,
+        "monthlyExpenses": 38000,
+        "portfolioBreakdown": {
+          "savings": 55000,
+          "nifty50": 587520,
+          "midcap": 345160,
+          "gold": 267680,
+          "fd": 29640
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "3-Year Diversification Expert!",
+          "badge": "three-year-balanced"
+        }
+      }
+    },
+    {
+      "month": 42,
+      "timestamp": "42:00",
+      "realDate": "July 2024",
+      "events": [
+        {
+          "type": "market-correction",
+          "title": "Global Uncertainty - Market Correction",
+          "description": "Global tensions cause 10% equity correction. Gold surges 6%!",
+          "impact": "negative",
+          "teachingMoment": {
+            "concept": "Diversification During Crisis",
+            "explanation": "Remember this moment! Equities fell 10%, but gold rose 6%. Your portfolio only dropped ~5%. Pure equity investors lost 10%!",
+            "perspective": "This is WHY you diversify. Gold is your insurance during corrections.",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 16704,
+        "nifty50Change": -10.0,
+        "midcapIndex": 27342,
+        "midcapChange": -10.0,
+        "goldPrice": 59020,
+        "goldChange": 6.0,
+        "fdRate": 7.8,
+        "inflationRate": 6.2,
+        "sentiment": "bearish"
+      },
+      "news": [
+        {
+          "headline": "Global recession fears trigger selloff",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bearish"
+        },
+        {
+          "headline": "Gold hits record highs as safe haven demand soars",
+          "impact": "positive",
+          "affectedAssets": ["gold-etf"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 1115000,
+        "currentValue": 1258500,
+        "returns": 143500,
+        "returnsPercentage": 12.87,
+        "xirr": 12.2,
+        "cashAvailable": 60000,
+        "monthlyIncome": 72000,
+        "monthlyExpenses": 38000,
+        "portfolioBreakdown": {
+          "savings": 60000,
+          "nifty50": 639480,
+          "midcap": 372890,
+          "gold": 355490,
+          "fd": 30640
+        }
+      }
+    },
+    {
+      "month": 48,
+      "timestamp": "48:00",
+      "realDate": "January 2025",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "4 Years Complete! 💪",
+          "description": "Markets recovered! Your disciplined approach through volatility paid off.",
+          "teachingMoment": {
+            "concept": "Staying Diversified Through Cycles",
+            "explanation": "You survived a 10% correction with minimal damage. Diversification = sleeping well during storms!",
+            "stats": {
+              "totalInvested": 1265000,
+              "currentValue": 1485000,
+              "absoluteReturns": 220000,
+              "returnsPercentage": 17.39,
+              "xirr": "~13.2% annualized"
+            },
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "personal-event",
+          "title": "Promotion & Salary Hike!",
+          "description": "Great news! Promoted with 15% salary hike. New salary: ₹83,000/month.",
+          "teachingMoment": {
+            "concept": "Scaling Investments with Income",
+            "explanation": "As income grows, increase SIP proportionally. Consider ₹30,000/month now.",
+            "popupTiming": "after-milestone"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 18370,
+        "nifty50Change": 4.5,
+        "midcapIndex": 30110,
+        "midcapChange": 5.0,
+        "goldPrice": 59610,
+        "goldChange": 0.5,
+        "fdRate": 8.0,
+        "inflationRate": 5.8,
+        "sentiment": "positive"
+      },
+      "news": [
+        {
+          "headline": "Economic recovery strong, markets rebound sharply",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 1265000,
+        "currentValue": 1485000,
+        "returns": 220000,
+        "returnsPercentage": 17.39,
+        "xirr": 13.2,
+        "cashAvailable": 65000,
+        "monthlyIncome": 83000,
+        "monthlyExpenses": 40000,
+        "portfolioBreakdown": {
+          "savings": 65000,
+          "nifty50": 752850,
+          "midcap": 439150,
+          "gold": 377310,
+          "fd": 31690
+        },
+        "milestone": {
+          "type": "achievement",
+          "message": "4-Year Balanced Portfolio Master!",
+          "badge": "four-year-diversified"
+        }
+      }
+    },
+    {
+      "month": 60,
+      "timestamp": "60:00",
+      "realDate": "January 2026",
+      "events": [
+        {
+          "type": "simulation-end",
+          "title": "🎉 5 YEARS COMPLETE! CONGRATULATIONS! 🎉",
+          "description": "You've mastered multi-asset diversification over 5 years!",
+          "teachingMoment": {
+            "concept": "The Power of Diversification",
+            "explanation": "Your disciplined, diversified approach has created substantial wealth with controlled risk!",
+            "finalStats": {
+              "totalInvested": 1625000,
+              "currentValue": 1950000,
+              "absoluteReturns": 325000,
+              "returnsPercentage": 20.0,
+              "xirr": "~13.8% annualized",
+              "goalAchievement": "97.5% of ₹20,00,000 goal"
+            },
+            "insights": [
+              "Survived major correction with minimal impact (diversification shield)",
+              "Gold protected you during 2 equity corrections",
+              "Rebalancing locked in profits from winners",
+              "Multi-asset approach = better risk-adjusted returns",
+              "Your Sharpe ratio > pure equity investors!"
+            ],
+            "popupTiming": "immediate"
+          }
+        },
+        {
+          "type": "chapter-summary",
+          "title": "Chapter 2 Summary",
+          "keyLearnings": [
+            "Diversification reduces risk without sacrificing returns",
+            "Negative correlation assets protect during downturns",
+            "Different assets lead in different market phases",
+            "Rebalancing locks in profits and maintains allocation",
+            "Tax efficiency varies across asset classes",
+            "Gold is insurance, not investment"
+          ],
+          "achievements": [
+            "5-Year Diversified Portfolio Master",
+            "Survived 2 Corrections (Diversification Shield)",
+            "Rebalancing Expert",
+            "₹3.25 Lakh Returns - 20% Total Gain!"
+          ],
+          "comparison": {
+            "chapter1": "Single asset (equity) - Higher volatility",
+            "chapter2": "Multi-asset - Lower volatility, comparable returns",
+            "advantage": "Better risk-adjusted returns (Sharpe ratio)"
+          },
+          "nextSteps": "In Chapter 3, you'll learn active management: sector rotation, mutual fund selection, and tactical allocation!"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 19280,
+        "nifty50Change": 3.2,
+        "midcapIndex": 31615,
+        "midcapChange": 3.5,
+        "goldPrice": 61250,
+        "goldChange": 1.5,
+        "fdRate": 8.0,
+        "inflationRate": 5.5,
+        "sentiment": "bullish"
+      },
+      "news": [
+        {
+          "headline": "Indian markets among world's best performers",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index", "midcap-fund"],
+          "sentiment": "bullish"
+        }
+      ],
+      "userFinancials": {
+        "totalInvested": 1625000,
+        "currentValue": 1950000,
+        "returns": 325000,
+        "returnsPercentage": 20.0,
+        "xirr": 13.8,
+        "cashAvailable": 75000,
+        "monthlyIncome": 83000,
+        "monthlyExpenses": 40000,
+        "portfolioBreakdown": {
+          "savings": 75000,
+          "nifty50": 990720,
+          "midcap": 579475,
+          "gold": 489000,
+          "fd": 32805
+        },
+        "totalNetWorth": 2025000,
+        "milestone": {
+          "type": "completion",
+          "message": "Chapter 2 Mastered! Diversification Champion! 🏆",
+          "badge": "chapter-2-complete"
+        }
+      }
+    }
+  ],
+  "quiz": {
+    "title": "Chapter 2 Quiz: Multi-Asset Mastery",
+    "passingScore": 7,
+    "totalQuestions": 10,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary benefit of diversification?",
+        "options": [
+          "Guaranteed higher returns",
+          "Reduces portfolio risk without necessarily sacrificing returns",
+          "Eliminates all market risk",
+          "Makes you rich faster"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Diversification reduces portfolio risk by spreading investments across uncorrelated assets. When one falls, others may rise or stay stable, reducing overall volatility."
+      },
+      {
+        "id": 2,
+        "question": "What does negative correlation between assets mean?",
+        "options": [
+          "Both assets always lose money",
+          "Assets have no relationship",
+          "When one asset goes up, the other tends to go down",
+          "Both assets always gain together"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Negative correlation means assets move in opposite directions. Gold and equity often have negative correlation - when stocks fall, gold rises as a safe haven."
+      },
+      {
+        "id": 3,
+        "question": "When should you rebalance your portfolio?",
+        "options": [
+          "Every month",
+          "Never - let winners run",
+          "Annually or when allocation drifts 5-10% from target",
+          "Only when markets crash"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Rebalance annually or when your allocation drifts significantly (5-10%) from targets. This locks in profits from winners and buys underperformers at lower prices."
+      },
+      {
+        "id": 4,
+        "question": "Why is gold included in a diversified portfolio?",
+        "options": [
+          "For maximum returns",
+          "As a hedge and portfolio stabilizer during equity downturns",
+          "Because it always outperforms equity",
+          "To avoid all taxes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Gold acts as a hedge against inflation and equity volatility. It tends to rise when stocks fall (negative correlation), protecting your portfolio during corrections."
+      },
+      {
+        "id": 5,
+        "question": "What is the tax treatment for equity LTCG?",
+        "options": [
+          "15% flat rate",
+          "10% on gains above ₹1 lakh after 1 year holding",
+          "20% with indexation",
+          "Tax-free always"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Equity long-term capital gains (held >1 year) are taxed at 10% on gains exceeding ₹1 lakh per year. First ₹1 lakh is tax-free."
+      },
+      {
+        "id": 6,
+        "question": "How long must you hold gold for LTCG benefits?",
+        "options": [
+          "1 year",
+          "2 years",
+          "3 years",
+          "5 years"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Gold and debt funds must be held for 3+ years to qualify for long-term capital gains treatment (20% with indexation benefit)."
+      },
+      {
+        "id": 7,
+        "question": "What should you do with a windfall/bonus?",
+        "options": [
+          "Spend it all - you earned it!",
+          "Invest 100% immediately",
+          "Use 50-30-20: 50% invest, 30% save, 20% enjoy",
+          "Keep it all in savings account"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A balanced approach: invest 50% (often in underweight assets to rebalance), save 30% for goals, and enjoy 20%. This balances growth, planning, and lifestyle."
+      },
+      {
+        "id": 8,
+        "question": "During a market correction, what typically happens to gold?",
+        "options": [
+          "Falls more than equity",
+          "Stays exactly the same",
+          "Often rises as a safe haven",
+          "Becomes worthless"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Gold typically rises during equity corrections as investors seek safe havens. This negative correlation is why gold is valuable in diversified portfolios."
+      },
+      {
+        "id": 9,
+        "question": "What is rebalancing?",
+        "options": [
+          "Selling all losing investments",
+          "Selling winners and buying losers to maintain target allocation",
+          "Only buying more of winning assets",
+          "Checking your balance monthly"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Rebalancing means selling overweight assets (winners) and buying underweight assets (losers) to return to your target allocation, locking in profits and managing risk."
+      },
+      {
+        "id": 10,
+        "question": "What was the key lesson from surviving the correction in Month 42?",
+        "options": [
+          "Always sell before corrections",
+          "Diversification protected the portfolio - equity fell 10% but gold rose 6%",
+          "Should have invested only in gold",
+          "Market timing is easy"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The correction showed diversification in action: while equity fell 10%, gold surged 6%, so the diversified portfolio only dropped ~5%. Pure equity investors lost much more."
+      }
+    ]
+  },
+  "performanceMetrics": {
+    "scoreCalculation": {
+      "diversificationScore": "Maintained balanced allocation",
+      "rebalancingScore": "Timely portfolio adjustments",
+      "returnScore": "Based on XIRR achieved",
+      "knowledgeScore": "Quiz performance",
+      "resilience": "Behavior during corrections",
+      "finalGrade": "Combination of all factors"
+    },
+    "benchmarks": {
+      "excellent": {
+        "xirr": ">13%",
+        "volatility": "<12%",
+        "rebalancingFrequency": "Annual",
+        "quizScore": "9-10/10"
+      },
+      "good": {
+        "xirr": "11-13%",
+        "volatility": "12-15%",
+        "rebalancingFrequency": "1-2 times",
+        "quizScore": "7-8/10"
+      },
+      "needsImprovement": {
+        "xirr": "<11%",
+        "volatility": ">15%",
+        "rebalancingFrequency": "Never",
+        "quizScore": "<7/10"
+      }
+    },
+    "comparison": {
+      "vsChapter1": {
+        "returns": "Comparable (13.8% vs 14.2%)",
+        "volatility": "Much lower (better risk-adjusted)",
+        "maxDrawdown": "Lower (-0.94% vs -2.17%)",
+        "sharpeRatio": "Higher (better risk-reward)",
+        "conclusion": "Similar returns with significantly less risk"
+      }
+    }
+  }
+}

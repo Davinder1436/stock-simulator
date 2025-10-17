@@ -1,0 +1,247 @@
+'use client';
+
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import {
+  LongTermChapterData,
+  SimulationState,
+  TimelineMonth,
+  TeachingMoment,
+  InvestmentDistribution,
+  UserPortfolio,
+  AssetHolding,
+  FixedDepositHolding,
+} from '@/types/longterm';
+
+interface LongTermSimulationContextType {
+  state: SimulationState;
+  currentMonthData: TimelineMonth | null;
+  loadChapter: (chapterId: string) => Promise<void>;
+  startSimulation: () => void;
+  pauseSimulation: () => void;
+  resumeSimulation: () => void;
+  resetSimulation: () => void;
+  setSpeed: (speed: number) => void;
+  goToMonth: (month: number) => void;
+  recordDecision: (decision: string, value: any) => void;
+  dismissTeachingPopup: () => void;
+  skipToEnd: () => void;
+  updateInvestmentDistribution: (distribution: InvestmentDistribution) => void;
+  createFixedDeposit: (amount: number) => void;
+  breakFixedDeposit: (fdId: string) => void;
+}
+
+const LongTermSimulationContext = createContext<LongTermSimulationContextType | undefined>(
+  undefined
+);
+
+export const useLongTermSimulation = () => {
+  const context = useContext(LongTermSimulationContext);
+  if (!context) {
+    throw new Error('useLongTermSimulation must be used within LongTermSimulationProvider');
+  }
+  return context;
+};
+
+export const LongTermSimulationProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
+  const [state, setState] = useState<SimulationState>({
+    isRunning: false,
+    isPaused: false,
+    currentMonth: 0,
+    speed: 1,
+    selectedChapter: null,
+    chapterData: null,
+    userDecisions: {},
+    showTeachingPopup: false,
+    currentTeachingMoment: null,
+    achievements: [],
+    investmentDistribution: {},
+    userPortfolio: {
+      cash: 50000,
+      assetHoldings: {},
+      fixedDeposits: [],
+      totalInvested: 0,
+      currentValue: 50000,
+      totalReturns: 0,
+      totalReturnsPercentage: 0,
+    },
+    monthlyIncome: 50000,
+    monthlyExpenses: 30000,
+  });
+
+  const [currentMonthData, setCurrentMonthData] = useState<TimelineMonth | null>(null);
+
+  // Load chapter data
+  const loadChapter = useCallback(async (chapterId: string) => {
+    try {
+      const response = await fetch(`/chapter1-longterm-data.json`);
+      const data: LongTermChapterData = await response.json();
+      
+      setState(prev => ({
+        ...prev,
+        selectedChapter: chapterId,
+        chapterData: data,
+        currentMonth: 0,
+        isRunning: false,
+        isPaused: false,
+      }));
+
+      if (data.timeline && data.timeline.length > 0) {
+        setCurrentMonthData(data.timeline[0]);
+        
+        // Show initial teaching moments
+        const initialEvents = data.timeline[0].events.filter(
+          e => e.teachingMoment && e.teachingMoment.popupTiming === 'immediate'
+        );
+        if (initialEvents.length > 0 && initialEvents[0].teachingMoment) {
+          setState(prev => ({
+            ...prev,
+            showTeachingPopup: true,
+            currentTeachingMoment: initialEvents[0].teachingMoment!,
+          }));
+        }
+      }
+    } catch (error) {
+      console.error('Error loading chapter:', error);
+    }
+  }, []);
+
+  // Update current month data when month changes
+  useEffect(() => {
+    if (state.chapterData && state.chapterData.timeline) {
+      const monthData = state.chapterData.timeline.find(
+        m => m.month === state.currentMonth
+      );
+      if (monthData) {
+        setCurrentMonthData(monthData);
+
+        // Check for teaching moments
+        const teachingEvents = monthData.events.filter(
+          e => e.teachingMoment && e.teachingMoment.popupTiming === 'immediate'
+        );
+        if (teachingEvents.length > 0 && teachingEvents[0].teachingMoment) {
+          setState(prev => ({
+            ...prev,
+            showTeachingPopup: true,
+            currentTeachingMoment: teachingEvents[0].teachingMoment!,
+          }));
+        }
+
+        // Check for milestones and achievements
+        if (monthData.userFinancials.milestone) {
+          setState(prev => ({
+            ...prev,
+            achievements: [
+              ...prev.achievements,
+              monthData.userFinancials.milestone!.badge,
+            ],
+          }));
+        }
+      }
+    }
+  }, [state.currentMonth, state.chapterData]);
+
+  // Simulation timer
+  useEffect(() => {
+    if (!state.isRunning || state.isPaused || !state.chapterData) return;
+
+    const interval = setInterval(() => {
+      setState(prev => {
+        if (prev.currentMonth >= prev.chapterData!.chapterInfo.totalMonths) {
+          return { ...prev, isRunning: false };
+        }
+        return { ...prev, currentMonth: prev.currentMonth + 1 };
+      });
+    }, 60000 / state.speed); // 60 seconds per month, adjusted by speed
+
+    return () => clearInterval(interval);
+  }, [state.isRunning, state.isPaused, state.speed, state.chapterData]);
+
+  const startSimulation = useCallback(() => {
+    setState(prev => ({ ...prev, isRunning: true, isPaused: false }));
+  }, []);
+
+  const pauseSimulation = useCallback(() => {
+    setState(prev => ({ ...prev, isPaused: true }));
+  }, []);
+
+  const resumeSimulation = useCallback(() => {
+    setState(prev => ({ ...prev, isPaused: false }));
+  }, []);
+
+  const resetSimulation = useCallback(() => {
+    setState(prev => ({
+      ...prev,
+      isRunning: false,
+      isPaused: false,
+      currentMonth: 0,
+      userDecisions: {},
+      achievements: [],
+    }));
+    if (state.chapterData && state.chapterData.timeline.length > 0) {
+      setCurrentMonthData(state.chapterData.timeline[0]);
+    }
+  }, [state.chapterData]);
+
+  const setSpeed = useCallback((speed: number) => {
+    setState(prev => ({ ...prev, speed }));
+  }, []);
+
+  const goToMonth = useCallback((month: number) => {
+    setState(prev => ({
+      ...prev,
+      currentMonth: Math.min(
+        month,
+        prev.chapterData?.chapterInfo.totalMonths || 60
+      ),
+    }));
+  }, []);
+
+  const recordDecision = useCallback((decision: string, value: any) => {
+    setState(prev => ({
+      ...prev,
+      userDecisions: {
+        ...prev.userDecisions,
+        [decision]: value,
+      },
+    }));
+  }, []);
+
+  const dismissTeachingPopup = useCallback(() => {
+    setState(prev => ({
+      ...prev,
+      showTeachingPopup: false,
+      currentTeachingMoment: null,
+    }));
+  }, []);
+
+  const skipToEnd = useCallback(() => {
+    setState(prev => ({
+      ...prev,
+      currentMonth: prev.chapterData?.chapterInfo.totalMonths || 60,
+      isRunning: false,
+    }));
+  }, []);
+
+  return (
+    <LongTermSimulationContext.Provider
+      value={{
+        state,
+        currentMonthData,
+        loadChapter,
+        startSimulation,
+        pauseSimulation,
+        resumeSimulation,
+        resetSimulation,
+        setSpeed,
+        goToMonth,
+        recordDecision,
+        dismissTeachingPopup,
+        skipToEnd,
+      }}
+    >
+      {children}
+    </LongTermSimulationContext.Provider>
+  );
+};

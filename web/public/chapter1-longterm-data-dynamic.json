@@ -1,0 +1,953 @@
+{
+  "chapterInfo": {
+    "chapterId": "longterm-chapter-1",
+    "title": "Introduction to Long-Term Investing",
+    "subtitle": "Build Your Own Investment Strategy",
+    "duration": 60,
+    "timeScale": "1 minute = 1 month",
+    "totalMonths": 60,
+    "difficulty": "Beginner",
+    "objectives": [
+      "Create your own investment distribution strategy",
+      "Experience market volatility and make decisions",
+      "Learn to rebalance your portfolio based on market conditions",
+      "Build discipline in systematic investing"
+    ],
+    "initialSetup": {
+      "userProfile": {
+        "name": "New Investor",
+        "age": 25,
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "initialSavings": 50000,
+        "emergencyFund": 0,
+        "riskProfile": "moderate"
+      },
+      "goalToAchieve": {
+        "targetAmount": 1500000,
+        "purpose": "Build Investment Corpus",
+        "timeframe": "5 years"
+      }
+    }
+  },
+  "availableInvestmentOptions": [
+    {
+      "id": "nifty50-index",
+      "name": "Nifty 50 Index Fund",
+      "type": "equity",
+      "category": "large-cap",
+      "description": "Tracks India's top 50 companies. Volatile but highest long-term returns.",
+      "minInvestment": 500,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "stcg": "15% if sold before 1 year",
+        "ltcg": "10% on gains above ₹1 lakh after 1 year"
+      },
+      "historicalReturn": "12% annually",
+      "riskLevel": "high",
+      "liquidity": "high",
+      "volatilityFactor": 1.0
+    },
+    {
+      "id": "government-bonds",
+      "name": "Government Bonds",
+      "type": "debt",
+      "category": "sovereign",
+      "description": "Safest investment backed by government. Low returns but stable.",
+      "minInvestment": 1000,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "interest": "Taxed as per income slab"
+      },
+      "historicalReturn": "6.5-7.5% annually",
+      "riskLevel": "very-low",
+      "liquidity": "high",
+      "volatilityFactor": 0.1
+    },
+    {
+      "id": "gold",
+      "name": "Digital Gold",
+      "type": "commodity",
+      "category": "precious-metal",
+      "description": "Hedge against inflation. Moderately volatile, safe haven asset.",
+      "minInvestment": 100,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "stcg": "As per income slab if sold before 3 years",
+        "ltcg": "20% with indexation after 3 years"
+      },
+      "historicalReturn": "8-10% annually",
+      "riskLevel": "moderate",
+      "liquidity": "high",
+      "volatilityFactor": 0.5
+    },
+    {
+      "id": "fixed-deposit",
+      "name": "Fixed Deposit",
+      "type": "debt",
+      "category": "fixed-income",
+      "description": "Guaranteed returns. Locked for 1 year minimum. Penalty on early withdrawal.",
+      "minInvestment": 10000,
+      "lockInPeriod": 12,
+      "taxImplication": {
+        "interest": "Taxed as per income slab, TDS applicable"
+      },
+      "historicalReturn": "6-7% annually",
+      "riskLevel": "very-low",
+      "liquidity": "low",
+      "volatilityFactor": 0,
+      "earlyWithdrawalPenalty": 0.5
+    },
+    {
+      "id": "savings-account",
+      "name": "Savings Account",
+      "type": "cash",
+      "category": "liquid",
+      "description": "Emergency fund. Instant access, minimal returns.",
+      "minInvestment": 0,
+      "lockInPeriod": 0,
+      "taxImplication": {
+        "interest": "Taxed as per income slab"
+      },
+      "historicalReturn": "3-4% annually",
+      "riskLevel": "none",
+      "liquidity": "instant",
+      "volatilityFactor": 0
+    }
+  ],
+  "timeline": [
+    {
+      "month": 0,
+      "timestamp": "0:00",
+      "realDate": "January 2021",
+      "events": [
+        {
+          "type": "simulation-start",
+          "title": "Welcome to Your Investment Journey!",
+          "description": "You're 25 years old with ₹50,000 in savings. You earn ₹50,000/month and can invest ₹20,000 after expenses. Build your investment strategy!",
+          "impact": "none",
+          "teachingMoment": {
+            "concept": "Investment Distribution Strategy",
+            "explanation": "You can distribute your monthly ₹20,000 across different assets: Index Funds (high risk, high returns), Government Bonds (safe, moderate returns), Gold (inflation hedge), and FD (locked, guaranteed returns).",
+            "tip": "Diversification reduces risk. Don't put all eggs in one basket!",
+            "actionRequired": "Set up your monthly investment distribution",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14000,
+        "nifty50MonthlyReturn": 0,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 4.5,
+        "goldPrice": 48000,
+        "goldMonthlyReturn": 0,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "neutral",
+        "volatilityIndex": 15
+      },
+      "news": [],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 1,
+      "timestamp": "1:00",
+      "realDate": "February 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Markets Rally on Positive News",
+          "description": "Index funds show healthy growth this month.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14200,
+        "nifty50MonthlyReturn": 1.43,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 4.5,
+        "goldPrice": 48200,
+        "goldMonthlyReturn": 0.42,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 12
+      },
+      "news": [
+        {
+          "headline": "Indian markets rally on positive economic data",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 1.43
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 2,
+      "timestamp": "2:00",
+      "realDate": "March 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Continued Upward Momentum",
+          "description": "Economic recovery drives market gains.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14555,
+        "nifty50MonthlyReturn": 2.5,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 4.6,
+        "goldPrice": 47800,
+        "goldMonthlyReturn": -0.83,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 11
+      },
+      "news": [
+        {
+          "headline": "Vaccination drive accelerates, economic recovery expected",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 2.5
+          }
+        },
+        {
+          "headline": "Gold weakens as investors move to equities",
+          "impact": "negative",
+          "affectedAssets": ["gold"],
+          "sentiment": "bearish",
+          "marketImpact": {
+            "gold": -0.83
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 3,
+      "timestamp": "3:00",
+      "realDate": "April 2021",
+      "events": [
+        {
+          "type": "market-correction",
+          "title": "Market Correction - Test Your Strategy!",
+          "description": "COVID-19 second wave causes a sharp market drop. Time to test your risk tolerance!",
+          "impact": "negative",
+          "teachingMoment": {
+            "concept": "Market Volatility & Staying Invested",
+            "explanation": "Corrections are normal. Index funds fell 5%, but your bonds and FDs remain stable. This is why diversification matters!",
+            "tip": "Don't panic sell during corrections. Markets always recover over the long term.",
+            "action": "Consider if you want to rebalance or stay the course",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 13827,
+        "nifty50MonthlyReturn": -5.0,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 4.8,
+        "goldPrice": 48500,
+        "goldMonthlyReturn": 1.46,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "negative",
+        "volatilityIndex": 28
+      },
+      "news": [
+        {
+          "headline": "COVID-19 second wave hits India, markets tumble",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bearish",
+          "marketImpact": {
+            "nifty50-index": -5.0
+          }
+        },
+        {
+          "headline": "Gold prices rise as investors seek safe haven",
+          "impact": "positive",
+          "affectedAssets": ["gold"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "gold": 1.46
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 4,
+      "timestamp": "4:00",
+      "realDate": "May 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Recovery Begins",
+          "description": "Markets bounce back as situation improves.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14244,
+        "nifty50MonthlyReturn": 3.0,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 5.0,
+        "goldPrice": 48200,
+        "goldMonthlyReturn": -0.62,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 18
+      },
+      "news": [
+        {
+          "headline": "Markets recover as COVID cases decline",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 3.0
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 5,
+      "timestamp": "5:00",
+      "realDate": "June 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Steady Progress",
+          "description": "Markets continue upward trajectory.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14530,
+        "nifty50MonthlyReturn": 2.0,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 4.9,
+        "goldPrice": 48000,
+        "goldMonthlyReturn": -0.41,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 14
+      },
+      "news": [
+        {
+          "headline": "RBI maintains accommodative stance, rates unchanged",
+          "impact": "neutral",
+          "affectedAssets": ["government-bonds", "fixed-deposit"],
+          "sentiment": "neutral",
+          "marketImpact": {}
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30000,
+        "availableToInvest": 20000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 1.5
+      }
+    },
+    {
+      "month": 6,
+      "timestamp": "6:00",
+      "realDate": "July 2021",
+      "events": [
+        {
+          "type": "market-movement",
+          "title": "Strong Corporate Earnings",
+          "description": "Companies report strong quarterly results.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 14965,
+        "nifty50MonthlyReturn": 3.0,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 5.1,
+        "goldPrice": 47800,
+        "goldMonthlyReturn": -0.42,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 12
+      },
+      "news": [
+        {
+          "headline": "Corporate earnings beat estimates, market optimism rises",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 3.0
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 30450,
+        "availableToInvest": 19550,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 12,
+      "timestamp": "12:00",
+      "realDate": "January 2022",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "First Year Complete! 🎉",
+          "description": "Review your portfolio performance and strategy.",
+          "teachingMoment": {
+            "concept": "Annual Review",
+            "explanation": "Take time to review your returns, asset allocation, and rebalance if needed.",
+            "tip": "Consider if your current distribution still aligns with your goals",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 15400,
+        "nifty50MonthlyReturn": 2.8,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.5,
+        "fdMonthlyReturn": 0.54,
+        "inflationRate": 5.2,
+        "goldPrice": 48500,
+        "goldMonthlyReturn": 1.04,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 13
+      },
+      "news": [
+        {
+          "headline": "Budget 2022 focuses on infrastructure, markets rally",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 2.8
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 50000,
+        "monthlyExpenses": 31000,
+        "availableToInvest": 19000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 18,
+      "timestamp": "18:00",
+      "realDate": "July 2022",
+      "events": [
+        {
+          "type": "personal-event",
+          "title": "Salary Increment! 🎊",
+          "description": "You received a 10% salary hike. New salary: ₹55,000/month.",
+          "impact": "positive",
+          "teachingMoment": {
+            "concept": "Increase Your SIP with Income",
+            "explanation": "When your income grows, increase your investments to avoid lifestyle inflation.",
+            "tip": "You now have more available to invest. Consider increasing your monthly allocation!",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 15800,
+        "nifty50MonthlyReturn": 1.5,
+        "governmentBondsRate": 6.8,
+        "governmentBondsMonthlyReturn": 0.57,
+        "fdRate": 6.8,
+        "fdMonthlyReturn": 0.57,
+        "inflationRate": 6.5,
+        "goldPrice": 50000,
+        "goldMonthlyReturn": 2.04,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "neutral",
+        "volatilityIndex": 16
+      },
+      "news": [
+        {
+          "headline": "Inflation concerns weigh on markets",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bearish",
+          "marketImpact": {
+            "nifty50-index": 1.5
+          }
+        },
+        {
+          "headline": "Gold surges amid inflation fears",
+          "impact": "positive",
+          "affectedAssets": ["gold"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "gold": 2.04
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 55000,
+        "monthlyExpenses": 32000,
+        "availableToInvest": 23000,
+        "salaryChangePercent": 10,
+        "expensesChangePercent": 3
+      }
+    },
+    {
+      "month": 24,
+      "timestamp": "24:00",
+      "realDate": "January 2023",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "2 Years of Investing! 💪",
+          "description": "You've built significant discipline in investing.",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 16500,
+        "nifty50MonthlyReturn": 3.2,
+        "governmentBondsRate": 7.0,
+        "governmentBondsMonthlyReturn": 0.58,
+        "fdRate": 7.0,
+        "fdMonthlyReturn": 0.58,
+        "inflationRate": 6.0,
+        "goldPrice": 51000,
+        "goldMonthlyReturn": 1.64,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 11
+      },
+      "news": [
+        {
+          "headline": "Markets hit new highs on economic optimism",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 3.2
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 55000,
+        "monthlyExpenses": 32500,
+        "availableToInvest": 22500,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 1.5
+      }
+    },
+    {
+      "month": 36,
+      "timestamp": "36:00",
+      "realDate": "January 2024",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "3 Years Milestone! 🎯",
+          "description": "Your long-term strategy is paying off!",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 17200,
+        "nifty50MonthlyReturn": 2.5,
+        "governmentBondsRate": 7.2,
+        "governmentBondsMonthlyReturn": 0.6,
+        "fdRate": 7.2,
+        "fdMonthlyReturn": 0.6,
+        "inflationRate": 5.5,
+        "goldPrice": 52000,
+        "goldMonthlyReturn": 1.96,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 10
+      },
+      "news": [
+        {
+          "headline": "Strong GDP growth drives market confidence",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 2.5
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 55000,
+        "monthlyExpenses": 33000,
+        "availableToInvest": 22000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 0
+      }
+    },
+    {
+      "month": 42,
+      "timestamp": "42:00",
+      "realDate": "July 2024",
+      "events": [
+        {
+          "type": "market-correction",
+          "title": "Major Market Correction! ⚠️",
+          "description": "Global economic slowdown causes sharp market fall.",
+          "impact": "negative",
+          "teachingMoment": {
+            "concept": "Market Cycles",
+            "explanation": "After 3+ years of growth, corrections are healthy. Your diversified portfolio cushions the impact.",
+            "tip": "This is when rupee cost averaging shines - you're buying at lower prices!",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 15824,
+        "nifty50MonthlyReturn": -8.0,
+        "governmentBondsRate": 7.2,
+        "governmentBondsMonthlyReturn": 0.6,
+        "fdRate": 7.2,
+        "fdMonthlyReturn": 0.6,
+        "inflationRate": 5.8,
+        "goldPrice": 54000,
+        "goldMonthlyReturn": 3.85,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "negative",
+        "volatilityIndex": 32
+      },
+      "news": [
+        {
+          "headline": "Global recession fears trigger market selloff",
+          "impact": "negative",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bearish",
+          "marketImpact": {
+            "nifty50-index": -8.0
+          }
+        },
+        {
+          "headline": "Safe-haven demand boosts gold prices",
+          "impact": "positive",
+          "affectedAssets": ["gold"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "gold": 3.85
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 60000,
+        "monthlyExpenses": 33500,
+        "availableToInvest": 26500,
+        "salaryChangePercent": 9,
+        "expensesChangePercent": 1.5
+      }
+    },
+    {
+      "month": 48,
+      "timestamp": "48:00",
+      "realDate": "January 2025",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "4 Years Complete! 🏆",
+          "description": "You've weathered multiple market cycles!",
+          "impact": "positive"
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 17600,
+        "nifty50MonthlyReturn": 4.2,
+        "governmentBondsRate": 7.5,
+        "governmentBondsMonthlyReturn": 0.625,
+        "fdRate": 7.5,
+        "fdMonthlyReturn": 0.625,
+        "inflationRate": 5.2,
+        "goldPrice": 53500,
+        "goldMonthlyReturn": -0.93,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 13
+      },
+      "news": [
+        {
+          "headline": "Markets roar back with strong recovery",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 4.2
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 60000,
+        "monthlyExpenses": 34000,
+        "availableToInvest": 26000,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 1.5
+      }
+    },
+    {
+      "month": 60,
+      "timestamp": "60:00",
+      "realDate": "January 2026",
+      "events": [
+        {
+          "type": "milestone",
+          "title": "5 Years Complete! 🌟 Journey Finished!",
+          "description": "Congratulations! Review your total returns and learnings.",
+          "impact": "positive",
+          "teachingMoment": {
+            "concept": "The Power of Long-Term Investing",
+            "explanation": "You've experienced real market cycles, learned to manage emotions, and built wealth systematically.",
+            "tip": "Your final portfolio value depends on the decisions you made along the way!",
+            "popupTiming": "immediate"
+          }
+        }
+      ],
+      "marketData": {
+        "nifty50Index": 18300,
+        "nifty50MonthlyReturn": 3.0,
+        "governmentBondsRate": 7.5,
+        "governmentBondsMonthlyReturn": 0.625,
+        "fdRate": 7.5,
+        "fdMonthlyReturn": 0.625,
+        "inflationRate": 4.8,
+        "goldPrice": 54000,
+        "goldMonthlyReturn": 0.93,
+        "savingsAccountRate": 3.5,
+        "savingsAccountMonthlyReturn": 0.29,
+        "sentiment": "positive",
+        "volatilityIndex": 11
+      },
+      "news": [
+        {
+          "headline": "Economy reaches new heights, markets celebrate",
+          "impact": "positive",
+          "affectedAssets": ["nifty50-index"],
+          "sentiment": "bullish",
+          "marketImpact": {
+            "nifty50-index": 3.0
+          }
+        }
+      ],
+      "salaryExpenses": {
+        "monthlySalary": 60000,
+        "monthlyExpenses": 34500,
+        "availableToInvest": 25500,
+        "salaryChangePercent": 0,
+        "expensesChangePercent": 1.5
+      }
+    }
+  ],
+  "quiz": {
+    "title": "Chapter 1 Quiz: Test Your Knowledge",
+    "passingScore": 7,
+    "totalQuestions": 10,
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which asset class showed the highest volatility during market corrections?",
+        "options": [
+          "Fixed Deposits",
+          "Nifty 50 Index Fund",
+          "Government Bonds",
+          "Savings Account"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Index funds are equity-based and experience the highest volatility, but also offer the highest long-term returns."
+      },
+      {
+        "id": 2,
+        "question": "What happens if you withdraw from a Fixed Deposit before maturity?",
+        "options": [
+          "You get full returns",
+          "You lose 50% of the returns",
+          "You lose all returns",
+          "You get bonus returns"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Early FD withdrawal typically incurs a penalty of about 0.5-1% of returns as specified in the terms."
+      },
+      {
+        "id": 3,
+        "question": "During the market correction in Month 42, which asset performed best?",
+        "options": [
+          "Nifty 50 Index",
+          "Government Bonds",
+          "Gold",
+          "Fixed Deposit"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Gold acts as a safe haven during market turmoil and showed positive returns when equity markets fell."
+      },
+      {
+        "id": 4,
+        "question": "What is the main benefit of portfolio diversification?",
+        "options": [
+          "Higher guaranteed returns",
+          "Zero risk",
+          "Reduced overall portfolio volatility",
+          "Tax savings"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Diversification reduces risk by spreading investments across different asset classes that react differently to market conditions."
+      },
+      {
+        "id": 5,
+        "question": "How does inflation affect your real returns?",
+        "options": [
+          "It has no effect",
+          "It reduces the purchasing power of returns",
+          "It increases returns",
+          "It only affects equity"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Inflation erodes the real value of money. A 10% return with 5% inflation means your real return is only about 5%."
+      },
+      {
+        "id": 6,
+        "question": "What should you do when you receive a salary increment?",
+        "options": [
+          "Keep investment same",
+          "Stop investing",
+          "Increase your monthly investment",
+          "Withdraw all investments"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Increasing investments with income growth helps you build wealth faster without affecting your lifestyle."
+      },
+      {
+        "id": 7,
+        "question": "Which investment option has the highest liquidity?",
+        "options": [
+          "Fixed Deposit",
+          "Government Bonds",
+          "Savings Account",
+          "Index Fund"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Savings accounts offer instant liquidity with no lock-in period or withdrawal penalties."
+      },
+      {
+        "id": 8,
+        "question": "What is the lock-in period for Fixed Deposits in this simulation?",
+        "options": [
+          "0 months",
+          "6 months",
+          "12 months",
+          "24 months"
+        ],
+        "correctAnswer": 2,
+        "explanation": "FDs have a 12-month lock-in period. Early withdrawal results in penalty."
+      },
+      {
+        "id": 9,
+        "question": "During market corrections, what's the best strategy?",
+        "options": [
+          "Sell everything immediately",
+          "Stop all investments",
+          "Continue investing to buy at lower prices",
+          "Move everything to cash"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Continuing to invest during corrections helps you buy more units at lower prices (rupee cost averaging)."
+      },
+      {
+        "id": 10,
+        "question": "What was the primary learning from this chapter?",
+        "options": [
+          "Only invest in one asset",
+          "Timing the market is essential",
+          "Systematic investing with diversification builds wealth",
+          "Avoid equity completely"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The chapter demonstrates that regular, disciplined investing across diversified assets is the key to long-term wealth creation."
+      }
+    ]
+  }
+}
