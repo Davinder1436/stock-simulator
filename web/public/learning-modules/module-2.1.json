@@ -1,0 +1,1014 @@
+{
+  "module_metadata": {
+    "module_id": "2.1",
+    "level": 2,
+    "level_name": "Corporate & Investment Fundamentals",
+    "module_title": "Companies & Shareholding Basics",
+    "module_description": "Understand what companies are, how they're structured, and what it means to own shares",
+    "estimated_duration_minutes": 52,
+    "difficulty": "beginner",
+    "prerequisites": ["1.1", "1.2", "1.3", "1.4"],
+    "learning_objectives": [
+      "Understand different types of business structures",
+      "Learn what shares represent and shareholder rights",
+      "Grasp public vs private companies",
+      "Understand how companies raise capital",
+      "Learn about dividends and share valuation basics"
+    ],
+    "total_lessons": 6,
+    "total_quiz_questions": 12,
+    "pass_percentage": 70,
+    "next_module": "2.2"
+  },
+  "lessons": [
+    {
+      "lesson_id": "2.1.1",
+      "lesson_number": 1,
+      "title": "Business Structures",
+      "subtitle": "From Sole Proprietor to Corporation",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Before understanding shares, you need to understand how businesses are structured. The structure determines ownership, liability, taxation, and how capital is raised."
+        },
+        {
+          "type": "definition",
+          "term": "Business Structure",
+          "definition": "The legal organization of a business that defines ownership, liability, taxation, and operational framework."
+        },
+        {
+          "type": "property_grid",
+          "properties": [
+            {
+              "property": "Sole Proprietorship",
+              "description": "One person owns and runs the business",
+              "good_example": "Local shop, freelancer, consultant",
+              "bad_example": "Owner personally liable for all debts. No separation between personal and business assets.",
+              "icon": "user"
+            },
+            {
+              "property": "Partnership",
+              "description": "Two or more people share ownership",
+              "good_example": "Law firms, CA firms, small businesses",
+              "bad_example": "Partners share profits and liabilities. Can be general or limited partnership.",
+              "icon": "users"
+            },
+            {
+              "property": "Limited Liability Partnership (LLP)",
+              "description": "Partners have limited personal liability",
+              "good_example": "Professional services, startups",
+              "bad_example": "Popular in India. Partners not personally liable for other partners' misconduct.",
+              "icon": "shield"
+            },
+            {
+              "property": "Private Limited Company (Pvt Ltd)",
+              "description": "Separate legal entity, shares not publicly traded",
+              "good_example": "Most startups, small-medium businesses",
+              "bad_example": "Limited liability, can't sell shares to public, max 200 shareholders.",
+              "icon": "briefcase"
+            },
+            {
+              "property": "Public Limited Company (Ltd/PLC)",
+              "description": "Can sell shares to public through stock exchanges",
+              "good_example": "TCS, Reliance, Infosys - listed companies",
+              "bad_example": "Strict regulations, transparent reporting, unlimited shareholders.",
+              "icon": "building"
+            },
+            {
+              "property": "One Person Company (OPC)",
+              "description": "Single owner with limited liability",
+              "good_example": "Solo entrepreneurs wanting corporate protection",
+              "bad_example": "Introduced in 2013 in India. Best of sole proprietor + Pvt Ltd.",
+              "icon": "award"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Sole Proprietorship vs Private Limited",
+          "items": [
+            {
+              "aspect": "Liability",
+              "sole_proprietor": "Unlimited - personal assets at risk",
+              "private_limited": "Limited - only investment at risk",
+              "advantage": "Pvt Ltd protects personal wealth"
+            },
+            {
+              "aspect": "Ownership Transfer",
+              "sole_proprietor": "Cannot sell business separately",
+              "private_limited": "Can sell shares",
+              "advantage": "Pvt Ltd offers flexibility"
+            },
+            {
+              "aspect": "Raising Capital",
+              "sole_proprietor": "Very difficult, personal loans only",
+              "private_limited": "Can raise from investors, VCs",
+              "advantage": "Pvt Ltd attracts investment"
+            },
+            {
+              "aspect": "Compliance",
+              "sole_proprietor": "Minimal paperwork",
+              "private_limited": "Annual filings, audits required",
+              "advantage": "Sole proprietor is simpler"
+            },
+            {
+              "aspect": "Credibility",
+              "sole_proprietor": "Lower perception",
+              "private_limited": "Higher trust with clients/banks",
+              "advantage": "Pvt Ltd builds confidence"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Evolution of a Business",
+          "content": "Raj starts as freelance web developer (Sole Proprietor):\n\nYear 1: Just him, ₹5 lakh revenue\n→ Sole Proprietorship works fine\n\nYear 2: Hires 2 developers, ₹25 lakh revenue\n→ Forms Partnership with co-founder\n\nYear 3: Client sues for ₹50 lakh over contract dispute\n→ Partnership means personal assets at risk! Converts to LLP for protection\n\nYear 5: Revenue ₹2 crores, wants VC funding\n→ Converts to Private Limited Company. Raises ₹5 crore at ₹20 crore valuation\n\nYear 8: Revenue ₹100 crores, ready to scale\n→ Goes public (IPO), becomes Public Limited Company, raises ₹500 crores\n\nEach structure served its purpose at that stage."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Sole proprietor is simplest but personally risky",
+            "Private Limited offers liability protection and investor appeal",
+            "Public Limited can access public markets through stock exchanges",
+            "Structure choice depends on size, growth plans, and risk tolerance",
+            "Most startups begin as Pvt Ltd for flexibility and protection"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Which business structure offers limited liability to a single owner?",
+        "options": [
+          "Sole Proprietorship",
+          "Partnership",
+          "One Person Company (OPC)",
+          "General Partnership"
+        ],
+        "correct_answer": 2,
+        "explanation": "One Person Company (OPC) provides limited liability protection to a single owner, combining the benefits of sole proprietorship's simplicity with private limited company's protection."
+      }
+    },
+    {
+      "lesson_id": "2.1.2",
+      "lesson_number": 2,
+      "title": "What Are Shares?",
+      "subtitle": "Ownership Units of a Company",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "When you buy a share, you're buying a piece of a company. You become a part-owner, with rights and responsibilities. Understanding what shares represent is fundamental to investing."
+        },
+        {
+          "type": "definition",
+          "term": "Share (Stock/Equity)",
+          "definition": "A unit of ownership in a company, representing a claim on the company's assets and earnings. Also called stock or equity."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "What Shares Represent",
+          "pillars": [
+            {
+              "pillar": "1. Ownership",
+              "description": "You own a fraction of the company",
+              "explanation": "If company has 1 crore shares and you own 1 lakh shares:\n• You own 1% of the company\n• You own 1% of all assets (buildings, cash, inventory)\n• You own 1% of future profits\n\nExample: Own 1% of Reliance = You own 1% of all their refineries, telecom towers, retail stores!",
+              "strength": "Proportional ownership of everything"
+            },
+            {
+              "pillar": "2. Voting Rights",
+              "description": "Say in company decisions",
+              "explanation": "• Vote in Annual General Meetings (AGM)\n• Elect Board of Directors\n• Approve major decisions (mergers, acquisitions)\n• One share = one vote (usually)\n\nNote: Some companies have different share classes with different voting rights.",
+              "strength": "Democratic control"
+            },
+            {
+              "pillar": "3. Profit Participation",
+              "description": "Share in company's success",
+              "explanation": "Two ways to earn:\n\n1. **Dividends**: Company distributes portion of profits to shareholders\n2. **Capital Appreciation**: Share price increases as company grows\n\nExample: Buy at ₹100, company grows, sell at ₹300 + received ₹20 in dividends = ₹220 total gain!",
+              "strength": "Wealth creation mechanism"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Calculating Your Ownership",
+          "formula": "Ownership % = (Your Shares / Total Shares Outstanding) × 100",
+          "example": "TCS has 369 crore shares outstanding.\nYou buy 10,000 shares.\n\nYour ownership = (10,000 / 369,00,00,000) × 100\n               = 0.0027%\n\nYou own 0.0027% of TCS!\n\nSounds tiny? If TCS profit is ₹40,000 crores:\nYour share of profit = ₹40,000 crore × 0.0027%\n                      = ₹1.08 crores worth of earnings attributed to your shares!",
+          "note": "You don't get this cash directly—it's either paid as dividend or reinvested for growth."
+        },
+        {
+          "type": "comparison",
+          "title": "Types of Shares",
+          "items": [
+            {
+              "type": "Equity Shares (Common Stock)",
+              "rights": "Voting, dividends (variable), capital gains",
+              "risk": "High - last to get paid in bankruptcy",
+              "return": "Potentially unlimited upside",
+              "typical": "Most shares you see on stock market"
+            },
+            {
+              "type": "Preference Shares (Preferred Stock)",
+              "rights": "Fixed dividend, priority over equity, limited/no voting",
+              "risk": "Lower - paid before equity holders",
+              "return": "Fixed dividend like bond + some upside",
+              "typical": "Less common, more bond-like"
+            },
+            {
+              "type": "Bonus Shares",
+              "rights": "Free shares from company reserves",
+              "risk": "No additional risk",
+              "return": "More shares, same ownership %",
+              "typical": "Reward to shareholders"
+            },
+            {
+              "type": "Rights Shares",
+              "rights": "Option to buy more shares at discount",
+              "risk": "Optional - can ignore",
+              "return": "Maintain ownership % as company expands",
+              "typical": "When company raises more capital"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real Share Ownership",
+          "content": "You buy 100 shares of Infosys at ₹1,500 = ₹1,50,000 investment\n\nInfosys total shares: 424 crore\nYour ownership: 100 / 424,00,00,000 = 0.0000024%\n\n**What you own:**\n• 0.0000024% of ₹63,000 crore market cap = ₹1,50,000 ✓\n• 0.0000024% of all offices globally\n• 0.0000024% of ₹23,000 crore cash reserves\n• 0.0000024% of future profits\n\n**Your rights:**\n• Receive annual report\n• Vote in AGM (100 votes)\n• Receive dividends (₹16/share last year = ₹1,600)\n• Sell anytime on stock exchange\n\n**Your obligations:**\n• None! Limited liability. Can't lose more than ₹1,50,000."
+        },
+        {
+          "type": "insight",
+          "title": "Why Companies Issue Shares",
+          "content": "Companies issue shares to raise capital without taking debt:\n\n**Advantages for Company:**\n• No interest payments (unlike loans)\n• No repayment required (unlike loans)\n• Shared risk with investors\n• Can raise massive amounts (Paytm IPO: ₹18,300 crores!)\n\n**Cost to Company:**\n• Dilution - founders own smaller %\n• Loss of control if too many shares sold\n• Pressure from shareholders for profits\n• Disclosure requirements\n\nCompanies balance between selling shares (dilution) and taking loans (interest burden)."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Shares represent fractional ownership of a company",
+            "Shareholders have voting rights and profit participation",
+            "Returns come from dividends and price appreciation",
+            "Equity shares have voting rights; preference shares have priority",
+            "Limited liability - you can't lose more than your investment"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "If a company has 10 crore shares and you own 50,000 shares, what % do you own?",
+        "options": [
+          "0.005%",
+          "0.05%",
+          "0.5%",
+          "5%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Ownership = (50,000 / 10,00,00,000) × 100 = 0.05%. You own half of one-tenth of one percent of the company."
+      }
+    },
+    {
+      "lesson_id": "2.1.3",
+      "lesson_number": 3,
+      "title": "Public vs Private Companies",
+      "subtitle": "Listed and Unlisted Shares",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Not all companies can be bought and sold on stock exchanges. The difference between public and private companies determines who can invest and how shares are traded."
+        },
+        {
+          "type": "comparison",
+          "title": "Private vs Public Companies",
+          "items": [
+            {
+              "aspect": "Share Trading",
+              "private": "Cannot sell on stock exchange",
+              "public": "Listed on BSE/NSE, trade freely",
+              "winner": "Public = Liquidity"
+            },
+            {
+              "aspect": "Who Can Invest",
+              "private": "Limited to founders, VCs, invited investors",
+              "public": "Anyone can buy through stock exchange",
+              "winner": "Public = Access"
+            },
+            {
+              "aspect": "Regulations",
+              "private": "Minimal disclosure requirements",
+              "public": "Quarterly reports, strict SEBI compliance",
+              "winner": "Private = Privacy"
+            },
+            {
+              "aspect": "Share Price",
+              "private": "Negotiated between parties, illiquid",
+              "public": "Market-determined every second",
+              "winner": "Public = Fair price discovery"
+            },
+            {
+              "aspect": "Cost of Operation",
+              "private": "Lower compliance costs",
+              "public": "High - audits, reporting, governance",
+              "winner": "Private = Cheaper"
+            },
+            {
+              "aspect": "Raising Capital",
+              "private": "Limited to private investors",
+              "public": "Can tap public markets easily",
+              "winner": "Public = Easier fundraising"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Going Public: The IPO Journey",
+          "pillars": [
+            {
+              "pillar": "Why Companies Go Public",
+              "description": "Multiple strategic reasons",
+              "explanation": "1. **Raise Capital**: Billions from public investors\n2. **Liquidity**: Early investors and employees can sell\n3. **Valuation**: Market determines fair value\n4. **Credibility**: Public companies have higher trust\n5. **Currency for M&A**: Use shares to acquire other companies\n6. **Employee rewards**: Stock options become valuable\n\nExample: Zomato went public to raise ₹9,375 crores for expansion and provide exit to early investors.",
+              "strength": "Transforms private startup to public corporation"
+            },
+            {
+              "pillar": "Requirements for IPO in India",
+              "description": "SEBI eligibility criteria",
+              "explanation": "• Track record: 3 years of operation\n• Profitability: Positive cash flows (or growth potential)\n• Minimum issue size: ₹10 crores\n• Net worth: Minimum ₹1 crore in 3 of last 5 years\n• Promoter holding: Min 20% pre-issue\n• Clean governance: No major fraud/violations\n\nProcess takes 4-6 months, costs 3-7% of funds raised.",
+              "strength": "Quality control before public listing"
+            },
+            {
+              "pillar": "Post-IPO Obligations",
+              "description": "Ongoing compliance burden",
+              "explanation": "• Quarterly financial results (within 45 days)\n• Annual audited accounts\n• Immediate disclosure of material events\n• Board composition rules (independent directors)\n• Insider trading restrictions\n• AGM and shareholder rights\n\nCost: ₹1-5 crores annually for compliance",
+              "strength": "Transparency protects investors"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Zomato's Public Journey",
+          "content": "**Pre-IPO (Private Company):**\n• Founded 2008, raised from Sequoia, Ant Financial, others\n• Valuation in private rounds: $3.9 billion (₹29,000 crores)\n• Shares illiquid - only specialized investors could buy\n• No public disclosure of finances\n\n**IPO (July 2021):**\n• Raised ₹9,375 crores at ₹76/share\n• Market cap: ₹60,000 crores\n• Everyone could buy - from ₹15,000 investment\n• Listed on BSE/NSE\n\n**Post-IPO:**\n• Share price fluctuated ₹76 → ₹150 → ₹40 → ₹110 (volatility!)\n• Quarterly results public - losses visible to all\n• Anyone can now invest/exit daily\n• Permanent scrutiny from analysts, media, SEBI"
+        },
+        {
+          "type": "process_flow",
+          "title": "Typical Company Evolution",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Startup (Private)",
+              "description": "Founders bootstrap or raise from friends/family. Company worth ₹1-5 crores.",
+              "money_supply": "Personal savings, angel investors"
+            },
+            {
+              "step": 2,
+              "title": "Series A/B/C (Private)",
+              "description": "Venture capital rounds. Valuation grows ₹50 crores → ₹500 crores → ₹2,000 crores.",
+              "money_supply": "VCs like Sequoia, Accel invest"
+            },
+            {
+              "step": 3,
+              "title": "Late Stage (Private)",
+              "description": "Large PE funds invest. Valuation ₹5,000+ crores. Profitable or near-profitable.",
+              "money_supply": "SoftBank, Tiger Global type investors"
+            },
+            {
+              "step": 4,
+              "title": "IPO (Going Public)",
+              "description": "List on stock exchange. Valuation ₹10,000+ crores. Retail investors can buy.",
+              "money_supply": "Public raises ₹1,000-10,000+ crores"
+            },
+            {
+              "step": 5,
+              "title": "Mature Public Company",
+              "description": "Established, stable, possibly dividend-paying. Part of indices like Nifty 50.",
+              "money_supply": "Can raise follow-on public offerings"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "Unlisted Share Trading",
+          "scenarios": [
+            {
+              "scenario": "Pre-IPO Companies",
+              "description": "Companies like Byju's, OYO, Ola (before IPO) have unlisted shares trading in grey market.",
+              "effect": "Can buy, but risky - no regulation, hard to sell, price not transparent"
+            },
+            {
+              "scenario": "Employee ESOPs",
+              "description": "Startup employees get stock options. Can't sell until IPO or company buyback.",
+              "effect": "Illiquid wealth - millionaire on paper but can't access money"
+            },
+            {
+              "scenario": "Private Equity",
+              "description": "Wealthy investors buy stakes in private companies directly. Min investment ₹1-10 crores.",
+              "effect": "High risk, high return, very illiquid (5-10 year hold)"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Private companies have restricted ownership; public companies trade freely",
+            "IPO is the process of going from private to public",
+            "Public companies face strict disclosure and governance requirements",
+            "Liquidity is the biggest advantage of public markets",
+            "Most startups stay private 8-12 years before IPO"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the main advantage of a company going public through an IPO?",
+        "options": [
+          "Lower taxes",
+          "Less regulation",
+          "Ability to raise large capital and provide liquidity",
+          "Guaranteed profits"
+        ],
+        "correct_answer": 2,
+        "explanation": "IPO allows companies to raise significant capital from public investors and provides liquidity for early investors and employees to sell shares. It comes with increased regulation, not less."
+      }
+    },
+    {
+      "lesson_id": "2.1.4",
+      "lesson_number": 4,
+      "title": "How Companies Raise Money",
+      "subtitle": "Primary Markets and Capital Formation",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Companies need capital to grow—build factories, hire people, expand to new markets. They can borrow (debt) or sell ownership (equity). Understanding capital raising is key to evaluating investment opportunities."
+        },
+        {
+          "type": "comparison",
+          "title": "Debt vs Equity Financing",
+          "items": [
+            {
+              "method": "Debt (Loans/Bonds)",
+              "ownership": "No dilution - lenders aren't owners",
+              "repayment": "Must repay with interest",
+              "risk_to_company": "Fixed obligation - must pay even in losses",
+              "cost": "Interest expense (tax-deductible)",
+              "best_for": "Established companies with steady cash flow"
+            },
+            {
+              "method": "Equity (Shares)",
+              "ownership": "Dilution - new shareholders own part",
+              "repayment": "No repayment required ever",
+              "risk_to_company": "Shared with investors - no fixed obligation",
+              "cost": "Dilution + dividend expectations",
+              "best_for": "High-growth startups, expansion plans"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Types of Equity Fundraising",
+          "pillars": [
+            {
+              "pillar": "1. Initial Public Offering (IPO)",
+              "description": "First time selling to public",
+              "explanation": "Company's debut on stock exchange:\n\n• **Fresh Issue**: Company creates new shares, gets the money\n• **Offer for Sale (OFS)**: Existing shareholders sell their shares, company gets nothing\n• **Mix**: Usually combination of both\n\nExample: Paytm IPO (2021)\n• Fresh issue: ₹8,300 crores → Company gets this\n• OFS: ₹10,000 crores → Early investors encash\n• Total: ₹18,300 crores IPO",
+              "strength": "Transforms company forever"
+            },
+            {
+              "pillar": "2. Follow-on Public Offering (FPO)",
+              "description": "Already listed company raises more",
+              "explanation": "After IPO, company can raise again:\n\n• Dilutes existing shareholders further\n• Usually at market price or small discount\n• Common for banks, capital-intensive businesses\n\nExample: Yes Bank FPO (2020) raised ₹15,000 crores to recover from crisis",
+              "strength": "Access to capital without new debt"
+            },
+            {
+              "pillar": "3. Rights Issue",
+              "description": "Offer to existing shareholders first",
+              "explanation": "Company offers new shares to current shareholders:\n\n• In proportion to existing holdings\n• Usually at 10-20% discount to market price\n• Can accept, sell rights, or ignore\n\nExample: Own 100 shares, company offers 1:4 rights\n• You can buy 25 more shares at discount\n• Or sell your right to someone else",
+              "strength": "Protects existing shareholders from dilution"
+            },
+            {
+              "pillar": "4. Qualified Institutional Placement (QIP)",
+              "description": "Sell to institutions only",
+              "explanation": "Listed companies can sell to:\n\n• Mutual funds, insurance companies, FIIs\n• Minimum ₹2 lakh per investor\n• Faster, cheaper than public offering\n• Retail investors excluded\n\nExample: Reliance QIP (2020) raised ₹53,125 crores from institutions",
+              "strength": "Quick, large capital from sophisticated investors"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Reliance's Capital Raising Marathon (2020)",
+          "content": "Reliance needed capital to reduce debt:\n\n**April-July 2020:**\n• Facebook: ₹43,574 crores for 9.99% of Jio\n• Google: ₹33,737 crores for 7.73% of Jio\n• Silver Lake, Vista, others: ₹75,000+ crores\n• Rights Issue: ₹53,125 crores from existing shareholders\n\n**Total raised: ₹2,00,000+ CRORES in 4 months!**\n\n**Result:**\n• Debt reduced from ₹1.6 lakh crores to ₹80,000 crores\n• Promoter ownership diluted from 50% to 45%\n• Company became debt-free by 2021\n\nThis shows the power of equity markets for capital access."
+        },
+        {
+          "type": "formula",
+          "title": "Understanding Dilution",
+          "formula": "New Ownership % = Old Shares / (Old Shares + New Shares Issued)",
+          "example": "You own 10,000 shares of company with 1 crore total shares.\nYour ownership: 10,000 / 1,00,00,000 = 0.01%\n\nCompany raises capital by issuing 50 lakh new shares:\n\nYour new ownership:\n= 10,000 / (1,00,00,000 + 50,00,000)\n= 10,000 / 1,50,00,000\n= 0.0067%\n\nYou were diluted from 0.01% to 0.0067% (33% dilution!)\n\nHowever, if the capital raised grows company value by more than dilution, you still win.",
+          "note": "Dilution is okay if capital is used productively to grow the business."
+        },
+        {
+          "type": "real_world",
+          "title": "When Capital Raising Goes Wrong",
+          "scenarios": [
+            {
+              "scenario": "Kingfisher Airlines",
+              "description": "Repeatedly raised capital (loans + equity) but business model was broken. Money went into operations, not growth.",
+              "effect": "Eventually collapsed. Investors lost everything."
+            },
+            {
+              "scenario": "WeWork IPO Attempt",
+              "description": "Tried to raise $3 billion at $47B valuation. Prospectus revealed massive losses, questionable governance.",
+              "effect": "IPO cancelled. Valuation crashed from $47B to $8B. CEO ousted."
+            },
+            {
+              "scenario": "Successful Example: TCS",
+              "description": "TCS rarely raises capital—generates profits to fund growth. IPO was in 2004, hasn't needed capital since.",
+              "effect": "Best companies rarely need capital. Consistent profit generation."
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Companies raise capital through debt (loans) or equity (shares)",
+            "IPO is first public offering; FPO is subsequent capital raise",
+            "Rights issues protect existing shareholders from dilution",
+            "Dilution reduces your ownership % but can be beneficial if capital is used well",
+            "Best companies generate profits and rarely need external capital"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What happens to your ownership percentage when a company issues new shares?",
+        "options": [
+          "It increases",
+          "It stays the same",
+          "It gets diluted (decreases)",
+          "It doubles"
+        ],
+        "correct_answer": 2,
+        "explanation": "When a company issues new shares, your ownership percentage gets diluted because your fixed number of shares now represents a smaller portion of a larger total share count."
+      }
+    },
+    {
+      "lesson_id": "2.1.5",
+      "lesson_number": 5,
+      "title": "Dividends: Sharing Profits",
+      "subtitle": "How Companies Return Cash to Shareholders",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Dividends are cash payments companies make to shareholders from profits. It's one of two ways you earn from shares (the other being price appreciation). Understanding dividends helps evaluate income-generating investments."
+        },
+        {
+          "type": "definition",
+          "term": "Dividend",
+          "definition": "A portion of company profits distributed to shareholders, usually as cash payment per share, decided by the board of directors."
+        },
+        {
+          "type": "formula",
+          "title": "Key Dividend Metrics",
+          "formula": "Dividend Yield = (Annual Dividend per Share / Share Price) × 100\n\nDividend Payout Ratio = (Total Dividends / Net Profit) × 100",
+          "example": "Coal India:\n• Share price: ₹250\n• Annual dividend: ₹20/share\n• Net profit: ₹30,000 crores\n• Total dividends paid: ₹13,000 crores\n\nDividend Yield = (20 / 250) × 100 = 8%\n(You earn 8% annually from dividends alone!)\n\nPayout Ratio = (13,000 / 30,000) × 100 = 43%\n(Company distributes 43% of profits, retains 57% for growth)",
+          "note": "High yield is good for income, but check if it's sustainable."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Dividend Types",
+          "pillars": [
+            {
+              "pillar": "Interim Dividend",
+              "description": "Paid during the year",
+              "explanation": "• Declared by board anytime\n• Based on half-year or quarterly results\n• Quick cash to shareholders\n\nExample: Infosys declares ₹15 interim dividend in October based on good Q2 results",
+              "strength": "Faster returns, doesn't wait for year-end"
+            },
+            {
+              "pillar": "Final Dividend",
+              "description": "Paid after year-end",
+              "explanation": "• Proposed by board, approved by shareholders in AGM\n• Based on full-year performance\n• Paid once annually\n\nExample: TCS proposes ₹40 final dividend after ₹45,000 crore annual profit",
+              "strength": "Based on complete annual performance"
+            },
+            {
+              "pillar": "Special Dividend",
+              "description": "One-time exceptional payment",
+              "explanation": "• When company has excess cash\n• After asset sale or windfall profit\n• Not regular, shouldn't be expected\n\nExample: Company sells division for ₹10,000 crores, pays ₹50 special dividend to share proceeds",
+              "strength": "Bonus for shareholders"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "High Dividend vs Growth Companies",
+          "items": [
+            {
+              "type": "High Dividend (Coal India, ITC)",
+              "payout": "50-80% of profits",
+              "growth": "Low - mature business",
+              "investor": "Retirees, income seekers",
+              "yield": "6-10% dividend yield",
+              "example": "Coal India pays ₹24/share, 9% yield"
+            },
+            {
+              "type": "Growth (Amazon, Zomato)",
+              "payout": "0% - no dividends",
+              "growth": "High - reinvest everything",
+              "investor": "Long-term wealth builders",
+              "yield": "0% dividend but 20-30% price growth",
+              "example": "Amazon never paid dividend, stock up 200,000% since IPO"
+            },
+            {
+              "type": "Balanced (TCS, Infosys)",
+              "payout": "40-60% of profits",
+              "growth": "Moderate - mature but growing",
+              "investor": "Balanced investors",
+              "yield": "2-4% dividend + 10-12% growth",
+              "example": "TCS pays ₹75/share (2% yield) + stock grows 12%/year"
+            }
+          ]
+        },
+        {
+          "type": "process_flow",
+          "title": "Dividend Payment Timeline",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Declaration Date",
+              "description": "Board announces dividend. Example: 'Board declares ₹10/share dividend'",
+              "money_supply": "Announcement made public"
+            },
+            {
+              "step": 2,
+              "title": "Ex-Dividend Date",
+              "description": "Must own shares BEFORE this date to get dividend. Buy on/after ex-date = no dividend",
+              "money_supply": "Critical date for eligibility"
+            },
+            {
+              "step": 3,
+              "title": "Record Date",
+              "description": "Company checks who owns shares. If your name is in records = you get dividend",
+              "money_supply": "2 days after ex-dividend date"
+            },
+            {
+              "step": 4,
+              "title": "Payment Date",
+              "description": "Money credited to your bank account. Usually 7-30 days after record date",
+              "money_supply": "Cash received!"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real Dividend Scenario",
+          "content": "You own 500 shares of HDFC Bank at ₹1,600/share\n\n**April 20:** HDFC declares ₹19.50 dividend/share\n**Ex-date: May 1**\n**Record date: May 3**\n**Payment date: May 15**\n\nYou bought shares on April 25 (before ex-date) ✓\n\n**May 1:** Share price drops from ₹1,600 to ₹1,581 (₹19 drop = dividend amount)\n\n**May 15:** ₹9,750 credited to your account\n• 500 shares × ₹19.50 = ₹9,750\n• Minus 10% TDD (dividend tax) = ₹975\n• Net received: ₹8,775\n\nYour shares are now worth ₹1,581 each + you got ₹8,775 cash. Total value same, but you have cash!"
+        },
+        {
+          "type": "insight",
+          "title": "Why Share Price Drops on Ex-Dividend Date",
+          "content": "On ex-dividend date, share price typically falls by dividend amount:\n\nBefore ex-date: ₹100 (includes right to ₹5 dividend)\nOn ex-date: ₹95 (dividend entitlement removed)\n\nWhy?\n• Buyers after ex-date don't get dividend\n• So they won't pay full price\n• Market auto-adjusts price down\n\nYour total wealth doesn't change:\nBefore: 100 shares × ₹100 = ₹10,000\nAfter: 100 shares × ₹95 + ₹500 dividend = ₹10,000\n\nThis is called 'dividend neutral' - no free lunch!"
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Dividends are profit distributions to shareholders",
+            "Dividend yield = annual dividend / share price",
+            "Must own shares before ex-dividend date to receive dividend",
+            "High dividend companies are good for income; growth companies reinvest",
+            "Share price drops by dividend amount on ex-dividend date"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "If a stock trades at ₹500 and pays ₹25 annual dividend, what is the dividend yield?",
+        "options": [
+          "2%",
+          "5%",
+          "10%",
+          "25%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Dividend Yield = (Annual Dividend / Share Price) × 100 = (25 / 500) × 100 = 5%. You earn 5% annually from dividends alone."
+      }
+    },
+    {
+      "lesson_id": "2.1.6",
+      "lesson_number": 6,
+      "title": "Basic Share Valuation",
+      "subtitle": "What Makes a Share Worth Its Price?",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Why is TCS share ₹3,500 while HDFC Bank is ₹1,600? What determines share price? Understanding basic valuation helps you identify if a stock is expensive or cheap."
+        },
+        {
+          "type": "definition",
+          "term": "Market Capitalization (Market Cap)",
+          "definition": "Total value of all company shares. Calculated as: Share Price × Total Shares Outstanding. It's the price to buy the entire company."
+        },
+        {
+          "type": "formula",
+          "title": "Market Capitalization",
+          "formula": "Market Cap = Share Price × Total Shares Outstanding",
+          "example": "Reliance:\n• Share price: ₹2,500\n• Total shares: 676 crore\n\nMarket Cap = 2,500 × 676,00,00,000\n           = ₹16,90,000 crores\n           = ₹16.9 lakh crores\n\nThis means stock market values entire Reliance at ₹16.9 lakh crores. To buy 100% ownership, you'd need this much (theoretically).",
+          "note": "Market cap determines company size, not share price!"
+        },
+        {
+          "type": "comparison",
+          "title": "Market Cap Categories",
+          "items": [
+            {
+              "category": "Large Cap",
+              "size": ">₹20,000 crores",
+              "examples": "TCS, Reliance, HDFC Bank",
+              "characteristics": "Stable, mature, lower growth, less volatile",
+              "risk": "Low"
+            },
+            {
+              "category": "Mid Cap",
+              "size": "₹5,000-20,000 crores",
+              "examples": "Dixon, PI Industries, Trent",
+              "characteristics": "Growing, moderate volatility",
+              "risk": "Medium"
+            },
+            {
+              "category": "Small Cap",
+              "size": "<₹5,000 crores",
+              "examples": "Newer/smaller listed companies",
+              "characteristics": "High growth potential, high volatility",
+              "risk": "High"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Key Valuation Metrics (Simplified)",
+          "pillars": [
+            {
+              "pillar": "P/E Ratio (Price-to-Earnings)",
+              "description": "Most popular valuation metric",
+              "explanation": "P/E = Share Price / Earnings Per Share (EPS)\n\nTells you: How many years of profit needed to recover share price\n\nExample:\n• Share price: ₹1,000\n• Annual profit per share (EPS): ₹50\n• P/E = 1,000 / 50 = 20x\n\nMeaning: At current earnings, takes 20 years to earn back your investment\n\nLow P/E (<15) = Cheap\nMedium P/E (15-25) = Fair\nHigh P/E (>25) = Expensive (or high growth expected)",
+              "strength": "Quick comparison tool"
+            },
+            {
+              "pillar": "P/B Ratio (Price-to-Book)",
+              "description": "Price vs book value of assets",
+              "explanation": "P/B = Share Price / Book Value Per Share\n\nBook Value = Total Assets - Total Liabilities\n\nExample:\n• Share price: ₹800\n• Book value per share: ₹400\n• P/B = 800 / 400 = 2x\n\nMeaning: Paying 2x the accounting value of assets\n\nUseful for: Banks, real estate, manufacturing\nP/B < 1 = Trading below asset value (cheap or troubled)\nP/B > 3 = Premium for growth/quality",
+              "strength": "Asset-based valuation"
+            },
+            {
+              "pillar": "Dividend Yield",
+              "description": "Income return from dividends",
+              "explanation": "Yield = (Annual Dividend / Price) × 100\n\n• 2-3% = Low (growth companies)\n• 4-6% = Good (balanced)\n• 7-10% = High (mature businesses)\n\nCompare with FD rates (6-7%): If stock yields 8% + has growth potential, better than FD!",
+              "strength": "Income investor's metric"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Comparing Two Companies",
+          "content": "**Company A: TCS**\n• Share Price: ₹3,500\n• EPS: ₹130\n• P/E: 27x (expensive!)\n• Book Value/Share: ₹280\n• P/B: 12.5x\n• Dividend Yield: 2.1%\n• Market Cap: ₹13 lakh crores (Large Cap)\n\n**Company B: Regional IT Company**\n• Share Price: ₹150\n• EPS: ₹20\n• P/E: 7.5x (cheap!)\n• Book Value/Share: ₹100\n• P/B: 1.5x\n• Dividend Yield: 5%\n• Market Cap: ₹2,000 crores (Small Cap)\n\n**Analysis:**\nCompany B looks cheaper on all metrics. But TCS commands premium for:\n• Quality and brand\n• Global scale\n• Consistent growth\n• Lower risk\n\nMetrics alone don't tell full story. Context matters!"
+        },
+        {
+          "type": "comparison",
+          "title": "What Affects Share Price",
+          "items": [
+            {
+              "factor": "Company Performance",
+              "impact": "Direct & Strong",
+              "example": "Better earnings → Price up",
+              "your_control": "None - company management controls"
+            },
+            {
+              "factor": "Industry Trends",
+              "impact": "Moderate",
+              "example": "IT boom → All IT stocks rise",
+              "your_control": "Choose industry wisely"
+            },
+            {
+              "factor": "Market Sentiment",
+              "impact": "Strong Short-term",
+              "example": "Bull market → Everything rises",
+              "your_control": "None - market psychology"
+            },
+            {
+              "factor": "Economic Factors",
+              "impact": "Indirect",
+              "example": "High interest rates → Stocks fall",
+              "your_control": "None - macroeconomic"
+            },
+            {
+              "factor": "News & Events",
+              "impact": "Sudden spikes/drops",
+              "example": "Scandal → Stock crashes",
+              "your_control": "Stay informed"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "Why Absolute Share Price Doesn't Matter",
+          "content": "Common mistake: 'TCS at ₹3,500 is expensive, XYZ at ₹50 is cheap!'\n\n**Wrong thinking!** Share price alone is meaningless.\n\nWhat matters:\n• Market Cap (total value)\n• P/E (price vs earnings)\n• Growth prospects\n• Quality of business\n\nExample:\n• MRF: ₹1,00,000/share (highest in India)\n• Market cap: ₹42,000 crores\n\nVs\n\n• Reliance: ₹2,500/share\n• Market cap: ₹16,90,000 crores\n\nReliance is 40x larger despite lower share price!\n\nRemember: Price per share = Total value / Number of shares\n\nCompanies can split shares (1 → 2) to reduce price. Doesn't change total value."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Market cap (price × shares) determines company size, not share price",
+            "P/E ratio shows how expensive shares are relative to earnings",
+            "Lower P/E isn't always better - quality commands premium",
+            "Compare companies within same industry for meaningful insights",
+            "Absolute share price (₹100 vs ₹1,000) is irrelevant - look at valuation metrics"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "A company has 10 crore shares trading at ₹500 each. What is its market cap?",
+        "options": [
+          "₹500 crores",
+          "₹5,000 crores",
+          "₹50,000 crores",
+          "₹10 crores"
+        ],
+        "correct_answer": 1,
+        "explanation": "Market Cap = Share Price × Total Shares = ₹500 × 10,00,00,000 = ₹5,000 crores. This is the total value of the company."
+      }
+    }
+  ],
+  "module_quiz": {
+    "quiz_id": "quiz_2.1",
+    "title": "Companies & Shareholding - Final Assessment",
+    "description": "Test your understanding of company structures and shares",
+    "time_limit_minutes": 18,
+    "passing_score": 70,
+    "questions": [
+      {
+        "question_id": "q1",
+        "question": "Which business structure provides limited liability to a single owner?",
+        "type": "multiple_choice",
+        "options": [
+          "Sole Proprietorship",
+          "Partnership",
+          "One Person Company (OPC)",
+          "LLP"
+        ],
+        "correct_answer": 2,
+        "explanation": "One Person Company (OPC) offers limited liability protection to a single owner, combining sole proprietorship's simplicity with private company's protection.",
+        "points": 8
+      },
+      {
+        "question_id": "q2",
+        "question": "What does owning shares in a company represent?",
+        "type": "multiple_choice",
+        "options": [
+          "Loan to the company",
+          "Fractional ownership with voting rights",
+          "Guaranteed employment",
+          "Fixed interest income"
+        ],
+        "correct_answer": 1,
+        "explanation": "Shares represent fractional ownership of a company, granting voting rights and participation in profits through dividends and capital appreciation.",
+        "points": 8
+      },
+      {
+        "question_id": "q3",
+        "question": "If a company has 50 crore shares and you own 25,000, what % do you own?",
+        "type": "multiple_choice",
+        "options": [
+          "0.005%",
+          "0.05%",
+          "0.5%",
+          "5%"
+        ],
+        "correct_answer": 0,
+        "explanation": "Ownership = (25,000 / 50,00,00,000) × 100 = 0.005%. You own five-thousandths of one percent.",
+        "points": 10
+      },
+      {
+        "question_id": "q4",
+        "question": "What is the main difference between public and private companies?",
+        "type": "multiple_choice",
+        "options": [
+          "Public companies pay more taxes",
+          "Private companies are always smaller",
+          "Public company shares can be traded on stock exchanges",
+          "Private companies don't need audits"
+        ],
+        "correct_answer": 2,
+        "explanation": "Public companies (limited) can sell shares on stock exchanges to anyone. Private companies (Pvt Ltd) have restricted ownership and can't list on exchanges.",
+        "points": 8
+      },
+      {
+        "question_id": "q5",
+        "question": "What happens to your ownership when a company issues new shares?",
+        "type": "multiple_choice",
+        "options": [
+          "It increases proportionally",
+          "It stays exactly the same",
+          "It gets diluted (decreases)",
+          "It doubles"
+        ],
+        "correct_answer": 2,
+        "explanation": "When new shares are issued, your fixed number of shares represents a smaller percentage of the now-larger total, resulting in dilution.",
+        "points": 8
+      },
+      {
+        "question_id": "q6",
+        "question": "What is an IPO?",
+        "type": "multiple_choice",
+        "options": [
+          "International Profit Organization",
+          "Initial Public Offering - first sale of shares to public",
+          "Internal Profit Operation",
+          "Investment Performance Optimization"
+        ],
+        "correct_answer": 1,
+        "explanation": "IPO (Initial Public Offering) is when a private company first sells shares to the public and lists on a stock exchange.",
+        "points": 8
+      },
+      {
+        "question_id": "q7",
+        "question": "What is a dividend?",
+        "type": "multiple_choice",
+        "options": [
+          "Company's total profit",
+          "Distribution of company profits to shareholders",
+          "Bonus shares",
+          "Share price increase"
+        ],
+        "correct_answer": 1,
+        "explanation": "Dividend is a cash payment from company profits distributed to shareholders, usually per share owned.",
+        "points": 8
+      },
+      {
+        "question_id": "q8",
+        "question": "If a stock trades at ₹400 and pays ₹20 annual dividend, what is the dividend yield?",
+        "type": "multiple_choice",
+        "options": [
+          "2%",
+          "5%",
+          "10%",
+          "20%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Dividend Yield = (20 / 400) × 100 = 5%. You earn 5% annually from dividends alone.",
+        "points": 10
+      },
+      {
+        "question_id": "q9",
+        "question": "What is market capitalization?",
+        "type": "multiple_choice",
+        "options": [
+          "Total company profits",
+          "Share price × Total outstanding shares",
+          "Company's annual revenue",
+          "Total assets of company"
+        ],
+        "correct_answer": 1,
+        "explanation": "Market Cap = Share Price × Total Shares Outstanding. It represents the total market value of all company shares.",
+        "points": 8
+      },
+      {
+        "question_id": "q10",
+        "question": "A company with share price ₹800, EPS ₹40. What is its P/E ratio?",
+        "type": "multiple_choice",
+        "options": [
+          "10x",
+          "20x",
+          "30x",
+          "40x"
+        ],
+        "correct_answer": 1,
+        "explanation": "P/E Ratio = Share Price / EPS = 800 / 40 = 20x. It would take 20 years of current earnings to equal the share price.",
+        "points": 10
+      },
+      {
+        "question_id": "q11",
+        "question": "When must you own shares to receive a declared dividend?",
+        "type": "multiple_choice",
+        "options": [
+          "On declaration date",
+          "Before ex-dividend date",
+          "On payment date",
+          "Anytime in the year"
+        ],
+        "correct_answer": 1,
+        "explanation": "You must own shares before the ex-dividend date to be eligible for the dividend. Buying on or after ex-date means no dividend for you.",
+        "points": 8
+      },
+      {
+        "question_id": "q12",
+        "question": "Which is typically considered a 'large cap' company in India?",
+        "type": "multiple_choice",
+        "options": [
+          "Market cap > ₹500 crores",
+          "Market cap > ₹5,000 crores",
+          "Market cap > ₹20,000 crores",
+          "Market cap > ₹1,00,000 crores"
+        ],
+        "correct_answer": 2,
+        "explanation": "Large cap companies have market capitalization above ₹20,000 crores. They're typically established, stable companies like TCS, Reliance, HDFC Bank.",
+        "points": 8
+      }
+    ]
+  },
+  "completion_badge": {
+    "badge_id": "shareholding_expert",
+    "title": "Shareholding Master",
+    "description": "Mastered company structures and share ownership",
+    "icon": "briefcase",
+    "color": "#8B4513"
+  }
+}

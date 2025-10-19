@@ -1,0 +1,1231 @@
+{
+  "module_metadata": {
+    "module_id": "1.4",
+    "level": 1,
+    "level_name": "Foundation",
+    "module_title": "Personal Finance Basics",
+    "module_description": "Master essential personal finance skills—budgeting, saving, debt management, and building your financial foundation",
+    "estimated_duration_minutes": 48,
+    "difficulty": "beginner",
+    "prerequisites": ["1.1", "1.2", "1.3"],
+    "learning_objectives": [
+      "Create and manage a personal budget",
+      "Build an emergency fund and savings plan",
+      "Understand and manage different types of debt",
+      "Learn the basics of credit scores",
+      "Develop healthy financial habits for life"
+    ],
+    "total_lessons": 6,
+    "total_quiz_questions": 12,
+    "pass_percentage": 70,
+    "next_module": "2.1"
+  },
+  "lessons": [
+    {
+      "lesson_id": "1.4.1",
+      "lesson_number": 1,
+      "title": "Budgeting Fundamentals",
+      "subtitle": "Your Financial Roadmap",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "A budget is simply a plan for your money. It tells your money where to go instead of wondering where it went. Without a budget, you're driving blindfolded—you might reach your destination, but it's unlikely."
+        },
+        {
+          "type": "definition",
+          "term": "Budget",
+          "definition": "A detailed plan that outlines expected income and expenses over a specific period, helping you control spending and achieve financial goals."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "The 50/30/20 Rule (Popular Framework)",
+          "pillars": [
+            {
+              "pillar": "50% - Needs (Essentials)",
+              "description": "Non-negotiable expenses for survival",
+              "explanation": "• Rent/EMI (housing)\n• Groceries and utilities\n• Transportation (commute)\n• Insurance premiums\n• Minimum debt payments\n\nThese are must-haves—you cannot eliminate them without serious lifestyle changes.",
+              "strength": "Foundation of financial stability"
+            },
+            {
+              "pillar": "30% - Wants (Lifestyle)",
+              "description": "Discretionary spending for enjoyment",
+              "explanation": "• Dining out, entertainment\n• Shopping (non-essential clothes, gadgets)\n• Hobbies, subscriptions (Netflix, gym)\n• Vacations\n\nThese enhance life quality but are flexible. Cut here first in financial stress.",
+              "strength": "Quality of life, but flexible"
+            },
+            {
+              "pillar": "20% - Savings & Investments",
+              "description": "Building wealth and security",
+              "explanation": "• Emergency fund\n• Retirement savings (EPF, NPS)\n• Investment (mutual funds, stocks)\n• Extra debt repayment\n• Long-term goals (house, education)\n\nThis 20% is non-negotiable for financial freedom. Pay yourself first!",
+              "strength": "Future wealth and security"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Budget Breakdown: ₹60,000 Monthly Income",
+          "content": "Applying 50/30/20 rule:\n\nNeeds (₹30,000):\n• Rent: ₹15,000\n• Groceries: ₹6,000\n• Utilities: ₹2,000\n• Transport: ₹4,000\n• Insurance: ₹3,000\n\nWants (₹18,000):\n• Dining/Entertainment: ₹8,000\n• Shopping: ₹5,000\n• Subscriptions: ₹2,000\n• Hobbies: ₹3,000\n\nSavings (₹12,000):\n• Emergency fund: ₹4,000\n• Mutual fund SIP: ₹6,000\n• PPF: ₹2,000\n\nThis is a starting point—adjust based on your situation and goals."
+        },
+        {
+          "type": "process_flow",
+          "title": "Creating Your First Budget",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Calculate Net Income",
+              "description": "Total take-home after taxes, EPF deductions. Include all sources: salary, freelance, rental, etc.",
+              "money_supply": "Example: ₹60,000/month"
+            },
+            {
+              "step": 2,
+              "title": "Track Current Spending",
+              "description": "For one month, record EVERY expense. Use app (Walnut, Money Manager) or spreadsheet. Categorize: needs vs wants.",
+              "money_supply": "Awareness is 50% of the solution"
+            },
+            {
+              "step": 3,
+              "title": "Set Financial Goals",
+              "description": "Short-term (vacation), medium-term (car), long-term (retirement). Assign timeline and amount to each.",
+              "money_supply": "Goals give purpose to saving"
+            },
+            {
+              "step": 4,
+              "title": "Allocate Money",
+              "description": "Apply 50/30/20 or customize. Ensure income ≥ expenses. If not, cut wants or increase income.",
+              "money_supply": "Zero-based budgeting: Every rupee assigned"
+            },
+            {
+              "step": 5,
+              "title": "Review Monthly",
+              "description": "Compare actual vs budgeted. Adjust categories. Celebrate wins, identify problem areas.",
+              "money_supply": "Continuous improvement"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Budgeting Methods",
+          "items": [
+            {
+              "method": "50/30/20 Rule",
+              "best_for": "Beginners, simple approach",
+              "complexity": "Easy",
+              "flexibility": "Moderate"
+            },
+            {
+              "method": "Zero-Based Budget",
+              "best_for": "Detail-oriented, tight finances",
+              "complexity": "Medium",
+              "flexibility": "Low (every rupee assigned)"
+            },
+            {
+              "method": "Envelope System",
+              "best_for": "Cash users, overspenders",
+              "complexity": "Easy",
+              "flexibility": "High (physical cash limits)"
+            },
+            {
+              "method": "Pay Yourself First",
+              "best_for": "Disciplined savers",
+              "complexity": "Easy",
+              "flexibility": "High (automate savings, spend rest)"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "Why Most Budgets Fail",
+          "content": "Common mistakes:\n\n1. **Too restrictive**: Budgeting ₹0 for fun leads to burnout and binge spending\n2. **Not tracking**: Creating budget but not monitoring actual spending\n3. **Unrealistic categories**: Budgeting ₹3,000 for groceries when you spend ₹6,000\n4. **Ignoring irregular expenses**: Car maintenance, gifts, annual subscriptions\n5. **No emergency buffer**: One unexpected expense destroys the budget\n\nSolution: Start with 80% accuracy. Allow flexibility. Build gradually."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Budget is a spending plan, not a restriction—it creates freedom",
+            "50/30/20 rule is a simple starting framework",
+            "Track spending for one month before creating budget",
+            "Review and adjust monthly—no budget is perfect from day one",
+            "Automate savings first, then budget the rest"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "In the 50/30/20 budgeting rule, what does the 20% represent?",
+        "options": [
+          "Entertainment and hobbies",
+          "Rent and utilities",
+          "Savings and investments",
+          "Transportation costs"
+        ],
+        "correct_answer": 2,
+        "explanation": "The 20% in the 50/30/20 rule is allocated to savings, investments, and debt repayment—building your financial future."
+      }
+    },
+    {
+      "lesson_id": "1.4.2",
+      "lesson_number": 2,
+      "title": "Emergency Fund: Your Financial Safety Net",
+      "subtitle": "Protection Against Life's Uncertainties",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "An emergency fund is money set aside exclusively for unexpected expenses or income loss. It's the difference between a crisis and an inconvenience—the foundation of financial security."
+        },
+        {
+          "type": "definition",
+          "term": "Emergency Fund",
+          "definition": "A readily accessible savings account containing 3-6 months of essential expenses, reserved exclusively for genuine emergencies."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "What Qualifies as an Emergency?",
+          "pillars": [
+            {
+              "pillar": "✓ True Emergencies",
+              "description": "Unexpected, urgent, necessary",
+              "explanation": "• Job loss or income reduction\n• Medical emergencies not covered by insurance\n• Urgent home repairs (water leak, electrical)\n• Vehicle breakdown (if needed for work)\n• Family emergency requiring travel\n\nKey test: Unexpected + Urgent + Necessary",
+              "strength": "Protects against genuine crises"
+            },
+            {
+              "pillar": "✗ NOT Emergencies",
+              "description": "Planned or avoidable expenses",
+              "explanation": "• Sales and discounts (iPhone sale!)\n• Vacations\n• Lifestyle upgrades\n• Gifts and celebrations\n• 'Good deals' on non-essentials\n\nThese should come from regular budget, not emergency fund.",
+              "strength": "Maintain fund integrity"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Calculating Your Emergency Fund",
+          "formula": "Emergency Fund = Monthly Essential Expenses × 3 to 6 months\n\nEssential Expenses = Needs only (rent, food, utilities, insurance, minimum debt payments)",
+          "example": "Your monthly expenses:\n• Rent: ₹15,000\n• Groceries: ₹6,000\n• Utilities: ₹2,000\n• Transport: ₹3,000\n• Insurance: ₹2,000\n• Loan EMI: ₹8,000\n\nTotal essential: ₹36,000/month\n\nEmergency fund target:\n• Minimum (3 months): ₹1,08,000\n• Ideal (6 months): ₹2,16,000",
+          "note": "Single income/freelancer: 6-9 months. Dual income/stable job: 3-6 months."
+        },
+        {
+          "type": "comparison",
+          "title": "How Much Emergency Fund Do You Need?",
+          "items": [
+            {
+              "situation": "Single income, dependents",
+              "months": "6-9 months",
+              "reason": "High risk if income stops"
+            },
+            {
+              "situation": "Dual income, no dependents",
+              "months": "3-4 months",
+              "reason": "Two income sources, lower risk"
+            },
+            {
+              "situation": "Freelancer/Business owner",
+              "months": "9-12 months",
+              "reason": "Irregular income, no benefits"
+            },
+            {
+              "situation": "Government/Stable job",
+              "months": "3-4 months",
+              "reason": "Job security, predictable income"
+            }
+          ]
+        },
+        {
+          "type": "process_flow",
+          "title": "Building Your Emergency Fund",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Start Small: ₹10,000",
+              "description": "First milestone—covers minor emergencies like phone repair or small medical bill.",
+              "money_supply": "Achievable quickly, builds confidence"
+            },
+            {
+              "step": 2,
+              "title": "Next: One Month's Expenses",
+              "description": "Enough to survive 30 days without income. Big psychological milestone.",
+              "money_supply": "Example: ₹36,000"
+            },
+            {
+              "step": 3,
+              "title": "Then: Three Months",
+              "description": "Minimum recommended. Covers most job search periods or recovery time.",
+              "money_supply": "Example: ₹1,08,000"
+            },
+            {
+              "step": 4,
+              "title": "Goal: Six Months",
+              "description": "Ideal safety net. Sleep-well money. Enables taking calculated career risks.",
+              "money_supply": "Example: ₹2,16,000"
+            },
+            {
+              "step": 5,
+              "title": "Maintain & Replenish",
+              "description": "If used, immediately rebuild before other goals. Keep in liquid, safe account.",
+              "money_supply": "Savings account or liquid fund"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Where to Keep Emergency Fund",
+          "items": [
+            {
+              "option": "Savings Account",
+              "liquidity": "Instant",
+              "returns": "3-4%",
+              "safety": "High (₹5L insured)",
+              "verdict": "✓ Best for most"
+            },
+            {
+              "option": "Liquid Mutual Fund",
+              "liquidity": "1-2 days",
+              "returns": "5-7%",
+              "safety": "Very high",
+              "verdict": "✓ Good option"
+            },
+            {
+              "option": "Fixed Deposit",
+              "liquidity": "Poor (penalty)",
+              "returns": "6-7%",
+              "safety": "High",
+              "verdict": "✗ Too rigid"
+            },
+            {
+              "option": "Stocks/Equity Funds",
+              "liquidity": "Good",
+              "returns": "Volatile",
+              "safety": "Low (can fall 30-50%)",
+              "verdict": "✗ Too risky"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "COVID-19: Emergency Fund Lesson",
+          "scenarios": [
+            {
+              "scenario": "March 2020 - Lockdown",
+              "description": "Millions lost jobs overnight. Salaries cut 30-50%. Businesses shut down.",
+              "effect": "Those without emergency funds devastated"
+            },
+            {
+              "scenario": "With Emergency Fund",
+              "description": "Family with 6-month fund weathered 4-month income loss. Avoided debt. Survived with dignity.",
+              "effect": "Financial stress but manageable"
+            },
+            {
+              "scenario": "Without Emergency Fund",
+              "description": "Forced to borrow from family, friends, take high-interest loans. Sold investments at market bottom.",
+              "effect": "Financial and emotional crisis"
+            },
+            {
+              "scenario": "Lesson",
+              "description": "Emergency fund isn't pessimism—it's wisdom. 'Hope for best, prepare for worst.'",
+              "effect": "Post-COVID, savings rate increased"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Emergency fund is for genuine emergencies only—not sales or vacations",
+            "Target 3-6 months of essential expenses based on your situation",
+            "Keep in liquid, safe places—savings account or liquid funds",
+            "Build gradually: ₹10k → 1 month → 3 months → 6 months",
+            "This is Step 1 of financial planning—before investing or big purchases"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Where should you typically keep your emergency fund?",
+        "options": [
+          "Stock market for growth",
+          "Fixed deposit for returns",
+          "Savings account or liquid fund for quick access",
+          "Real estate investment"
+        ],
+        "correct_answer": 2,
+        "explanation": "Emergency funds must be liquid (quickly accessible) and safe. Savings accounts and liquid mutual funds provide both instant access and capital safety."
+      }
+    },
+    {
+      "lesson_id": "1.4.3",
+      "lesson_number": 3,
+      "title": "Understanding Debt: Good vs Bad",
+      "subtitle": "Smart Borrowing Strategies",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Not all debt is bad. Used wisely, debt is a tool to build wealth. Used poorly, it's a trap that destroys financial futures. Understanding the difference is crucial for financial success."
+        },
+        {
+          "type": "definition",
+          "term": "Debt",
+          "definition": "Money borrowed that must be repaid with interest. Can be productive (creates value) or destructive (funds consumption without returns)."
+        },
+        {
+          "type": "comparison",
+          "title": "Good Debt vs Bad Debt",
+          "items": [
+            {
+              "type": "Home Loan",
+              "category": "Good Debt ✓",
+              "rate": "8-9%",
+              "reason": "Asset appreciation, tax benefits, forced savings",
+              "verdict": "Builds wealth over time"
+            },
+            {
+              "type": "Education Loan",
+              "category": "Good Debt ✓",
+              "rate": "9-12%",
+              "reason": "Increases earning potential, invests in yourself",
+              "verdict": "Returns exceed cost if chosen wisely"
+            },
+            {
+              "type": "Business Loan",
+              "category": "Good Debt ✓",
+              "rate": "10-14%",
+              "reason": "Generates income, grows business",
+              "verdict": "Leverage to scale faster"
+            },
+            {
+              "type": "Credit Card Debt",
+              "category": "Bad Debt ✗",
+              "rate": "36-42%",
+              "reason": "Funds consumption, no asset created, very expensive",
+              "verdict": "Wealth destroyer"
+            },
+            {
+              "type": "Personal Loan for Vacation",
+              "category": "Bad Debt ✗",
+              "rate": "11-15%",
+              "reason": "Paying interest for past consumption",
+              "verdict": "Financial irresponsibility"
+            },
+            {
+              "type": "Car Loan (New Car)",
+              "category": "Questionable ⚠",
+              "rate": "9-11%",
+              "reason": "Depreciating asset, convenience vs cost",
+              "verdict": "Only if necessary for income"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "The Debt Evaluation Framework",
+          "pillars": [
+            {
+              "pillar": "1. Does it Generate Income?",
+              "description": "Will this debt help earn money?",
+              "explanation": "YES → Good debt potential\n• Home loan on rental property\n• Business loan for inventory\n• Vehicle loan for cab driver\n\nNO → Proceed with caution\n• Car loan for personal use\n• Loan for wedding\n• Credit card for lifestyle",
+              "strength": "Primary criterion"
+            },
+            {
+              "pillar": "2. Does it Appreciate or Depreciate?",
+              "description": "Will the asset grow in value?",
+              "explanation": "APPRECIATES → Better debt\n• Real estate (8-10% annually)\n• Education (career growth)\n• Gold (inflation hedge)\n\nDEPRECIATES → Worse debt\n• Car (15-20% first year)\n• Electronics (50% in 2 years)\n• Furniture",
+              "strength": "Asset value trajectory"
+            },
+            {
+              "pillar": "3. Interest Rate Test",
+              "description": "Can you earn more than the rate?",
+              "explanation": "If loan is 8% and you can invest at 12% → Leverage makes sense\n\nIf loan is 40% (credit card) and your income growth is 10% → Debt trap\n\nRule: Never borrow at rates higher than your return potential.",
+              "strength": "Mathematical viability"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Debt-to-Income Ratio",
+          "formula": "Debt-to-Income Ratio = (Total Monthly Debt Payments / Gross Monthly Income) × 100\n\nHealthy: < 30%\nCaution: 30-40%\nDanger: > 40%",
+          "example": "Monthly income: ₹80,000\nMonthly debt payments:\n• Home loan EMI: ₹18,000\n• Car loan EMI: ₹8,000\n• Personal loan EMI: ₹5,000\nTotal: ₹31,000\n\nRatio = (31,000 / 80,000) × 100 = 38.75%\n\nYou're in CAUTION zone. Avoid new debt. Banks may reject new loans.",
+          "note": "Banks use this to assess loan eligibility. Keep below 40% for financial health."
+        },
+        {
+          "type": "process_flow",
+          "title": "Debt Repayment Strategies",
+          "steps": [
+            {
+              "step": 1,
+              "title": "List All Debts",
+              "description": "Write down every loan: amount, interest rate, minimum payment, tenure.",
+              "money_supply": "Complete picture of obligations"
+            },
+            {
+              "step": 2,
+              "title": "Choose Strategy",
+              "description": "Avalanche (highest rate first) OR Snowball (smallest balance first).",
+              "money_supply": "Avalanche saves more, Snowball builds momentum"
+            },
+            {
+              "step": 3,
+              "title": "Pay Minimums on All",
+              "description": "Never default. Pay at least minimum on every debt.",
+              "money_supply": "Protects credit score"
+            },
+            {
+              "step": 4,
+              "title": "Attack Target Debt",
+              "description": "Put all extra money toward chosen debt. Pay it off completely.",
+              "money_supply": "Intensity on one at a time"
+            },
+            {
+              "step": 5,
+              "title": "Roll Payments Forward",
+              "description": "Once a debt is cleared, add that payment to the next target. Snowball effect!",
+              "money_supply": "Accelerating freedom"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Avalanche vs Snowball Method",
+          "items": [
+            {
+              "method": "Debt Avalanche",
+              "target": "Highest interest rate first",
+              "advantage": "Saves most money mathematically",
+              "disadvantage": "May take longer to see first win",
+              "best_for": "Disciplined, math-focused people"
+            },
+            {
+              "method": "Debt Snowball",
+              "target": "Smallest balance first",
+              "advantage": "Quick wins, psychological momentum",
+              "disadvantage": "Costs slightly more in interest",
+              "best_for": "Those needing motivation and quick wins"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "The Credit Card Trap",
+          "scenarios": [
+            {
+              "scenario": "Month 1",
+              "description": "Buy ₹30,000 items on card. Minimum payment ₹900 (3%). Think 'I'll pay later.'",
+              "effect": "Remaining ₹29,100 at 40% annual (3.33% monthly)"
+            },
+            {
+              "scenario": "Month 6",
+              "description": "Paying only minimums. Balance is still ₹27,500. Paid ₹5,400 but only ₹2,500 reduced principal!",
+              "effect": "₹2,900 went to interest alone"
+            },
+            {
+              "scenario": "3 Years Later",
+              "description": "Original ₹30,000 purchase cost ₹48,000+ with interest. Still not fully paid if only minimums.",
+              "effect": "60% extra for things you forgot you bought"
+            },
+            {
+              "scenario": "Lesson",
+              "description": "Credit cards are transactional tools, not loans. Pay FULL balance every month. Otherwise, personal loan at 12% is better than 40% card debt.",
+              "effect": "Never carry credit card balance"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Good debt generates income or appreciates; bad debt funds consumption",
+            "Keep debt-to-income ratio below 40% for financial health",
+            "Credit card debt at 40% is wealth poison—pay full balance monthly",
+            "Use Avalanche (rate-based) or Snowball (balance-based) to eliminate debt",
+            "Home loans and education loans can be good leveraging tools"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Which of the following is generally considered 'good debt'?",
+        "options": [
+          "Credit card balance for shopping",
+          "Home loan for primary residence",
+          "Personal loan for vacation",
+          "Payday loan for expenses"
+        ],
+        "correct_answer": 1,
+        "explanation": "Home loans are generally good debt because real estate typically appreciates, interest is tax-deductible, and it builds equity over time. The other options fund consumption without creating value."
+      }
+    },
+    {
+      "lesson_id": "1.4.4",
+      "lesson_number": 4,
+      "title": "Credit Score: Your Financial Reputation",
+      "subtitle": "The Number That Opens Doors",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Your credit score is a three-digit number that determines whether banks will lend to you, at what interest rate, and how much. It's your financial reputation score—and it matters enormously."
+        },
+        {
+          "type": "definition",
+          "term": "Credit Score (CIBIL Score in India)",
+          "definition": "A numerical representation (300-900) of your creditworthiness based on credit history, calculated by credit bureaus like CIBIL, Experian, Equifax."
+        },
+        {
+          "type": "comparison",
+          "title": "Credit Score Ranges & Implications",
+          "items": [
+            {
+              "range": "750-900 (Excellent)",
+              "approval": "Very high",
+              "rate": "Lowest rates offered",
+              "impact": "Best deals, pre-approved offers, high limits"
+            },
+            {
+              "range": "700-749 (Good)",
+              "approval": "High",
+              "rate": "Competitive rates",
+              "impact": "Easy approval, good terms"
+            },
+            {
+              "range": "650-699 (Fair)",
+              "approval": "Moderate",
+              "rate": "Higher rates",
+              "impact": "May need documentation, limited options"
+            },
+            {
+              "range": "550-649 (Poor)",
+              "approval": "Low",
+              "rate": "Very high rates",
+              "impact": "Rejections common, secured cards only"
+            },
+            {
+              "range": "300-549 (Very Poor)",
+              "approval": "Very low",
+              "rate": "Often rejected",
+              "impact": "Serious credit repair needed"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "What Determines Your Credit Score",
+          "pillars": [
+            {
+              "pillar": "1. Payment History (35%)",
+              "description": "Most important factor",
+              "explanation": "• Do you pay on time, every time?\n• Any missed payments, defaults, or settlements?\n• Even one 30-day late payment hurts\n\nSolution: Set auto-pay for minimum amount. NEVER miss due dates.",
+              "strength": "Single biggest factor"
+            },
+            {
+              "pillar": "2. Credit Utilization (30%)",
+              "description": "How much credit you're using",
+              "explanation": "• If credit limit is ₹1 lakh, you use ₹80k → 80% utilization (BAD)\n• Keep below 30% for healthy score\n• Lower is better\n\nExample: ₹1L limit, use max ₹30k even if you can afford more.\n\nTip: Request limit increase to lower utilization ratio without changing spending.",
+              "strength": "Second most important"
+            },
+            {
+              "pillar": "3. Credit History Length (15%)",
+              "description": "How long you've had credit",
+              "explanation": "• Older accounts boost score\n• Average age of all accounts matters\n• Don't close oldest credit card even if unused\n\n10-year-old card is valuable for score.",
+              "strength": "Rewards credit maturity"
+            },
+            {
+              "pillar": "4. Credit Mix (10%)",
+              "description": "Variety of credit types",
+              "explanation": "• Secured loans (home, car) + Unsecured (credit cards, personal)\n• Diverse mix shows you can handle different credit types\n• But don't take loans just for mix!",
+              "strength": "Shows credit management skills"
+            },
+            {
+              "pillar": "5. New Credit (10%)",
+              "description": "Recent credit inquiries",
+              "explanation": "• Each loan application = 'hard inquiry' → small score drop\n• Multiple inquiries in short time = red flag (credit hungry)\n• Rate shopping for home/car loan in 14-day window counts as one\n\nAvoid applying for multiple cards in short periods.",
+              "strength": "Prevents credit-seeking behavior"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Credit Score Impact on Home Loan",
+          "content": "₹50 lakh home loan for 20 years:\n\nExcellent Score (780):\n• Interest rate: 8.5%\n• EMI: ₹43,391/month\n• Total interest: ₹54.14 lakhs\n\nPoor Score (640):\n• Interest rate: 10.5%\n• EMI: ₹49,954/month\n• Total interest: ₹69.89 lakhs\n\nDifference: ₹15.75 LAKHS more in interest just due to credit score!\n\nGood credit score literally saves millions over a lifetime."
+        },
+        {
+          "type": "process_flow",
+          "title": "Building Credit Score from Scratch",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Get Your First Credit Card",
+              "description": "If rejected for regular card, apply for secured credit card (FD-backed). Start building history.",
+              "money_supply": "Entry into credit system"
+            },
+            {
+              "step": 2,
+              "title": "Use Card Lightly",
+              "description": "Spend only 10-30% of limit. Even small purchases help. Gas, groceries, phone bills.",
+              "money_supply": "Low utilization, regular activity"
+            },
+            {
+              "step": 3,
+              "title": "Pay FULL Balance",
+              "description": "Every month, by due date, pay 100% of bill. Set auto-pay. Never pay minimum only.",
+              "money_supply": "Perfect payment history"
+            },
+            {
+              "step": 4,
+              "title": "Wait 6-12 Months",
+              "description": "Score builds with consistent good behavior. Check free annual report from CIBIL.",
+              "money_supply": "Score rises from 'No History' to 700+"
+            },
+            {
+              "step": 5,
+              "title": "Expand Credit Strategically",
+              "description": "After 1-2 years, add another card or small loan. Maintain perfect record. Score reaches 750+.",
+              "money_supply": "Elite credit status achieved"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "Common Credit Score Myths",
+          "content": "❌ MYTH: Checking your score lowers it\n✓ FACT: Self-checks (soft inquiry) don't hurt. Only loan applications (hard inquiry) impact score.\n\n❌ MYTH: Closing credit cards improves score\n✓ FACT: Closing cards reduces available credit (raises utilization) and shortens credit history—hurts score!\n\n❌ MYTH: Carrying small balance helps score\n✓ FACT: No benefit. Pay full balance. Interest doesn't boost score.\n\n❌ MYTH: Income affects credit score\n✓ FACT: Score is based on credit behavior, not income. Low earner with perfect payments beats high earner with defaults.\n\n❌ MYTH: Married couples share credit score\n✓ FACT: Scores are individual. Spouse's credit doesn't affect yours (unless joint accounts)."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Credit score (300-900) determines loan eligibility and interest rates",
+            "Payment history (35%) is most important—never miss a due date",
+            "Keep credit utilization below 30% of available limit",
+            "Don't close old credit cards—history length matters",
+            "Good score saves lakhs in interest over lifetime"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the recommended maximum credit utilization ratio for a healthy credit score?",
+        "options": [
+          "10%",
+          "30%",
+          "50%",
+          "70%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Credit utilization should ideally stay below 30% of your total available credit limit. Lower utilization shows you're not credit-dependent and improves your credit score."
+      }
+    },
+    {
+      "lesson_id": "1.4.5",
+      "lesson_number": 5,
+      "title": "Savings vs Investing: Know the Difference",
+      "subtitle": "Right Tool for Right Goal",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Many people use 'saving' and 'investing' interchangeably. They're completely different. Saving is defense. Investing is offense. You need both to win the financial game."
+        },
+        {
+          "type": "comparison",
+          "title": "Savings vs Investing: Key Differences",
+          "items": [
+            {
+              "aspect": "Purpose",
+              "saving": "Protect and preserve capital",
+              "investing": "Grow wealth over time",
+              "winner": "Different goals"
+            },
+            {
+              "aspect": "Time Horizon",
+              "saving": "Short-term (0-3 years)",
+              "investing": "Long-term (5+ years)",
+              "winner": "Match to goal timeline"
+            },
+            {
+              "aspect": "Risk",
+              "saving": "Very low (capital protected)",
+              "investing": "Moderate to high (value fluctuates)",
+              "winner": "Saving safer, investing riskier"
+            },
+            {
+              "aspect": "Returns",
+              "saving": "Low (3-7% typically)",
+              "investing": "Higher (10-15%+ potential)",
+              "winner": "Investing wins over time"
+            },
+            {
+              "aspect": "Liquidity",
+              "saving": "High (instant access)",
+              "investing": "Varies (may need to sell)",
+              "winner": "Saving more accessible"
+            },
+            {
+              "aspect": "Inflation Protection",
+              "saving": "Poor (barely beats inflation)",
+              "investing": "Good (typically exceeds inflation)",
+              "winner": "Investing protects purchasing power"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Where to Save vs Where to Invest",
+          "pillars": [
+            {
+              "pillar": "Savings Products",
+              "description": "Capital protection, liquidity",
+              "explanation": "• Savings bank account (3-4%)\n• Fixed deposits (6-7%)\n• Recurring deposits (6-7%)\n• Liquid mutual funds (5-7%)\n• Post office schemes (6-7.5%)\n\nUse for: Emergency fund, goals within 3 years, security buffer",
+              "strength": "Safety and accessibility"
+            },
+            {
+              "pillar": "Investment Products",
+              "description": "Growth potential, wealth building",
+              "explanation": "• Equity mutual funds (10-15%)\n• Direct stocks (variable, high risk)\n• Real estate (8-10%)\n• Gold (8-10%)\n• PPF (7.1%, tax-free, 15-year lock)\n\nUse for: Retirement, long-term goals, beating inflation, wealth creation",
+              "strength": "Higher returns over time"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Goal-Based Allocation",
+          "content": "You have ₹5 lakhs to allocate:\n\nScenario: 30-year-old with multiple goals\n\n1. Emergency Fund (6 months expenses = ₹2 lakhs)\n   → SAVE in savings account\n   Reason: Need immediate access if emergency\n\n2. Car Purchase (2 years away, need ₹3 lakhs more)\n   → SAVE in FD/liquid funds\n   Reason: Can't risk market volatility for near-term goal\n\n3. Child's Education (12 years away, need ₹20 lakhs)\n   → INVEST in equity mutual funds\n   Reason: Long horizon allows riding volatility for higher returns\n\n4. Retirement (30 years away, need ₹2 crores)\n   → INVEST aggressively in equities\n   Reason: Very long term, can handle market ups/downs for maximum growth"
+        },
+        {
+          "type": "process_flow",
+          "title": "The Optimal Sequence",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Emergency Fund First",
+              "description": "Save 3-6 months expenses in liquid savings before anything else. Non-negotiable foundation.",
+              "money_supply": "Safety net established"
+            },
+            {
+              "step": 2,
+              "title": "Pay Off High-Interest Debt",
+              "description": "Credit cards (40%), personal loans (15%+). Guaranteed 'return' by eliminating interest.",
+              "money_supply": "Stop wealth bleeding"
+            },
+            {
+              "step": 3,
+              "title": "Employer Match (If Available)",
+              "description": "If employer matches EPF/NPS, contribute enough to get full match. Free money!",
+              "money_supply": "Instant 100% return"
+            },
+            {
+              "step": 4,
+              "title": "Short-Term Goals in Savings",
+              "description": "Goals within 3 years → FDs, RDs, liquid funds. Can't risk market volatility.",
+              "money_supply": "Near-term goals secured"
+            },
+            {
+              "step": 5,
+              "title": "Long-Term Goals in Investments",
+              "description": "Retirement, children's future (5+ years) → equity mutual funds, PPF, real estate.",
+              "money_supply": "Wealth building begins"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Time Horizon Decision Rule",
+          "formula": "Goal Timeline → Product Choice\n\n0-1 year: Savings account, liquid funds only\n1-3 years: FDs, RDs, debt mutual funds\n3-5 years: 60% debt, 40% equity funds\n5-10 years: 40% debt, 60% equity funds\n10+ years: 80-100% equity funds",
+          "example": "You need money for:\n\n• Down payment in 6 months: Savings account (can't risk any loss)\n• Wedding in 2 years: FD @ 7% (safe, decent return)\n• House in 7 years: 50-50 debt-equity funds (balanced growth + safety)\n• Retirement in 25 years: 100% equity funds (maximum growth potential)",
+          "note": "Risk capacity increases with time horizon. Longer time = more equity exposure possible."
+        },
+        {
+          "type": "real_world",
+          "title": "The Cost of Keeping Everything in Savings",
+          "scenarios": [
+            {
+              "scenario": "Ravi's Approach",
+              "description": "₹10 lakhs in FD at 7% for 20 years. Feels 'safe.' No market risk.",
+              "effect": "Grows to ₹38.7 lakhs"
+            },
+            {
+              "scenario": "Priya's Approach",
+              "description": "₹10 lakhs in equity mutual funds at 12% for 20 years. Some market volatility but stays invested.",
+              "effect": "Grows to ₹96.5 lakhs"
+            },
+            {
+              "scenario": "Difference",
+              "description": "Priya has ₹57.8 lakhs MORE despite same initial investment. Ravi's 'safe' approach cost him nearly ₹60 lakhs!",
+              "effect": "Opportunity cost of excessive safety"
+            },
+            {
+              "scenario": "Lesson",
+              "description": "For long-term goals, 'safety' of FDs is actually risky—you risk not reaching your goal. Inflation eats FD returns. Time diversifies equity risk.",
+              "effect": "Match risk to time horizon"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Savings = safety and liquidity; Investing = growth and wealth building",
+            "Short-term goals (0-3 years) → save in FDs, savings accounts",
+            "Long-term goals (5+ years) → invest in equities for higher returns",
+            "Sequence matters: Emergency fund → debt repayment → employer match → goal-based allocation",
+            "Don't invest short-term money; don't save long-term money"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "For a goal that is 10 years away, which allocation is most appropriate?",
+        "options": [
+          "100% savings account",
+          "100% fixed deposits",
+          "70-80% equity funds, 20-30% debt",
+          "100% gold"
+        ],
+        "correct_answer": 2,
+        "explanation": "For 10-year goals, a higher equity allocation (70-80%) is appropriate as you have time to ride out market volatility while capturing higher growth potential, with some debt for stability."
+      }
+    },
+    {
+      "lesson_id": "1.4.6",
+      "lesson_number": 6,
+      "title": "Building Financial Habits",
+      "subtitle": "Small Actions, Big Results",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Financial success isn't about one big decision. It's the result of small, consistent habits repeated over years. Wealth is built in boring discipline, not exciting gambles."
+        },
+        {
+          "type": "property_grid",
+          "properties": [
+            {
+              "property": "Pay Yourself First",
+              "description": "Save before spending, not after",
+              "good_example": "Salary credited → Auto-transfer 20% to investments → Spend rest",
+              "bad_example": "Spend all month → Save 'leftover' (usually nothing)",
+              "icon": "trending-up"
+            },
+            {
+              "property": "Automate Everything",
+              "description": "Remove willpower from equation",
+              "good_example": "Auto-debit for SIPs, bill payments, recurring deposits",
+              "bad_example": "Manual transfers → forget → miss investments",
+              "icon": "repeat"
+            },
+            {
+              "property": "Track Net Worth Quarterly",
+              "description": "Monitor overall financial health",
+              "good_example": "Every 3 months: Assets - Liabilities = Net Worth. Track growth.",
+              "bad_example": "No idea of total financial picture, just account balances",
+              "icon": "bar-chart"
+            },
+            {
+              "property": "30-Day Rule for Big Purchases",
+              "description": "Pause before buying",
+              "good_example": "Want ₹50k item → wait 30 days → reassess if still needed",
+              "bad_example": "Impulse buy → regret → clutter → money wasted",
+              "icon": "clock"
+            },
+            {
+              "property": "Annual Financial Review",
+              "description": "Year-end audit",
+              "good_example": "Review all accounts, update goals, rebalance portfolio, tax planning",
+              "bad_example": "Set-and-forget → drift from goals → suboptimal allocation",
+              "icon": "check-circle"
+            },
+            {
+              "property": "Increase Savings with Income",
+              "description": "Lifestyle inflation control",
+              "good_example": "₹10k raise → ₹5k to savings increase, ₹5k to lifestyle",
+              "bad_example": "₹10k raise → ₹10k lifestyle increase → always living paycheck-to-paycheck",
+              "icon": "arrow-up"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "The Power of Small Habits",
+          "pillars": [
+            {
+              "pillar": "Daily Coffee Example",
+              "description": "₹150 coffee × 25 days = ₹3,750/month",
+              "explanation": "Yearly cost: ₹45,000\n\nInvested at 12% for 30 years:\n₹45,000/year → ₹1.36 CRORES\n\nThat daily coffee costs over a crore in retirement money!\n\nNot saying never enjoy coffee—but be aware of long-term cost. Conscious spending vs mindless spending.",
+              "strength": "Compound effect of small expenses"
+            },
+            {
+              "pillar": "Credit Card Points Hack",
+              "description": "Use card for all expenses, collect points",
+              "explanation": "₹60,000 monthly spending on right credit card:\n• 2% cashback = ₹1,200/month = ₹14,400/year\n• Pay FULL balance (never pay interest)\n• Bank pays you to use their money!\n\nOver 30 years at 12%: ₹4.32 lakhs from 'free money'",
+              "strength": "Leverage without cost"
+            },
+            {
+              "pillar": "Side Income SIP",
+              "description": "Invest 100% of side hustle income",
+              "explanation": "Freelance ₹10,000/month, already living on salary:\n• Invest ALL side income in mutual funds\n• 12% return for 20 years\n• Corpus: ₹99.92 lakhs!\n\nBuilt nearly ₹1 crore from side income alone. Main salary untouched.",
+              "strength": "Accelerated wealth building"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Financial Habits: Rich vs Broke",
+          "items": [
+            {
+              "habit": "Income",
+              "rich": "See raise → increase savings first",
+              "broke": "See raise → upgrade lifestyle",
+              "result": "Rich get richer, broke stay broke"
+            },
+            {
+              "habit": "Purchases",
+              "rich": "Calculate cost per use",
+              "broke": "Look at sticker price only",
+              "result": "Rich buy quality, broke buy cheap twice"
+            },
+            {
+              "habit": "Debt",
+              "rich": "Use for assets that appreciate",
+              "broke": "Use for consumption and lifestyle",
+              "result": "Rich leverage, broke trap"
+            },
+            {
+              "habit": "Savings",
+              "rich": "Pay self first, automate",
+              "broke": "Save what's left (nothing)",
+              "result": "Rich build wealth, broke live paycheck-to-paycheck"
+            },
+            {
+              "habit": "Learning",
+              "rich": "Invest in financial education",
+              "broke": "Ignore money management",
+              "result": "Rich make informed decisions, broke make costly mistakes"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "The 1% Better Every Day",
+          "content": "James Clear's concept applied to finance:\n\nIf you improve your financial situation by just 1% every day:\n1.01^365 = 37.8x improvement in a year\n\nSmall actions:\n• Negotiate ₹500 off phone bill → ₹6,000/year saved\n• Pack lunch 3 days/week → ₹15,000/year saved\n• Use credit card points → ₹10,000/year value\n• Refinance loan 0.5% lower → ₹25,000/year saved on ₹50L loan\n• Learn one investment concept/week → Better returns\n\nTotal: ₹56,000+ saved without sacrificing lifestyle. Invested, becomes ₹50+ lakhs in 25 years!"
+        },
+        {
+          "type": "real_world",
+          "title": "Warren Buffett's Habits",
+          "scenarios": [
+            {
+              "scenario": "Lives Below Means",
+              "description": "Still lives in house bought in 1958 for $31,500. Drives regular car. Doesn't buy what he doesn't need.",
+              "effect": "More capital to invest"
+            },
+            {
+              "scenario": "Reads 5-6 Hours Daily",
+              "description": "Spends 80% of day reading annual reports, newspapers, books. Continuous learning.",
+              "effect": "Better investment decisions"
+            },
+            {
+              "scenario": "Long-Term Focus",
+              "description": "'Someone's sitting in the shade today because someone planted a tree long ago.' Thinks in decades, not quarters.",
+              "effect": "Compound wealth over 60+ years"
+            },
+            {
+              "scenario": "Avoid Debt",
+              "description": "'Never borrow money for things that depreciate.' Uses leverage only for appreciating assets.",
+              "effect": "Preserves capital for growth"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Wealth is built through consistent habits, not one-time decisions",
+            "Pay yourself first—automate savings before spending",
+            "Small daily expenses compound to massive opportunity costs",
+            "Increase savings rate with every raise to avoid lifestyle inflation",
+            "Annual financial review keeps you aligned with long-term goals"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What does 'Pay Yourself First' mean?",
+        "options": [
+          "Buy things you want before bills",
+          "Save/invest a portion before spending on anything else",
+          "Pay yourself a salary from business",
+          "Give yourself rewards"
+        ],
+        "correct_answer": 1,
+        "explanation": "'Pay Yourself First' means automatically saving or investing a portion of income as soon as you receive it, before paying any other expenses. This ensures consistent wealth building."
+      }
+    }
+  ],
+  "module_quiz": {
+    "quiz_id": "quiz_1.4",
+    "title": "Personal Finance Basics - Final Assessment",
+    "description": "Test your personal finance knowledge",
+    "time_limit_minutes": 18,
+    "passing_score": 70,
+    "questions": [
+      {
+        "question_id": "q1",
+        "question": "In the 50/30/20 budgeting rule, what percentage should go to savings and investments?",
+        "type": "multiple_choice",
+        "options": [
+          "50%",
+          "30%",
+          "20%",
+          "10%"
+        ],
+        "correct_answer": 2,
+        "explanation": "The 50/30/20 rule allocates 50% to needs, 30% to wants, and 20% to savings and investments. This 20% builds your financial future.",
+        "points": 8
+      },
+      {
+        "question_id": "q2",
+        "question": "How many months of expenses should a typical emergency fund cover?",
+        "type": "multiple_choice",
+        "options": [
+          "1 month",
+          "3-6 months",
+          "12 months",
+          "24 months"
+        ],
+        "correct_answer": 1,
+        "explanation": "Most financial experts recommend 3-6 months of essential expenses in an emergency fund. Single income earners and freelancers should aim for 6-9 months.",
+        "points": 8
+      },
+      {
+        "question_id": "q3",
+        "question": "Which of the following is generally considered 'bad debt'?",
+        "type": "multiple_choice",
+        "options": [
+          "Home loan",
+          "Education loan",
+          "Credit card balance for shopping",
+          "Business loan"
+        ],
+        "correct_answer": 2,
+        "explanation": "Credit card debt at 36-42% interest for consumer purchases is bad debt—it funds consumption without creating value. Home, education, and business loans can generate returns exceeding their cost.",
+        "points": 8
+      },
+      {
+        "question_id": "q4",
+        "question": "What is a healthy debt-to-income ratio?",
+        "type": "multiple_choice",
+        "options": [
+          "Below 30%",
+          "Below 50%",
+          "Below 70%",
+          "Below 90%"
+        ],
+        "correct_answer": 0,
+        "explanation": "A debt-to-income ratio below 30% is considered healthy. 30-40% is caution zone. Above 40% indicates financial stress and makes new loan approval difficult.",
+        "points": 8
+      },
+      {
+        "question_id": "q5",
+        "question": "What is the most important factor in calculating credit score?",
+        "type": "multiple_choice",
+        "options": [
+          "Income level",
+          "Payment history",
+          "Number of credit cards",
+          "Age"
+        ],
+        "correct_answer": 1,
+        "explanation": "Payment history accounts for 35% of your credit score—the most important factor. Paying all bills on time is crucial for maintaining a good credit score.",
+        "points": 8
+      },
+      {
+        "question_id": "q6",
+        "question": "What is the recommended maximum credit utilization ratio?",
+        "type": "multiple_choice",
+        "options": [
+          "10%",
+          "30%",
+          "60%",
+          "90%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Credit utilization should stay below 30% of your available credit limit. This shows you're not credit-dependent and helps maintain a healthy credit score.",
+        "points": 8
+      },
+      {
+        "question_id": "q7",
+        "question": "Where should you keep your emergency fund?",
+        "type": "multiple_choice",
+        "options": [
+          "Stock market",
+          "Real estate",
+          "Savings account or liquid fund",
+          "Fixed deposit with 5-year lock-in"
+        ],
+        "correct_answer": 2,
+        "explanation": "Emergency funds must be highly liquid (instantly accessible) and safe. Savings accounts and liquid mutual funds provide both quick access and capital protection.",
+        "points": 8
+      },
+      {
+        "question_id": "q8",
+        "question": "For a goal that is 8 years away, what is the most appropriate investment allocation?",
+        "type": "multiple_choice",
+        "options": [
+          "100% savings account",
+          "100% fixed deposits",
+          "60-70% equity funds, 30-40% debt",
+          "100% gold"
+        ],
+        "correct_answer": 2,
+        "explanation": "For medium to long-term goals (5-10 years), a balanced allocation with higher equity (60-70%) provides growth potential while debt (30-40%) offers stability.",
+        "points": 9
+      },
+      {
+        "question_id": "q9",
+        "question": "What does 'Pay Yourself First' mean?",
+        "type": "multiple_choice",
+        "options": [
+          "Spend on luxuries before necessities",
+          "Save/invest before spending on other expenses",
+          "Pay bonuses to yourself",
+          "Keep all income for yourself"
+        ],
+        "correct_answer": 1,
+        "explanation": "'Pay Yourself First' means automatically saving or investing a portion of your income immediately upon receiving it, before any other spending. This ensures consistent wealth building.",
+        "points": 8
+      },
+      {
+        "question_id": "q10",
+        "question": "Which debt repayment strategy targets the highest interest rate first?",
+        "type": "multiple_choice",
+        "options": [
+          "Debt Snowball",
+          "Debt Avalanche",
+          "Debt Consolidation",
+          "Minimum Payment Method"
+        ],
+        "correct_answer": 1,
+        "explanation": "Debt Avalanche method targets the highest interest rate debt first, saving the most money mathematically. Debt Snowball targets smallest balance first for psychological wins.",
+        "points": 8
+      },
+      {
+        "question_id": "q11",
+        "question": "If you have ₹40,000 monthly expenses and ₹80,000 monthly income with ₹25,000 in EMIs, what's your debt-to-income ratio?",
+        "type": "multiple_choice",
+        "options": [
+          "25%",
+          "31.25%",
+          "50%",
+          "62.5%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Debt-to-Income Ratio = (25,000 / 80,000) × 100 = 31.25%. This is in the caution zone (30-40%). Should avoid taking new debt.",
+        "points": 9
+      },
+      {
+        "question_id": "q12",
+        "question": "What is the primary difference between saving and investing?",
+        "type": "multiple_choice",
+        "options": [
+          "Saving is for poor people, investing for rich",
+          "Saving is short-term safety, investing is long-term growth",
+          "There is no difference",
+          "Saving is illegal, investing is legal"
+        ],
+        "correct_answer": 1,
+        "explanation": "Saving focuses on capital preservation and liquidity for short-term needs, while investing aims for long-term wealth growth with higher returns but accepting market volatility.",
+        "points": 8
+      }
+    ]
+  },
+  "completion_badge": {
+    "badge_id": "personal_finance_master",
+    "title": "Finance Fundamentals Expert",
+    "description": "Mastered personal finance basics",
+    "icon": "trophy",
+    "color": "#32CD32"
+  }
+}

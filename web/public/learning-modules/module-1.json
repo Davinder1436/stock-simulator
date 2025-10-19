@@ -1,0 +1,740 @@
+{
+  "module_metadata": {
+    "module_id": "1.1",
+    "level": 1,
+    "level_name": "Foundation",
+    "module_title": "Understanding Money",
+    "module_description": "Grasp what money is, its evolution, and fundamental principles that govern our financial world",
+    "estimated_duration_minutes": 45,
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "learning_objectives": [
+      "Understand what money is and why it exists",
+      "Learn the evolution from barter to digital currency",
+      "Grasp the three core functions of money",
+      "Recognize different forms of money throughout history",
+      "Understand what gives money its value"
+    ],
+    "total_lessons": 6,
+    "total_quiz_questions": 10,
+    "pass_percentage": 70,
+    "next_module": "1.2"
+  },
+  "lessons": [
+    {
+      "lesson_id": "1.1.1",
+      "lesson_number": 1,
+      "title": "What is Money?",
+      "subtitle": "The Foundation of Economic Exchange",
+      "duration_minutes": 6,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Money is anything that is widely accepted as payment for goods and services or repayment of debts. It's one of humanity's most important inventions, enabling complex economies to function."
+        },
+        {
+          "type": "definition",
+          "term": "Money",
+          "definition": "A medium of exchange that is widely accepted in transactions for goods, services, and debts."
+        },
+        {
+          "type": "text",
+          "content": "Imagine a world without money. If you're a farmer with wheat and you need shoes, you'd have to find a shoemaker who wants wheat at the exact moment you need shoes. This 'double coincidence of wants' makes trade incredibly difficult."
+        },
+        {
+          "type": "example",
+          "title": "The Barter Problem",
+          "content": "A fisherman catches fish but needs rice. He finds a rice farmer, but the farmer wants cloth, not fish. The fisherman must first trade fish for cloth, then cloth for rice. With money, the fisherman simply sells fish for money and buys rice with money—two simple steps instead of complex chains."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Money eliminates the need for 'double coincidence of wants'",
+            "It simplifies trade and enables specialization",
+            "Money is a social agreement—it works because we all accept it",
+            "The form of money matters less than its acceptance"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Money is not wealth itself—it's a tool to measure and exchange wealth. A ₹500 note has minimal intrinsic value as paper, but represents purchasing power because society collectively agrees on its value."
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the main problem that money solves?",
+        "options": [
+          "Making things expensive",
+          "The double coincidence of wants",
+          "Creating wealth",
+          "Printing paper notes"
+        ],
+        "correct_answer": 1,
+        "explanation": "Money primarily solves the 'double coincidence of wants' problem in barter systems, where both parties must want exactly what the other offers at the same time."
+      }
+    },
+    {
+      "lesson_id": "1.1.2",
+      "lesson_number": 2,
+      "title": "The Three Functions of Money",
+      "subtitle": "Medium, Measure, and Store",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "For something to be considered money, it must perform three essential functions. Understanding these helps you evaluate any form of money, from rupees to cryptocurrencies."
+        },
+        {
+          "type": "function_card",
+          "functions": [
+            {
+              "number": 1,
+              "title": "Medium of Exchange",
+              "description": "Money facilitates transactions. You can exchange it for goods and services without barter.",
+              "example": "You sell your laptop for ₹40,000 and use that money to buy a phone. The money is the 'medium' that makes both transactions possible."
+            },
+            {
+              "number": 2,
+              "title": "Unit of Account",
+              "description": "Money provides a standard measure of value. It lets us compare the worth of different things.",
+              "example": "A shirt costs ₹1,000, a laptop costs ₹40,000. You immediately know a laptop equals 40 shirts in value. Without money, how would you compare a cow to a computer?"
+            },
+            {
+              "number": 3,
+              "title": "Store of Value",
+              "description": "Money preserves purchasing power over time, allowing you to save today and spend tomorrow.",
+              "example": "You earn ₹50,000 today, save ₹20,000, and can use it next month or next year. The money 'stores' your work's value across time."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Not all three functions are always perfect. Inflation erodes money's store of value. Some currencies aren't widely accepted as mediums of exchange. But for something to be truly considered money, it should perform all three reasonably well."
+        },
+        {
+          "type": "comparison",
+          "title": "Testing Different Items as Money",
+          "items": [
+            {
+              "name": "Indian Rupee",
+              "medium": "✓ Excellent",
+              "unit": "✓ Excellent",
+              "store": "⚠ Good (affected by inflation)",
+              "overall": "Strong money"
+            },
+            {
+              "name": "Gold",
+              "medium": "✗ Poor (hard to divide and carry)",
+              "unit": "⚠ Moderate (price fluctuates)",
+              "store": "✓ Excellent (maintains value)",
+              "overall": "Better as store than medium"
+            },
+            {
+              "name": "Fresh Vegetables",
+              "medium": "⚠ Possible locally",
+              "unit": "✗ Poor (inconsistent)",
+              "store": "✗ Terrible (spoils quickly)",
+              "overall": "Not good money"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "All money must perform three functions: exchange, accounting, and storage",
+            "Different forms of money excel at different functions",
+            "Modern currency is optimized for all three functions",
+            "Understanding these helps evaluate new forms like cryptocurrency"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Which function of money allows you to save today and spend later?",
+        "options": [
+          "Medium of exchange",
+          "Unit of account",
+          "Store of value",
+          "Legal tender"
+        ],
+        "correct_answer": 2,
+        "explanation": "Store of value is the function that allows money to preserve purchasing power over time, enabling saving and future spending."
+      }
+    },
+    {
+      "lesson_id": "1.1.3",
+      "lesson_number": 3,
+      "title": "Evolution of Money",
+      "subtitle": "From Shells to Digital Coins",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Money hasn't always been paper notes and digital numbers. Its evolution reflects humanity's increasing sophistication in commerce and trust systems."
+        },
+        {
+          "type": "timeline",
+          "events": [
+            {
+              "period": "10,000 BCE - 3,000 BCE",
+              "title": "Barter System",
+              "description": "Direct exchange of goods and services. Limited by double coincidence of wants.",
+              "example": "Trading 5 chickens for 1 goat"
+            },
+            {
+              "period": "3,000 BCE - 600 BCE",
+              "title": "Commodity Money",
+              "description": "Objects with intrinsic value used as money: shells, salt, cattle, grain.",
+              "example": "Cowrie shells in Asia and Africa. 'Salary' comes from 'salt' (salarium in Latin)"
+            },
+            {
+              "period": "600 BCE - 1,000 CE",
+              "title": "Metal Coins",
+              "description": "Standardized coins made of gold, silver, copper. Easier to carry and divide.",
+              "example": "First coins in Lydia (modern Turkey) around 600 BCE. Punch-marked coins in India."
+            },
+            {
+              "period": "1,000 CE - 1,900 CE",
+              "title": "Paper Money",
+              "description": "Promissory notes backed by gold or silver reserves. Easier to transport large values.",
+              "example": "China's Tang Dynasty first used paper money. British pound backed by gold."
+            },
+            {
+              "period": "1900 CE - 1971 CE",
+              "title": "Gold Standard",
+              "description": "Paper money directly convertible to gold. Limited money supply to gold reserves.",
+              "example": "₹1 note could be exchanged for a fixed amount of gold at the bank."
+            },
+            {
+              "period": "1971 CE - 2000 CE",
+              "title": "Fiat Money",
+              "description": "Money backed by government decree, not gold. Value from trust in the government.",
+              "example": "US left gold standard in 1971. Indian rupee is fiat currency."
+            },
+            {
+              "period": "2000 CE - Present",
+              "title": "Digital Money",
+              "description": "Electronic transfers, credit cards, UPI, cryptocurrencies. Money exists as data.",
+              "example": "UPI transactions, Bitcoin, digital wallets. Only 8% of Indian money is physical cash."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Each evolution solved problems of the previous form: durability, divisibility, portability, or scarcity. Modern money is moving towards pure digital forms because they're instant, borderless, and programmable."
+        },
+        {
+          "type": "insight",
+          "title": "Why Did Money Change?",
+          "content": "Each transition addressed key limitations:\n\n• Shells → Coins: Better standardization and durability\n• Coins → Paper: Easier to carry large amounts\n• Paper → Digital: Instant transfer across distances\n\nThe trend is clear: money becomes more abstract but more functional."
+        }
+      ],
+      "quiz_check": {
+        "question": "What major change happened to money in 1971?",
+        "options": [
+          "First paper money was created",
+          "Gold standard was abandoned",
+          "Cryptocurrency was invented",
+          "Barter system ended"
+        ],
+        "correct_answer": 1,
+        "explanation": "In 1971, the US abandoned the gold standard, meaning currencies were no longer backed by gold but by government decree (fiat money). This fundamentally changed the nature of modern money."
+      }
+    },
+    {
+      "lesson_id": "1.1.4",
+      "lesson_number": 4,
+      "title": "Properties of Good Money",
+      "subtitle": "What Makes Money Work",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Not everything can be good money. Throughout history, successful currencies share specific characteristics. Understanding these helps you evaluate any form of money—including new cryptocurrencies."
+        },
+        {
+          "type": "property_grid",
+          "properties": [
+            {
+              "property": "Durability",
+              "description": "Must last over time without degrading",
+              "good_example": "Metal coins last centuries. Digital money doesn't decay.",
+              "bad_example": "Fresh vegetables rot. Paper money tears but is replaceable.",
+              "icon": "shield"
+            },
+            {
+              "property": "Portability",
+              "description": "Easy to carry and transfer",
+              "good_example": "Paper money in wallet. Digital money via phone.",
+              "bad_example": "Gold bars are heavy. Cattle are hard to transport.",
+              "icon": "truck"
+            },
+            {
+              "property": "Divisibility",
+              "description": "Can be broken into smaller units",
+              "good_example": "₹1000 = 100 × ₹10 = 1000 × ₹1. Bitcoin divisible to 8 decimals.",
+              "bad_example": "Can't divide a cow into smaller cows. Diamonds lose value when cut.",
+              "icon": "split"
+            },
+            {
+              "property": "Uniformity",
+              "description": "Each unit is identical and interchangeable",
+              "good_example": "All ₹500 notes have equal value. All pure gold grams are equal.",
+              "bad_example": "Each diamond is unique. Cattle vary in quality.",
+              "icon": "equal"
+            },
+            {
+              "property": "Limited Supply",
+              "description": "Cannot be easily created or counterfeited",
+              "good_example": "Central banks control money printing. Bitcoin capped at 21 million.",
+              "bad_example": "Leaves are unlimited. Easy counterfeiting destroys value.",
+              "icon": "lock"
+            },
+            {
+              "property": "Acceptability",
+              "description": "Widely recognized and accepted",
+              "good_example": "Indian rupee accepted nationwide. USD accepted globally.",
+              "bad_example": "Company vouchers only work at specific stores.",
+              "icon": "check-circle"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Modern money excels at most properties. Cash is durable, portable, divisible, uniform, and widely accepted. Its supply is controlled by central banks. Digital money improves portability even further—you can send millions instantly."
+        },
+        {
+          "type": "real_world",
+          "title": "When Money Properties Fail",
+          "scenarios": [
+            {
+              "scenario": "Zimbabwe 2008",
+              "failure": "Limited Supply",
+              "description": "Government printed too much money. Inflation reached 79.6 billion percent monthly. A loaf of bread cost 100 billion dollars.",
+              "lesson": "Without scarcity, money becomes worthless."
+            },
+            {
+              "scenario": "Venezuelan Bolivar",
+              "failure": "Store of Value",
+              "description": "Hyperinflation made people weigh cash instead of counting it. Citizens switched to US dollars.",
+              "lesson": "When money loses value too fast, people abandon it."
+            }
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Which property of money ensures you can buy small items like candy?",
+        "options": [
+          "Durability",
+          "Divisibility",
+          "Limited supply",
+          "Acceptability"
+        ],
+        "correct_answer": 1,
+        "explanation": "Divisibility allows money to be broken into smaller units, enabling transactions of any size from ₹1 candy to ₹1 crore house."
+      }
+    },
+    {
+      "lesson_id": "1.1.5",
+      "lesson_number": 5,
+      "title": "What Gives Money Value?",
+      "subtitle": "Trust, Scarcity, and Collective Belief",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "A ₹2000 note is just paper with ink. A digital rupee is just data. So why can you exchange them for real goods and services worth ₹2000? Understanding the source of money's value is crucial for financial literacy."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Three Pillars of Money's Value",
+          "pillars": [
+            {
+              "pillar": "1. Legal Tender Status",
+              "description": "Government declares it as official payment method",
+              "explanation": "In India, the Reserve Bank of India issues currency. By law, no one can refuse to accept rupees for debt payment. This government backing creates baseline trust.",
+              "strength": "Strong for national currencies"
+            },
+            {
+              "pillar": "2. Scarcity & Supply Control",
+              "description": "Limited availability maintains value",
+              "explanation": "RBI carefully controls how much money exists. If money were unlimited, it would be worthless (like air—essential but free). Scarcity creates value. That's why counterfeiting is a crime—it dilutes scarcity.",
+              "strength": "Critical for value preservation"
+            },
+            {
+              "pillar": "3. Collective Trust & Network Effect",
+              "description": "Value grows as more people accept it",
+              "explanation": "Money's value is a shared belief. You accept ₹100 because you trust others will accept it from you. The more widespread this trust, the more valuable the money. This is why new currencies struggle—small networks mean limited utility.",
+              "strength": "Foundation of all money systems"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Historical backing shifted from intrinsic value (gold coins) to representative value (gold-backed notes) to pure fiat value (trust in government). Modern money's value is entirely based on collective confidence."
+        },
+        {
+          "type": "example",
+          "title": "The Bitcoin Experiment",
+          "content": "Bitcoin has no government backing, no physical form, and no intrinsic value. Yet in 2024, it trades at ₹50+ lakhs per coin. Why? Because a global community agrees it has value due to:\n\n• Absolute scarcity (only 21 million will ever exist)\n• Decentralized trust (blockchain verification)\n• Network effect (millions of users worldwide)\n• Utility as borderless digital money\n\nThis proves that government backing, while helpful, isn't absolutely necessary—collective trust and scarcity are sufficient."
+        },
+        {
+          "type": "comparison",
+          "title": "Value Sources: Then vs Now",
+          "items": [
+            {
+              "era": "Ancient (Commodity Money)",
+              "source": "Intrinsic value of material",
+              "example": "Gold coin value = gold metal value",
+              "vulnerability": "Heavy, hard to transport, can be melted"
+            },
+            {
+              "era": "Gold Standard Era",
+              "source": "Redeemable for fixed gold amount",
+              "example": "₹1 note = 1g gold at bank",
+              "vulnerability": "Limited by gold supply, bank runs possible"
+            },
+            {
+              "era": "Modern Fiat",
+              "source": "Government decree + controlled supply",
+              "example": "₹100 note backed by RBI + Indian economy",
+              "vulnerability": "Trust in government required, inflation risk"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Money's value isn't intrinsic—it's a social agreement",
+            "Government backing provides trust infrastructure",
+            "Controlled scarcity prevents inflation and maintains value",
+            "The more people accept money, the more valuable it becomes",
+            "Confidence is fragile—hyperinflation destroys money's value overnight"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Modern fiat money primarily derives its value from:",
+        "options": [
+          "The gold it can be exchanged for",
+          "The paper it's printed on",
+          "Collective trust and controlled supply",
+          "The central bank building"
+        ],
+        "correct_answer": 2,
+        "explanation": "Fiat money has no intrinsic or commodity backing. Its value comes from collective trust in the currency system and carefully controlled supply by the central bank."
+      }
+    },
+    {
+      "lesson_id": "1.1.6",
+      "lesson_number": 6,
+      "title": "Money Creation & Supply",
+      "subtitle": "Where Does Money Come From?",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Most people think money comes from the government printing notes. The reality is far more interesting—and counterintuitive. Most money is created by banks through lending, not by printing presses."
+        },
+        {
+          "type": "definition",
+          "term": "Money Supply",
+          "definition": "The total amount of money in circulation in an economy, including cash, bank deposits, and other liquid assets."
+        },
+        {
+          "type": "money_pyramid",
+          "title": "Layers of Money Supply",
+          "layers": [
+            {
+              "layer": "M0 (Base Money)",
+              "description": "Physical currency + bank reserves with RBI",
+              "percentage": "~15%",
+              "example": "All ₹500 and ₹2000 notes in circulation + what banks keep with RBI"
+            },
+            {
+              "layer": "M1 (Narrow Money)",
+              "description": "M0 + demand deposits (checking accounts)",
+              "percentage": "~35%",
+              "example": "Cash + money in savings accounts that can be withdrawn anytime"
+            },
+            {
+              "layer": "M2 (Broad Money)",
+              "description": "M1 + time deposits + market funds",
+              "percentage": "~100%",
+              "example": "Everything in M1 + fixed deposits + money market accounts"
+            },
+            {
+              "layer": "M3 (Broadest Money)",
+              "description": "M2 + large institutional deposits",
+              "percentage": "Most measured",
+              "example": "Total money supply measured by RBI (₹200+ lakh crore in India)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Here's the mind-blowing part: When banks lend money, they create new money. This process is called fractional reserve banking."
+        },
+        {
+          "type": "process_flow",
+          "title": "How Banks Create Money",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Initial Deposit",
+              "description": "You deposit ₹10,000 in Bank A. Bank must keep 4% (₹400) as reserve with RBI. Can lend remaining ₹9,600.",
+              "money_supply": "₹10,000"
+            },
+            {
+              "step": 2,
+              "title": "First Loan",
+              "description": "Bank A lends ₹9,600 to Person B to buy a phone. Seller deposits ₹9,600 in Bank B.",
+              "money_supply": "₹19,600 (Your ₹10k + Seller's ₹9.6k)"
+            },
+            {
+              "step": 3,
+              "title": "Second Loan",
+              "description": "Bank B keeps ₹384 reserve, lends ₹9,216 to Person C. Recipient deposits in Bank C.",
+              "money_supply": "₹28,816"
+            },
+            {
+              "step": 4,
+              "title": "Multiplication Continues",
+              "description": "Process repeats. Original ₹10,000 creates up to ₹2,50,000 total money supply!",
+              "money_supply": "₹2,50,000 (with 4% reserve ratio)"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Money Multiplier Formula",
+          "formula": "Money Multiplier = 1 / Reserve Ratio",
+          "example": "With 4% reserve requirement:\nMultiplier = 1 / 0.04 = 25\n\n₹10,000 deposit can create up to ₹2,50,000 total money supply.",
+          "note": "This is the theoretical maximum. Real-world multiplier is lower as people hold cash and banks maintain excess reserves."
+        },
+        {
+          "type": "insight",
+          "title": "Why This Matters",
+          "content": "Understanding money creation explains:\n\n• Why reserve ratio changes by RBI affect the whole economy\n• How credit expansion drives economic growth\n• Why banking crises cause money supply to contract\n• How central banks control inflation through lending rules\n• Why your bank deposit creates money but cash under mattress doesn't"
+        },
+        {
+          "type": "real_world",
+          "title": "2008 Financial Crisis Example",
+          "scenarios": [
+            {
+              "scenario": "Before Crisis",
+              "description": "Banks freely lending, money multiplier working. Credit flowing, economy growing.",
+              "effect": "Money supply expanding"
+            },
+            {
+              "scenario": "Crisis Hits",
+              "description": "Banks stop lending due to fear. Even with same deposits, no new loans = no money creation.",
+              "effect": "Money supply contracts sharply"
+            },
+            {
+              "scenario": "Central Bank Response",
+              "description": "RBI/Fed lowered reserve requirements and interest rates to encourage lending and restore money creation.",
+              "effect": "Gradual money supply recovery"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Most money (85%+) is digital, created by banks through lending",
+            "Physical cash is only a small part of total money supply",
+            "Reserve ratio determines how much money banks can create",
+            "Bank lending literally creates new money in the economy",
+            "Central banks control money supply through reserve requirements and interest rates"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "If reserve ratio is 10% and you deposit ₹1,000, how much total money can theoretically be created?",
+        "options": [
+          "₹900",
+          "₹1,000",
+          "₹10,000",
+          "₹100,000"
+        ],
+        "correct_answer": 2,
+        "explanation": "Money Multiplier = 1/0.10 = 10. So ₹1,000 × 10 = ₹10,000 total money supply can be created through the fractional reserve banking system."
+      }
+    }
+  ],
+  "module_quiz": {
+    "quiz_id": "quiz_1.1",
+    "title": "Understanding Money - Final Assessment",
+    "description": "Test your understanding of money fundamentals",
+    "time_limit_minutes": 15,
+    "passing_score": 70,
+    "questions": [
+      {
+        "question_id": "q1",
+        "question": "Which of the following is NOT one of the three primary functions of money?",
+        "type": "multiple_choice",
+        "options": [
+          "Medium of exchange",
+          "Store of value",
+          "Source of government revenue",
+          "Unit of account"
+        ],
+        "correct_answer": 2,
+        "explanation": "The three functions of money are: medium of exchange, store of value, and unit of account. While governments may earn from money creation (seigniorage), it's not a primary function of money itself.",
+        "points": 10
+      },
+      {
+        "question_id": "q2",
+        "question": "The main problem that money solves in the barter system is:",
+        "type": "multiple_choice",
+        "options": [
+          "High transportation costs",
+          "Double coincidence of wants",
+          "Lack of government regulation",
+          "Unequal distribution of goods"
+        ],
+        "correct_answer": 1,
+        "explanation": "Money eliminates the 'double coincidence of wants' problem where both parties must want exactly what the other has at the same time for a trade to happen.",
+        "points": 10
+      },
+      {
+        "question_id": "q3",
+        "question": "What significant change occurred to the global monetary system in 1971?",
+        "type": "multiple_choice",
+        "options": [
+          "Introduction of digital currency",
+          "Abandonment of the gold standard",
+          "Creation of the first paper money",
+          "Invention of credit cards"
+        ],
+        "correct_answer": 1,
+        "explanation": "In 1971, the United States abandoned the gold standard, meaning currencies were no longer backed by gold reserves but became pure fiat money backed by government decree.",
+        "points": 10
+      },
+      {
+        "question_id": "q4",
+        "question": "Which property of good money ensures that a ₹500 note in Mumbai has the same value as a ₹500 note in Delhi?",
+        "type": "multiple_choice",
+        "options": [
+          "Divisibility",
+          "Portability",
+          "Uniformity",
+          "Durability"
+        ],
+        "correct_answer": 2,
+        "explanation": "Uniformity ensures that each unit of money is identical and interchangeable, regardless of where it is used. All ₹500 notes have equal value everywhere.",
+        "points": 10
+      },
+      {
+        "question_id": "q5",
+        "question": "Modern fiat money primarily derives its value from:",
+        "type": "multiple_choice",
+        "options": [
+          "The precious metals backing it",
+          "The cost of paper and ink",
+          "Collective trust and controlled supply",
+          "The buildings of the central bank"
+        ],
+        "correct_answer": 2,
+        "explanation": "Fiat money has no intrinsic value or commodity backing. Its value comes from collective societal trust in the currency system and carefully controlled supply by the central bank.",
+        "points": 10
+      },
+      {
+        "question_id": "q6",
+        "question": "If the reserve ratio is 5%, what is the theoretical money multiplier?",
+        "type": "multiple_choice",
+        "options": [
+          "5",
+          "10",
+          "20",
+          "50"
+        ],
+        "correct_answer": 2,
+        "explanation": "Money Multiplier = 1 / Reserve Ratio = 1 / 0.05 = 20. This means each rupee deposited can theoretically create 20 rupees in the money supply through fractional reserve banking.",
+        "points": 10
+      },
+      {
+        "question_id": "q7",
+        "question": "Which component represents the largest portion of modern money supply?",
+        "type": "multiple_choice",
+        "options": [
+          "Physical cash in circulation",
+          "Gold in central bank vaults",
+          "Digital bank deposits and credits",
+          "Government bonds"
+        ],
+        "correct_answer": 2,
+        "explanation": "Over 85% of modern money supply is digital—existing as electronic records in bank accounts. Physical cash is only a small fraction of total money.",
+        "points": 10
+      },
+      {
+        "question_id": "q8",
+        "question": "When a bank gives you a loan, where does that money come from?",
+        "type": "multiple_choice",
+        "options": [
+          "Other depositors' accounts are debited",
+          "The central bank transfers it to the bank",
+          "The bank creates new money through lending",
+          "The bank's profit reserves"
+        ],
+        "correct_answer": 2,
+        "explanation": "In fractional reserve banking, when banks lend money, they actually create new money. The loan amount is added to the money supply—it doesn't come from existing deposits.",
+        "points": 10
+      },
+      {
+        "question_id": "q9",
+        "question": "Why did money evolve from commodity forms (like shells) to metal coins?",
+        "type": "multiple_choice",
+        "options": [
+          "Metals were more attractive looking",
+          "Governments mandated the change",
+          "Better standardization and durability",
+          "Shells became too common"
+        ],
+        "correct_answer": 2,
+        "explanation": "Metal coins provided better standardization (uniform weight and purity), greater durability, and easier divisibility compared to shells, salt, or other commodity money.",
+        "points": 10
+      },
+      {
+        "question_id": "q10",
+        "question": "What happens to the value of money when too much is printed?",
+        "type": "multiple_choice",
+        "options": [
+          "Value increases due to more circulation",
+          "Value remains same as government guarantees it",
+          "Value decreases causing inflation",
+          "Value doubles for every doubling of supply"
+        ],
+        "correct_answer": 2,
+        "explanation": "When money supply increases faster than economic output, each unit of money becomes less valuable, causing prices to rise—this is inflation. Extreme cases lead to hyperinflation like Zimbabwe in 2008.",
+        "points": 10
+      }
+    ]
+  },
+  "completion_badge": {
+    "badge_id": "money_fundamentals",
+    "title": "Money Master",
+    "description": "Completed Understanding Money module",
+    "icon": "medal",
+    "color": "#FFD700"
+  },
+  "additional_resources": [
+    {
+      "type": "article",
+      "title": "History of Indian Currency",
+      "description": "Detailed timeline from ancient coins to digital rupee",
+      "url": "#"
+    },
+    {
+      "type": "video",
+      "title": "How Banks Create Money - Animated",
+      "description": "Visual explanation of fractional reserve banking",
+      "duration": "8 min",
+      "url": "#"
+    },
+    {
+      "type": "tool",
+      "title": "Money Multiplier Calculator",
+      "description": "Calculate money creation with different reserve ratios",
+      "url": "#"
+    }
+  ]
+}

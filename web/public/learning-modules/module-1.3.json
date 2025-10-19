@@ -1,0 +1,814 @@
+{
+  "module_metadata": {
+    "module_id": "1.3",
+    "level": 1,
+    "level_name": "Foundation",
+    "module_title": "Time Value of Money",
+    "module_description": "Master the fundamental concept that money today is worth more than money tomorrow, and learn to make smart financial decisions",
+    "estimated_duration_minutes": 40,
+    "difficulty": "beginner",
+    "prerequisites": ["1.1", "1.2"],
+    "learning_objectives": [
+      "Understand why money has time value",
+      "Calculate present and future values",
+      "Grasp the power of compound interest over time",
+      "Make informed decisions between payment options",
+      "Understand inflation's impact on money's value"
+    ],
+    "total_lessons": 5,
+    "total_quiz_questions": 10,
+    "pass_percentage": 70,
+    "next_module": "1.4"
+  },
+  "lessons": [
+    {
+      "lesson_id": "1.3.1",
+      "lesson_number": 1,
+      "title": "Why Money Has Time Value",
+      "subtitle": "The Foundation of All Finance",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Would you prefer ₹1,00,000 today or ₹1,00,000 one year from now? If you chose today, you intuitively understand time value of money—perhaps the most important concept in all of finance."
+        },
+        {
+          "type": "definition",
+          "term": "Time Value of Money (TVM)",
+          "definition": "The principle that money available now is worth more than the same amount in the future due to its potential earning capacity and inflation."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Three Reasons Money Has Time Value",
+          "pillars": [
+            {
+              "pillar": "1. Earning Potential (Opportunity Cost)",
+              "description": "Money today can be invested to grow",
+              "explanation": "₹1,00,000 today invested at 8% becomes ₹1,08,000 in a year. So ₹1,00,000 one year from now is actually worth less than ₹1,00,000 today.\n\nOpportunity cost is what you give up by waiting.",
+              "strength": "Primary reason—money can multiply"
+            },
+            {
+              "pillar": "2. Inflation (Purchasing Power)",
+              "description": "Prices rise, money's value falls",
+              "explanation": "With 6% inflation, what costs ₹100 today costs ₹106 next year. So ₹1,00,000 next year buys less than ₹1,00,000 today.\n\nInflation silently erodes money's value over time.",
+              "strength": "Constant erosion of value"
+            },
+            {
+              "pillar": "3. Risk & Uncertainty",
+              "description": "Future is uncertain, present is certain",
+              "explanation": "A promise of ₹1,00,000 next year carries risk:\n• Payer might default\n• Currency might devalue\n• Economic crisis might occur\n\nCertainty today is more valuable than uncertainty tomorrow.",
+              "strength": "Risk premium for waiting"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real-World Decision",
+          "content": "You win a lottery with two payout options:\n\nOption A: ₹50 lakhs today\nOption B: ₹60 lakhs after 2 years\n\nWhich is better?\n\nIf you can invest at 10% annually:\n• ₹50 lakhs today → ₹50L × (1.10)² = ₹60.5 lakhs after 2 years\n\nOption A is better! ₹50 lakhs today is worth more than ₹60 lakhs in 2 years because of investment opportunity."
+        },
+        {
+          "type": "comparison",
+          "title": "Money Today vs Money Tomorrow",
+          "items": [
+            {
+              "aspect": "Investment Potential",
+              "today": "Can invest immediately and earn returns",
+              "future": "Lost opportunity to earn returns",
+              "winner": "Today wins"
+            },
+            {
+              "aspect": "Purchasing Power",
+              "today": "Buys more at current prices",
+              "future": "Buys less due to inflation",
+              "winner": "Today wins"
+            },
+            {
+              "aspect": "Certainty",
+              "today": "Money in hand, no risk",
+              "future": "Promise carries risk",
+              "winner": "Today wins"
+            },
+            {
+              "aspect": "Flexibility",
+              "today": "Use or invest as needed",
+              "future": "Must wait, less flexible",
+              "winner": "Today wins"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Money today is always worth more than the same amount in the future",
+            "Opportunity cost, inflation, and risk drive time value",
+            "This principle underlies all investment decisions",
+            "Understanding TVM helps you evaluate loans, investments, and payment options",
+            "Higher interest rates = higher time value of money"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Why is ₹1 lakh today worth more than ₹1 lakh next year?",
+        "options": [
+          "Currency design will change",
+          "It can earn returns if invested, plus inflation erodes future value",
+          "Banks require it",
+          "Government regulations"
+        ],
+        "correct_answer": 1,
+        "explanation": "Money today has higher value because it can be invested to earn returns (opportunity cost) and inflation will reduce the purchasing power of future money."
+      }
+    },
+    {
+      "lesson_id": "1.3.2",
+      "lesson_number": 2,
+      "title": "Future Value: Growing Your Money",
+      "subtitle": "How Money Grows Over Time",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Future Value (FV) answers the question: 'If I invest money today, how much will I have in the future?' This is critical for retirement planning, goal-based investing, and understanding investment returns."
+        },
+        {
+          "type": "definition",
+          "term": "Future Value (FV)",
+          "definition": "The value of a current sum of money at a specified future date, assuming a certain interest rate or rate of return."
+        },
+        {
+          "type": "formula",
+          "title": "Future Value Formula",
+          "formula": "FV = PV × (1 + r)^n\n\nWhere:\nPV = Present Value (amount today)\nr = Interest rate per period (as decimal)\nn = Number of periods",
+          "example": "You invest ₹1,00,000 at 10% annual return for 5 years:\n\nFV = 1,00,000 × (1 + 0.10)^5\n   = 1,00,000 × (1.10)^5\n   = 1,00,000 × 1.6105\n   = ₹1,61,051\n\nYour ₹1 lakh grows to ₹1.61 lakhs in 5 years!",
+          "note": "This assumes annual compounding. For monthly/quarterly compounding, adjust rate and periods accordingly."
+        },
+        {
+          "type": "process_flow",
+          "title": "How Compound Interest Builds Wealth",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Year 1",
+              "description": "₹1,00,000 at 10% earns ₹10,000 interest",
+              "money_supply": "Total: ₹1,10,000"
+            },
+            {
+              "step": 2,
+              "title": "Year 2",
+              "description": "₹1,10,000 at 10% earns ₹11,000 interest (interest on interest!)",
+              "money_supply": "Total: ₹1,21,000"
+            },
+            {
+              "step": 3,
+              "title": "Year 3",
+              "description": "₹1,21,000 at 10% earns ₹12,100 interest",
+              "money_supply": "Total: ₹1,33,100"
+            },
+            {
+              "step": 4,
+              "title": "Year 4",
+              "description": "₹1,33,100 at 10% earns ₹13,310 interest",
+              "money_supply": "Total: ₹1,46,410"
+            },
+            {
+              "step": 5,
+              "title": "Year 5",
+              "description": "₹1,46,410 at 10% earns ₹14,641 interest",
+              "money_supply": "Total: ₹1,61,051"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Simple vs Compound Interest Over Time",
+          "items": [
+            {
+              "year": "Year 1",
+              "simple": "₹1,10,000",
+              "compound": "₹1,10,000",
+              "difference": "₹0"
+            },
+            {
+              "year": "Year 5",
+              "simple": "₹1,50,000",
+              "compound": "₹1,61,051",
+              "difference": "+₹11,051"
+            },
+            {
+              "year": "Year 10",
+              "simple": "₹2,00,000",
+              "compound": "₹2,59,374",
+              "difference": "+₹59,374"
+            },
+            {
+              "year": "Year 20",
+              "simple": "₹3,00,000",
+              "compound": "₹6,72,750",
+              "difference": "+₹3,72,750"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "The Rule of 72",
+          "content": "Quick mental math to estimate doubling time:\n\nYears to Double = 72 / Interest Rate\n\nExamples:\n• At 6% return: 72/6 = 12 years to double\n• At 9% return: 72/9 = 8 years to double\n• At 12% return: 72/12 = 6 years to double\n\nThis rule works remarkably well for rates between 6-12% and helps you quickly evaluate investment opportunities."
+        },
+        {
+          "type": "real_world",
+          "title": "The Power of Starting Early",
+          "scenarios": [
+            {
+              "scenario": "Rajesh (Age 25)",
+              "description": "Invests ₹10,000/month for 10 years (₹12 lakhs total), then stops. Grows at 12% till age 60.",
+              "effect": "Final corpus: ₹3.88 crores"
+            },
+            {
+              "scenario": "Priya (Age 35)",
+              "description": "Invests ₹10,000/month for 25 years (₹30 lakhs total) from age 35-60. Same 12% return.",
+              "effect": "Final corpus: ₹3.77 crores"
+            },
+            {
+              "scenario": "Lesson",
+              "description": "Rajesh invested ₹18 lakhs LESS but earned ₹11 lakhs MORE due to 10-year head start. Time is more powerful than money!",
+              "effect": "Start early, let compounding work"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Future Value shows how money grows with compound interest",
+            "Compound interest creates exponential growth—interest earns interest",
+            "Rule of 72: Quick way to calculate doubling time",
+            "Starting early is more important than investing more",
+            "Even small amounts become substantial over long periods with compounding"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Using the Rule of 72, how long will it take to double your money at 8% annual return?",
+        "options": [
+          "6 years",
+          "8 years",
+          "9 years",
+          "12 years"
+        ],
+        "correct_answer": 2,
+        "explanation": "Rule of 72: Years to double = 72 / Interest Rate = 72 / 8 = 9 years. At 8% return, your money will approximately double in 9 years."
+      }
+    },
+    {
+      "lesson_id": "1.3.3",
+      "lesson_number": 3,
+      "title": "Present Value: What Future Money Is Worth Today",
+      "subtitle": "Discounting Future Cash Flows",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Present Value (PV) is the flip side of Future Value. It answers: 'What is a future amount worth in today's terms?' This is crucial for evaluating investment opportunities, loans, and business deals."
+        },
+        {
+          "type": "definition",
+          "term": "Present Value (PV)",
+          "definition": "The current value of a future sum of money, discounted at an appropriate interest rate to account for the time value of money."
+        },
+        {
+          "type": "formula",
+          "title": "Present Value Formula",
+          "formula": "PV = FV / (1 + r)^n\n\nOr equivalently:\n\nPV = FV × (1 + r)^-n\n\nWhere:\nFV = Future Value (amount in future)\nr = Discount rate (as decimal)\nn = Number of periods",
+          "example": "Someone promises to pay you ₹2,00,000 after 5 years. If your required return is 10%, what's it worth today?\n\nPV = 2,00,000 / (1.10)^5\n   = 2,00,000 / 1.6105\n   = ₹1,24,184\n\nSo ₹2 lakhs in 5 years is worth only ₹1.24 lakhs today at 10% discount rate.",
+          "note": "Higher discount rate = lower present value. Future money is worth less when opportunity cost is high."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Understanding Discounting",
+          "pillars": [
+            {
+              "pillar": "What is Discounting?",
+              "description": "The process of calculating present value",
+              "explanation": "Discounting is the opposite of compounding. While compounding grows money forward in time, discounting brings future money back to present terms.\n\nDiscount Rate = Your required rate of return or opportunity cost.",
+              "strength": "Core valuation technique"
+            },
+            {
+              "pillar": "Why Discount Rates Matter",
+              "description": "Higher rate = lower present value",
+              "explanation": "At 5% discount: ₹1 lakh in 10 years = ₹61,391 today\nAt 10% discount: ₹1 lakh in 10 years = ₹38,554 today\nAt 15% discount: ₹1 lakh in 10 years = ₹24,718 today\n\nThe higher your opportunity cost, the less future money is worth.",
+              "strength": "Risk and return relationship"
+            },
+            {
+              "pillar": "Choosing Discount Rate",
+              "description": "Depends on risk and alternatives",
+              "explanation": "Safe investment (FD): Use 6-7% discount rate\nStock market: Use 12-15% (higher risk)\nStartup investment: Use 20-30% (very high risk)\n\nRiskier future cash flows require higher discount rates.",
+              "strength": "Risk adjustment mechanism"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Real Estate Decision",
+          "content": "You're offered a property deal:\n\nOption A: Pay ₹50 lakhs today\nOption B: Pay ₹20 lakhs today + ₹35 lakhs after 3 years\n\nWhich is better if you can earn 12% elsewhere?\n\nCalculate PV of Option B:\n• ₹20 lakhs today = ₹20 lakhs (already in present terms)\n• ₹35 lakhs in 3 years = 35,00,000 / (1.12)³ = ₹24,91,355\n\nTotal PV of Option B = ₹20L + ₹24.91L = ₹44.91 lakhs\n\nOption B is better! You're paying ₹44.91 lakhs in present value terms vs ₹50 lakhs for Option A."
+        },
+        {
+          "type": "comparison",
+          "title": "Present Value at Different Discount Rates",
+          "items": [
+            {
+              "future_amount": "₹1,00,000 in 5 years",
+              "at_5": "₹78,353",
+              "at_10": "₹62,092",
+              "at_15": "₹49,718"
+            },
+            {
+              "future_amount": "₹1,00,000 in 10 years",
+              "at_5": "₹61,391",
+              "at_10": "₹38,554",
+              "at_15": "₹24,718"
+            },
+            {
+              "future_amount": "₹1,00,000 in 20 years",
+              "at_5": "₹37,689",
+              "at_10": "₹14,864",
+              "at_15": "₹6,110"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "How Investors Value Companies",
+          "scenarios": [
+            {
+              "scenario": "Company Projects",
+              "description": "Startup expects to earn ₹10 crore profit 5 years from now.",
+              "effect": "Simple thinking: Worth ₹10 crores"
+            },
+            {
+              "scenario": "Investor Calculates PV",
+              "description": "Venture capitalist uses 25% discount rate (high-risk startups): PV = 10 crore / (1.25)^5 = ₹3.28 crores",
+              "effect": "Company valued at ₹3.28 crores today"
+            },
+            {
+              "scenario": "Why High Discount?",
+              "description": "Startups are risky—most fail. High discount rate accounts for uncertainty. Only stable companies get low discount rates.",
+              "effect": "Risk = Higher discount = Lower valuation"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "Present Value in Daily Life",
+          "content": "PV isn't just for investors—you use it unconsciously:\n\n• Car loan: Bank calculates PV of your future EMI payments to determine loan amount\n• Insurance: Premium is PV of future claims (discounted by mortality risk)\n• Lottery payouts: 'Lump sum' is PV of 30-year annuity\n• Salary negotiation: Job with ₹10L now vs ₹12L deferred is PV comparison\n\nMastering PV helps you make better financial decisions in all aspects of life."
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Present Value brings future money back to today's terms",
+            "Higher discount rates make future money worth less today",
+            "PV is essential for comparing payment options across different time periods",
+            "Discount rate reflects opportunity cost and risk",
+            "All investment decisions ultimately involve PV calculations"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the present value of ₹1,00,000 to be received after 4 years at 10% discount rate?",
+        "options": [
+          "₹60,000",
+          "₹68,301",
+          "₹75,000",
+          "₹90,000"
+        ],
+        "correct_answer": 1,
+        "explanation": "PV = 1,00,000 / (1.10)^4 = 1,00,000 / 1.4641 = ₹68,301. Future money is worth less in present terms due to opportunity cost and time value."
+      }
+    },
+    {
+      "lesson_id": "1.3.4",
+      "lesson_number": 4,
+      "title": "Annuities & Regular Payments",
+      "subtitle": "Valuing Series of Cash Flows",
+      "duration_minutes": 9,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Most financial decisions involve multiple payments over time—EMIs, SIPs, pensions, salaries. Annuities help us value these series of regular payments."
+        },
+        {
+          "type": "definition",
+          "term": "Annuity",
+          "definition": "A series of equal payments made at regular intervals over a specified period. Can be ordinary (payments at end of period) or annuity due (payments at start)."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Types of Annuities",
+          "pillars": [
+            {
+              "pillar": "1. Ordinary Annuity",
+              "description": "Payments at END of each period",
+              "explanation": "Most common type:\n• EMI loans (pay at month-end)\n• Salaries (paid after work done)\n• Retirement plans (receive after period)\n\nExample: ₹10,000/month for 12 months, paid at end of each month.",
+              "strength": "Default assumption in most calculations"
+            },
+            {
+              "pillar": "2. Annuity Due",
+              "description": "Payments at START of each period",
+              "explanation": "Less common:\n• Rent (paid at month start)\n• Insurance premiums (paid upfront)\n• Subscriptions (paid in advance)\n\nExample: ₹10,000/month for 12 months, paid at start of each month.\n\nWorth ~4-5% more than ordinary annuity (one extra period of interest).",
+              "strength": "Used for advance payments"
+            },
+            {
+              "pillar": "3. Perpetuity",
+              "description": "Payments that continue forever",
+              "explanation": "Infinite series of payments:\n• Some government bonds (consols)\n• Endowment fund distributions\n• Dividend stocks (theoretically)\n\nPV of Perpetuity = Payment / Discount Rate\n\nExample: ₹10,000/year forever at 10% = ₹10,000/0.10 = ₹1,00,000",
+              "strength": "Simplest valuation for infinite cash flows"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Annuity Present Value Formula",
+          "formula": "PV of Annuity = PMT × [(1 - (1 + r)^-n) / r]\n\nWhere:\nPMT = Payment per period\nr = Interest rate per period\nn = Number of periods",
+          "example": "You'll receive ₹50,000/year for 10 years. What's it worth today at 8% discount?\n\nPV = 50,000 × [(1 - (1.08)^-10) / 0.08]\n   = 50,000 × [(1 - 0.4632) / 0.08]\n   = 50,000 × [0.5368 / 0.08]\n   = 50,000 × 6.71\n   = ₹3,35,500\n\n10 years of ₹50k payments (₹5 lakhs total) is worth ₹3.35 lakhs today.",
+          "note": "This formula is built into financial calculators and Excel (PV function)."
+        },
+        {
+          "type": "formula",
+          "title": "Annuity Future Value Formula",
+          "formula": "FV of Annuity = PMT × [((1 + r)^n - 1) / r]\n\nUseful for: SIPs, recurring deposits, retirement planning",
+          "example": "You invest ₹5,000/month for 20 years at 12% annual (1% monthly). How much will you have?\n\nFV = 5,000 × [((1.01)^240 - 1) / 0.01]\n   = 5,000 × [(10.89 - 1) / 0.01]\n   = 5,000 × 989\n   = ₹49,45,000\n\n₹5k/month (₹12 lakhs invested) grows to ₹49.45 lakhs in 20 years!",
+          "note": "This is how SIP calculators work. Monthly compounding creates tremendous wealth."
+        },
+        {
+          "type": "example",
+          "title": "Home Loan EMI Breakdown",
+          "content": "₹50 lakh home loan at 9% for 20 years:\n\nUsing EMI formula: EMI = ₹44,986/month\n\nTotal payment over 20 years:\n44,986 × 240 months = ₹1,07,96,640\n\nInterest paid: ₹1.08 crores - ₹50 lakhs = ₹58 lakhs\n\nYou pay more in interest than principal! This is why:\n• Early years: Most EMI goes to interest\n• Later years: More goes to principal\n• Banks recover cost early, protect against prepayment"
+        },
+        {
+          "type": "comparison",
+          "title": "SIP Returns: Power of Time",
+          "items": [
+            {
+              "duration": "10 years",
+              "monthly_sip": "₹10,000",
+              "total_invested": "₹12 lakhs",
+              "value_at_12": "₹23.23 lakhs",
+              "gain": "₹11.23L (93%)"
+            },
+            {
+              "duration": "20 years",
+              "monthly_sip": "₹10,000",
+              "total_invested": "₹24 lakhs",
+              "value_at_12": "₹99.92 lakhs",
+              "gain": "₹75.92L (316%)"
+            },
+            {
+              "duration": "30 years",
+              "monthly_sip": "₹10,000",
+              "total_invested": "₹36 lakhs",
+              "value_at_12": "₹3.52 crores",
+              "gain": "₹3.16Cr (877%)"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "Pension Decision",
+          "scenarios": [
+            {
+              "scenario": "Option A: Lump Sum",
+              "description": "Retire at 60, receive ₹1 crore lump sum.",
+              "effect": "Full amount immediately"
+            },
+            {
+              "scenario": "Option B: Annuity",
+              "description": "Receive ₹90,000/month for 25 years (till age 85).",
+              "effect": "Total: ₹2.7 crores over lifetime"
+            },
+            {
+              "scenario": "Which is Better?",
+              "description": "Calculate PV of Option B at 8% discount: ≈ ₹1.18 crores. Option B is better if you live 25+ years and can't invest well. Option A better if you can earn >8% or need flexibility.",
+              "effect": "Depends on health, investment skill, liquidity needs"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Annuities value series of regular payments using TVM principles",
+            "SIPs leverage annuity future value to build wealth systematically",
+            "EMI calculations use annuity present value (loan = PV of future payments)",
+            "Longer investment periods create exponentially larger returns",
+            "Perpetuities are valued simply as Payment / Discount Rate"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What is a key advantage of SIP investing over lump sum?",
+        "options": [
+          "Always gives higher returns",
+          "Reduces market timing risk through rupee cost averaging",
+          "Charges lower fees",
+          "Guaranteed returns"
+        ],
+        "correct_answer": 1,
+        "explanation": "SIPs spread investments over time, reducing the risk of investing all money at market peaks. Rupee cost averaging means you buy more units when prices are low and fewer when high, potentially improving long-term returns."
+      }
+    },
+    {
+      "lesson_id": "1.3.5",
+      "lesson_number": 5,
+      "title": "Inflation & Real Returns",
+      "subtitle": "The Silent Wealth Killer",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "You earn 8% on your FD. Sounds great, right? But if inflation is 6%, your real return is only 2%. Inflation is the hidden tax that erodes your wealth—understanding it is crucial for long-term financial success."
+        },
+        {
+          "type": "definition",
+          "term": "Inflation",
+          "definition": "The rate at which the general level of prices for goods and services rises, eroding the purchasing power of money over time."
+        },
+        {
+          "type": "formula",
+          "title": "Real Rate of Return",
+          "formula": "Real Return ≈ Nominal Return - Inflation Rate\n\nPrecise formula:\nReal Return = [(1 + Nominal) / (1 + Inflation)] - 1",
+          "example": "Your investment returns 10% nominal, inflation is 6%:\n\nApproximate: 10% - 6% = 4% real return\n\nPrecise: [(1.10) / (1.06)] - 1 = 1.0377 - 1 = 3.77% real return\n\nYou're only 3.77% richer in purchasing power terms, not 10%!",
+          "note": "For small differences, approximation works fine. Use precise formula for large inflation rates."
+        },
+        {
+          "type": "comparison",
+          "title": "Nominal vs Real Returns",
+          "items": [
+            {
+              "investment": "Savings Account (4%)",
+              "nominal": "4%",
+              "real_at_6_inflation": "-2%",
+              "verdict": "Losing purchasing power!"
+            },
+            {
+              "investment": "Fixed Deposit (7%)",
+              "nominal": "7%",
+              "real_at_6_inflation": "1%",
+              "verdict": "Barely beating inflation"
+            },
+            {
+              "investment": "Equity (12%)",
+              "nominal": "12%",
+              "real_at_6_inflation": "6%",
+              "verdict": "Building real wealth"
+            },
+            {
+              "investment": "Gold (8%)",
+              "nominal": "8%",
+              "real_at_6_inflation": "2%",
+              "verdict": "Inflation hedge"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "The Power of Inflation Over Time",
+          "content": "At 6% annual inflation:\n\n• Year 10: ₹1 lakh = ₹55,839 in today's purchasing power (44% loss!)\n• Year 20: ₹1 lakh = ₹31,180 in today's purchasing power (69% loss!)\n• Year 30: ₹1 lakh = ₹17,411 in today's purchasing power (83% loss!)\n\nThis is why 'safe' low-return investments like savings accounts actually destroy wealth over long periods. You need returns above inflation to build real wealth."
+        },
+        {
+          "type": "real_world",
+          "title": "India's Inflation History",
+          "scenarios": [
+            {
+              "scenario": "2008-2009",
+              "description": "Food inflation reached 10-12%. Common man severely impacted. Onions at ₹80/kg.",
+              "effect": "RBI raised rates aggressively"
+            },
+            {
+              "scenario": "2013-2014",
+              "description": "Overall inflation 9-10%. Rupee fell sharply against dollar. Import costs soared.",
+              "effect": "Interest rates increased to 8%+"
+            },
+            {
+              "scenario": "2020-2021",
+              "description": "COVID supply shocks caused price spikes. Inflation 6-7% despite recession.",
+              "effect": "Shows inflation can happen even with low growth"
+            },
+            {
+              "scenario": "RBI Target",
+              "description": "Current mandate: Keep inflation at 4% ±2% (2-6% range) using monetary policy.",
+              "effect": "Predictable inflation helps planning"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Retirement Planning with Inflation",
+          "content": "You need ₹50,000/month today for comfortable retirement. You'll retire in 25 years.\n\nWith 6% annual inflation:\nFuture cost = 50,000 × (1.06)^25 = ₹2,14,590/month needed!\n\nFor 30-year retirement:\nTotal corpus needed = ₹2,14,590 × 360 months (discounting) ≈ ₹3.2 crores\n\nIgnoring inflation would make you plan for ₹1.8 crores—a ₹1.4 crore shortfall! Always factor inflation into long-term goals."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Protecting Against Inflation",
+          "pillars": [
+            {
+              "pillar": "1. Equities (Stocks)",
+              "description": "Best long-term inflation hedge",
+              "explanation": "Companies can raise prices with inflation, protecting profits. Historically, equity returns (12-15%) significantly exceed inflation (6-7%).\n\nRisk: Volatile short-term, but powerful long-term.",
+              "strength": "Highest real returns over 15+ years"
+            },
+            {
+              "pillar": "2. Real Estate",
+              "description": "Tangible asset that appreciates",
+              "explanation": "Property values generally rise with inflation. Rental income grows over time. India historically 8-10% appreciation.\n\nRisk: Illiquid, high transaction costs, location dependent.",
+              "strength": "Dual benefit: appreciation + rental yield"
+            },
+            {
+              "pillar": "3. Gold",
+              "description": "Traditional inflation hedge",
+              "explanation": "Gold preserves purchasing power across centuries. Indians hold ~25,000 tonnes—cultural and financial hedge.\n\nReturns ≈ 8-10% long-term, matching inflation.\n\nRisk: No income generation, high volatility.",
+              "strength": "Crisis protection, global acceptance"
+            },
+            {
+              "pillar": "4. Inflation-Indexed Bonds",
+              "description": "Principal adjusts with inflation",
+              "explanation": "Government issues bonds where returns are CPI + fixed rate. Guaranteed real returns.\n\nIndia has limited options, more common in US (TIPS).",
+              "strength": "Risk-free real returns"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Nominal returns mean nothing—real returns (after inflation) matter",
+            "Inflation silently erodes wealth, especially in low-return 'safe' investments",
+            "Long-term goals must factor in inflation (double or triple estimates)",
+            "Equities provide best inflation protection over long periods",
+            "A diversified portfolio with growth assets is essential to beat inflation"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "If your investment returns 9% and inflation is 5%, what is your approximate real return?",
+        "options": [
+          "14%",
+          "9%",
+          "5%",
+          "4%"
+        ],
+        "correct_answer": 3,
+        "explanation": "Real Return ≈ Nominal Return - Inflation = 9% - 5% = 4%. Your actual purchasing power increases by only 4%, not the nominal 9%."
+      }
+    }
+  ],
+  "module_quiz": {
+    "quiz_id": "quiz_1.3",
+    "title": "Time Value of Money - Final Assessment",
+    "description": "Test your understanding of TVM concepts",
+    "time_limit_minutes": 15,
+    "passing_score": 70,
+    "questions": [
+      {
+        "question_id": "q1",
+        "question": "What is the primary reason money today is worth more than money in the future?",
+        "type": "multiple_choice",
+        "options": [
+          "Banks prefer current deposits",
+          "Opportunity cost, inflation, and risk",
+          "Government regulations",
+          "Currency design changes"
+        ],
+        "correct_answer": 1,
+        "explanation": "Time value of money exists due to: (1) opportunity cost—money can be invested to earn returns, (2) inflation—erodes purchasing power, and (3) risk—future is uncertain.",
+        "points": 10
+      },
+      {
+        "question_id": "q2",
+        "question": "Using the Rule of 72, approximately how long will it take to double your money at 12% return?",
+        "type": "multiple_choice",
+        "options": [
+          "4 years",
+          "6 years",
+          "8 years",
+          "12 years"
+        ],
+        "correct_answer": 1,
+        "explanation": "Rule of 72: Years to double = 72 / Interest Rate = 72 / 12 = 6 years. At 12% annual return, money doubles in approximately 6 years.",
+        "points": 10
+      },
+      {
+        "question_id": "q3",
+        "question": "What is the future value of ₹1,00,000 invested for 3 years at 8% annual compound interest?",
+        "type": "multiple_choice",
+        "options": [
+          "₹1,24,000",
+          "₹1,25,971",
+          "₹1,30,000",
+          "₹1,08,000"
+        ],
+        "correct_answer": 1,
+        "explanation": "FV = 1,00,000 × (1.08)³ = 1,00,000 × 1.2597 = ₹1,25,971. Compound interest creates exponential growth.",
+        "points": 10
+      },
+      {
+        "question_id": "q4",
+        "question": "What is the present value of ₹1,50,000 to be received after 5 years at 10% discount rate?",
+        "type": "multiple_choice",
+        "options": [
+          "₹1,00,000",
+          "₹93,139",
+          "₹1,20,000",
+          "₹85,000"
+        ],
+        "correct_answer": 1,
+        "explanation": "PV = 1,50,000 / (1.10)⁵ = 1,50,000 / 1.6105 = ₹93,139. Future money is worth less in present terms.",
+        "points": 10
+      },
+      {
+        "question_id": "q5",
+        "question": "Which grows faster over time?",
+        "type": "multiple_choice",
+        "options": [
+          "Simple interest",
+          "Compound interest",
+          "Both grow at the same rate",
+          "Depends on the principal"
+        ],
+        "correct_answer": 1,
+        "explanation": "Compound interest grows exponentially because you earn 'interest on interest,' while simple interest grows linearly. Over time, compound interest significantly outpaces simple interest.",
+        "points": 10
+      },
+      {
+        "question_id": "q6",
+        "question": "If you invest ₹5,000 monthly in a SIP for 10 years at 12% annual return, approximately how much will you accumulate?",
+        "type": "multiple_choice",
+        "options": [
+          "₹6 lakhs",
+          "₹11.5 lakhs",
+          "₹15 lakhs",
+          "₹20 lakhs"
+        ],
+        "correct_answer": 1,
+        "explanation": "Using annuity FV formula with monthly compounding at 1% per month for 120 months, ₹5,000 monthly SIP grows to approximately ₹11.5 lakhs (invested ₹6L, gain ₹5.5L).",
+        "points": 10
+      },
+      {
+        "question_id": "q7",
+        "question": "What is the real rate of return if nominal return is 11% and inflation is 7%?",
+        "type": "multiple_choice",
+        "options": [
+          "18%",
+          "4%",
+          "7%",
+          "11%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Real Return ≈ Nominal Return - Inflation = 11% - 7% = 4%. Your actual purchasing power increase is only 4%, not 11%.",
+        "points": 10
+      },
+      {
+        "question_id": "q8",
+        "question": "Which investment typically provides the best protection against inflation over the long term?",
+        "type": "multiple_choice",
+        "options": [
+          "Savings account",
+          "Fixed deposits",
+          "Equities (stocks)",
+          "Cash"
+        ],
+        "correct_answer": 2,
+        "explanation": "Equities historically provide 12-15% returns, well above inflation rates of 6-7%. Companies can raise prices with inflation, protecting profits and shareholder value.",
+        "points": 10
+      },
+      {
+        "question_id": "q9",
+        "question": "At 6% annual inflation, what will be the purchasing power of ₹1 lakh after 12 years?",
+        "type": "multiple_choice",
+        "options": [
+          "₹50,000",
+          "₹49,697",
+          "₹75,000",
+          "₹1,00,000"
+        ],
+        "correct_answer": 1,
+        "explanation": "Real value = 1,00,000 / (1.06)¹² = 1,00,000 / 2.012 = ₹49,697. Inflation cuts purchasing power in half over 12 years at 6% rate.",
+        "points": 10
+      },
+      {
+        "question_id": "q10",
+        "question": "What type of annuity has payments made at the START of each period?",
+        "type": "multiple_choice",
+        "options": [
+          "Ordinary annuity",
+          "Annuity due",
+          "Perpetuity",
+          "Deferred annuity"
+        ],
+        "correct_answer": 1,
+        "explanation": "Annuity due has payments at the beginning of each period (like rent paid at month start). Ordinary annuity has payments at the end (like salaries).",
+        "points": 10
+      }
+    ]
+  },
+  "completion_badge": {
+    "badge_id": "tvm_master",
+    "title": "Time Value Expert",
+    "description": "Mastered time value of money concepts",
+    "icon": "clock",
+    "color": "#FF6347"
+  }
+}

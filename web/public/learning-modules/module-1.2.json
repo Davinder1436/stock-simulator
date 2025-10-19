@@ -1,0 +1,1015 @@
+{
+  "module_metadata": {
+    "module_id": "1.2",
+    "level": 1,
+    "level_name": "Foundation",
+    "module_title": "Banking System Fundamentals",
+    "module_description": "Understand how banks work, their role in the economy, and how they manage money and credit",
+    "estimated_duration_minutes": 50,
+    "difficulty": "beginner",
+    "prerequisites": ["1.1"],
+    "learning_objectives": [
+      "Understand what banks are and their core functions",
+      "Learn how banks make money and manage risk",
+      "Grasp the concept of interest rates",
+      "Understand central banks and monetary policy",
+      "Learn about different types of banks and accounts"
+    ],
+    "total_lessons": 7,
+    "total_quiz_questions": 12,
+    "pass_percentage": 70,
+    "next_module": "1.3"
+  },
+  "lessons": [
+    {
+      "lesson_id": "1.2.1",
+      "lesson_number": 1,
+      "title": "What Are Banks?",
+      "subtitle": "Financial Intermediaries in the Economy",
+      "duration_minutes": 6,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "A bank is a financial institution that accepts deposits, makes loans, and provides other financial services. At its core, a bank is an intermediary between people who have extra money (savers) and people who need money (borrowers)."
+        },
+        {
+          "type": "definition",
+          "term": "Bank",
+          "definition": "A licensed financial intermediary that accepts deposits from savers and lends to borrowers, facilitating the flow of money in the economy."
+        },
+        {
+          "type": "example",
+          "title": "The Intermediary Role",
+          "content": "You deposit ₹1,00,000 in a savings account. The bank pays you 3% interest (₹3,000/year). The bank then lends this money to someone buying a car at 9% interest. The bank earns ₹9,000 from the borrower, pays you ₹3,000, and keeps ₹6,000 as profit. Everyone benefits: you earn interest, the borrower gets a car, and the bank makes money."
+        },
+        {
+          "type": "function_card",
+          "functions": [
+            {
+              "number": 1,
+              "title": "Accepting Deposits",
+              "description": "Banks provide a safe place to store money and pay interest",
+              "example": "Savings accounts, fixed deposits, current accounts"
+            },
+            {
+              "number": 2,
+              "title": "Lending Money",
+              "description": "Banks provide loans to individuals and businesses",
+              "example": "Home loans, car loans, business loans, credit cards"
+            },
+            {
+              "number": 3,
+              "title": "Payment Services",
+              "description": "Banks facilitate money transfers and payments",
+              "example": "Checks, UPI, NEFT, RTGS, debit/credit cards"
+            },
+            {
+              "number": 4,
+              "title": "Financial Services",
+              "description": "Banks offer various financial products",
+              "example": "Insurance, mutual funds, lockers, forex"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Banks connect savers with borrowers efficiently",
+            "They profit from the interest rate spread (lending rate - deposit rate)",
+            "Banks create economic growth by channeling savings into productive investments",
+            "Banking is built on trust—depositors trust their money is safe"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the primary role of a bank?",
+        "options": [
+          "To store physical gold",
+          "To intermediate between savers and borrowers",
+          "To print money",
+          "To control inflation"
+        ],
+        "correct_answer": 1,
+        "explanation": "Banks primarily act as financial intermediaries, taking deposits from savers and lending to borrowers, facilitating the efficient flow of money in the economy."
+      }
+    },
+    {
+      "lesson_id": "1.2.2",
+      "lesson_number": 2,
+      "title": "How Banks Make Money",
+      "subtitle": "The Business Model of Banking",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Banks aren't charities—they're businesses that need to make profit. Understanding how banks earn money helps you make better financial decisions and evaluate banking services."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Bank Revenue Streams",
+          "pillars": [
+            {
+              "pillar": "1. Net Interest Income (70-80% of revenue)",
+              "description": "Profit from interest rate spread",
+              "explanation": "Banks borrow money (deposits) at low interest rates and lend at higher rates. The difference is called Net Interest Margin (NIM).\n\nExample: Bank pays 4% on deposits, charges 10% on loans → 6% spread is profit.",
+              "strength": "Primary and most stable revenue source"
+            },
+            {
+              "pillar": "2. Fee-Based Income (15-20% of revenue)",
+              "description": "Charges for services",
+              "explanation": "Banks charge fees for various services: account maintenance, ATM usage, fund transfers, processing fees, penalties for insufficient balance, etc.\n\nExample: ₹500 annual credit card fee, ₹25 for other bank ATM, ₹100 for check book.",
+              "strength": "Steady income not dependent on interest rates"
+            },
+            {
+              "pillar": "3. Trading & Investment Income (5-10% of revenue)",
+              "description": "Profits from financial markets",
+              "explanation": "Banks trade bonds, currencies, and securities. They also earn from underwriting IPOs and investment banking services.\n\nExample: Bank buys government bonds at discount, sells at profit.",
+              "strength": "Can be highly profitable but volatile"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "Net Interest Margin (NIM)",
+          "formula": "NIM = (Interest Earned - Interest Paid) / Average Earning Assets",
+          "example": "Bank earns ₹100 crore from loans, pays ₹40 crore on deposits, has ₹1,000 crore in loans:\n\nNIM = (100 - 40) / 1,000 = 6%\n\nA healthy NIM for Indian banks is 3-4%.",
+          "note": "Higher NIM means more profit per rupee lent, but too high may indicate risky lending."
+        },
+        {
+          "type": "comparison",
+          "title": "Different Bank Types - Revenue Focus",
+          "items": [
+            {
+              "name": "Retail Banks (HDFC, ICICI)",
+              "primary": "Interest income from personal loans",
+              "secondary": "Account fees, card fees",
+              "typical_nim": "3.5-4%",
+              "risk": "Lower risk, stable"
+            },
+            {
+              "name": "Investment Banks (Goldman Sachs)",
+              "primary": "Trading profits, advisory fees",
+              "secondary": "Underwriting fees",
+              "typical_nim": "Not applicable",
+              "risk": "Higher risk, volatile"
+            },
+            {
+              "name": "Co-operative Banks",
+              "primary": "Interest on agricultural loans",
+              "secondary": "Minimal fees",
+              "typical_nim": "2-3%",
+              "risk": "Lower margins"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "Why Banks Push Credit Cards",
+          "scenarios": [
+            {
+              "scenario": "High Interest Income",
+              "description": "Credit cards charge 36-42% annual interest on unpaid balances—much higher than 10-12% on personal loans.",
+              "effect": "Massive profit from cardholders who carry balances"
+            },
+            {
+              "scenario": "Fee Income",
+              "description": "Annual fees (₹500-5,000), late payment fees (₹500-1,200), forex markup (3.5%), over-limit fees.",
+              "effect": "Multiple revenue streams per card"
+            },
+            {
+              "scenario": "Merchant Fees",
+              "description": "Every time you swipe, merchant pays 1-3% to the bank.",
+              "effect": "Profit even if you pay full balance"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Banks make most money from the spread between deposit and lending rates",
+            "Service fees are increasingly important as interest margins compress",
+            "Credit cards are highly profitable—average 15-20% return for banks",
+            "Understanding bank revenue helps you negotiate better terms"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "If a bank pays 4% on deposits and charges 11% on loans, what is the interest spread?",
+        "options": [
+          "4%",
+          "7%",
+          "11%",
+          "15%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Interest spread = Lending Rate - Deposit Rate = 11% - 4% = 7%. This spread is the bank's gross profit margin before expenses."
+      }
+    },
+    {
+      "lesson_id": "1.2.3",
+      "lesson_number": 3,
+      "title": "Understanding Interest Rates",
+      "subtitle": "The Price of Money",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Interest is the cost of borrowing money or the reward for saving it. Interest rates are one of the most important numbers in finance—they affect everything from your savings account to home loan EMIs to stock market valuations."
+        },
+        {
+          "type": "definition",
+          "term": "Interest Rate",
+          "definition": "The percentage charged on borrowed money (for loans) or paid on deposited money (for savings), typically expressed annually."
+        },
+        {
+          "type": "formula",
+          "title": "Simple vs Compound Interest",
+          "formula": "Simple Interest = Principal × Rate × Time\n\nCompound Interest = Principal × (1 + Rate)^Time - Principal",
+          "example": "₹1,00,000 invested at 8% for 5 years:\n\nSimple: 1,00,000 × 0.08 × 5 = ₹40,000 interest\nTotal: ₹1,40,000\n\nCompound: 1,00,000 × (1.08)^5 - 1,00,000 = ₹46,933 interest\nTotal: ₹1,46,933\n\nDifference: ₹6,933 more with compounding!",
+          "note": "Einstein allegedly called compound interest 'the eighth wonder of the world.' Banks use compound interest for both savings and loans."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Factors That Determine Interest Rates",
+          "pillars": [
+            {
+              "pillar": "1. Central Bank Policy Rate",
+              "description": "RBI's repo rate is the base",
+              "explanation": "The Reserve Bank of India sets the repo rate—the rate at which it lends to commercial banks. When RBI increases repo rate, all lending rates increase. When it decreases, rates fall.\n\nCurrent repo rate (2024): ~6.5%",
+              "strength": "Most influential factor"
+            },
+            {
+              "pillar": "2. Inflation",
+              "description": "Higher inflation → higher rates",
+              "explanation": "If inflation is 6% and bank pays 4% interest, you're losing 2% purchasing power. Banks must offer rates above inflation to attract deposits.\n\nReal Rate = Nominal Rate - Inflation",
+              "strength": "Affects all rates economy-wide"
+            },
+            {
+              "pillar": "3. Risk Level",
+              "description": "Higher risk → higher interest",
+              "explanation": "Personal loans (unsecured) charge 11-15%, home loans (secured by property) charge 8-9%. Credit cards (highest risk) charge 36-42%.\n\nRisk premium compensates for default probability.",
+              "strength": "Explains variation across loan types"
+            },
+            {
+              "pillar": "4. Loan Duration",
+              "description": "Longer tenure → usually higher rates",
+              "explanation": "Locking money for 10 years is riskier than 1 year (for lenders). Longer loans typically have higher rates to compensate.\n\n1-year FD: 6.5%, 5-year FD: 7.5%",
+              "strength": "Affects term structure of interest"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Interest Rates Across Products (Typical Indian Rates)",
+          "items": [
+            {
+              "product": "Savings Account",
+              "rate": "3-4%",
+              "type": "Earn",
+              "notes": "Paid to you, lowest earning"
+            },
+            {
+              "product": "Fixed Deposit",
+              "rate": "6-8%",
+              "type": "Earn",
+              "notes": "Higher for longer tenure"
+            },
+            {
+              "product": "Home Loan",
+              "rate": "8-9%",
+              "type": "Pay",
+              "notes": "Secured by property"
+            },
+            {
+              "product": "Personal Loan",
+              "rate": "11-15%",
+              "type": "Pay",
+              "notes": "Unsecured, higher risk"
+            },
+            {
+              "product": "Credit Card",
+              "rate": "36-42%",
+              "type": "Pay",
+              "notes": "Highest rate, revolving credit"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "Why Credit Card Rates Are So High",
+          "content": "Credit cards charge 36-42% annual interest—3-4x higher than personal loans. Why?\n\n• Unsecured (no collateral)\n• High default rates (5-10% of users default)\n• Small loan amounts (costly to service)\n• Convenience premium (instant credit)\n• Revolving nature (unpredictable usage)\n\nCRITICAL RULE: Never carry a credit card balance. Pay full amount by due date. If you can't, a personal loan at 12% is better than card debt at 40%!"
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Interest rates reflect the time value of money and risk",
+            "Compound interest is powerful—it works for or against you",
+            "RBI policy rate influences all interest rates in the economy",
+            "Never carry credit card debt—rates are extremely high",
+            "Inflation erodes the real value of interest earnings"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the real interest rate if a bank pays 5% nominal interest and inflation is 6%?",
+        "options": [
+          "+11%",
+          "+1%",
+          "-1%",
+          "0%"
+        ],
+        "correct_answer": 2,
+        "explanation": "Real Rate = Nominal Rate - Inflation = 5% - 6% = -1%. You're losing 1% purchasing power despite earning 5% nominal interest."
+      }
+    },
+    {
+      "lesson_id": "1.2.4",
+      "lesson_number": 4,
+      "title": "Central Banks & Monetary Policy",
+      "subtitle": "The Bank of Banks",
+      "duration_minutes": 8,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "While commercial banks serve individuals and businesses, central banks oversee the entire banking system and manage the nation's money supply. In India, the Reserve Bank of India (RBI) is the central bank."
+        },
+        {
+          "type": "definition",
+          "term": "Central Bank",
+          "definition": "The apex financial institution of a country that regulates the money supply, sets key interest rates, and supervises the banking system."
+        },
+        {
+          "type": "function_card",
+          "functions": [
+            {
+              "number": 1,
+              "title": "Monetary Policy",
+              "description": "Controls money supply and interest rates to manage inflation and growth",
+              "example": "RBI increases repo rate from 6% to 6.5% to cool inflation"
+            },
+            {
+              "number": 2,
+              "title": "Currency Issuance",
+              "description": "Sole authority to print and issue currency notes",
+              "example": "All Indian rupee notes bear RBI Governor's signature"
+            },
+            {
+              "number": 3,
+              "title": "Banking Regulation",
+              "description": "Supervises and regulates all banks to ensure stability",
+              "example": "Sets reserve requirements, licenses new banks, inspects operations"
+            },
+            {
+              "number": 4,
+              "title": "Lender of Last Resort",
+              "description": "Provides emergency funds to banks in crisis",
+              "example": "During 2008 crisis, RBI provided liquidity to banks"
+            },
+            {
+              "number": 5,
+              "title": "Foreign Exchange Management",
+              "description": "Manages forex reserves and currency exchange rates",
+              "example": "RBI holds $600+ billion in forex reserves to stabilize rupee"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Key Monetary Policy Tools",
+          "pillars": [
+            {
+              "pillar": "1. Repo Rate (Most Important)",
+              "description": "Rate at which RBI lends to banks",
+              "explanation": "When RBI increases repo rate:\n• Banks' borrowing becomes expensive\n• Banks increase lending rates\n• Borrowing decreases, spending slows\n• Inflation cools down\n\nLowering repo rate has opposite effect—stimulates economy.",
+              "strength": "Primary tool to control inflation and growth"
+            },
+            {
+              "pillar": "2. Cash Reserve Ratio (CRR)",
+              "description": "% of deposits banks must keep with RBI",
+              "explanation": "If CRR is 4%, banks must keep ₹4 with RBI for every ₹100 deposit. Higher CRR means less money to lend, reducing money supply.\n\nCurrent CRR: 4.5%",
+              "strength": "Directly controls money creation"
+            },
+            {
+              "pillar": "3. Statutory Liquidity Ratio (SLR)",
+              "description": "% banks must invest in government securities",
+              "explanation": "Banks must invest ~18% of deposits in government bonds. This ensures banks have liquid, safe assets and helps government borrowing.\n\nCurrent SLR: 18%",
+              "strength": "Ensures bank liquidity and funds government"
+            }
+          ]
+        },
+        {
+          "type": "process_flow",
+          "title": "How RBI Controls Inflation",
+          "steps": [
+            {
+              "step": 1,
+              "title": "High Inflation Detected",
+              "description": "Consumer price inflation rises to 7%, above RBI's 4% target.",
+              "money_supply": "Too much money chasing goods"
+            },
+            {
+              "step": 2,
+              "title": "RBI Increases Repo Rate",
+              "description": "RBI hikes repo rate from 6% to 6.5% in policy meeting.",
+              "money_supply": "Cost of borrowing increases"
+            },
+            {
+              "step": 3,
+              "title": "Banks Raise Lending Rates",
+              "description": "Commercial banks increase home loan rates from 8.5% to 9%, personal loans from 12% to 13%.",
+              "money_supply": "Borrowing becomes expensive"
+            },
+            {
+              "step": 4,
+              "title": "Reduced Borrowing & Spending",
+              "description": "Fewer people take loans. Those with loans pay higher EMIs. Spending decreases.",
+              "money_supply": "Money supply growth slows"
+            },
+            {
+              "step": 5,
+              "title": "Inflation Moderates",
+              "description": "Reduced demand brings prices down. Inflation falls from 7% to 5.5% over 6-9 months.",
+              "money_supply": "Balanced money supply"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Tight vs Loose Monetary Policy",
+          "items": [
+            {
+              "policy": "Tight (Contractionary)",
+              "rates": "↑ Higher rates",
+              "goal": "Control inflation",
+              "effect": "Slower growth, lower inflation",
+              "when": "Economy overheating"
+            },
+            {
+              "policy": "Loose (Expansionary)",
+              "rates": "↓ Lower rates",
+              "goal": "Stimulate growth",
+              "effect": "Faster growth, higher inflation",
+              "when": "Recession or slow growth"
+            }
+          ]
+        },
+        {
+          "type": "real_world",
+          "title": "COVID-19 Response (2020)",
+          "scenarios": [
+            {
+              "scenario": "Crisis Hits",
+              "description": "Lockdowns caused economic collapse. GDP contracted 24% in Q1 2020.",
+              "effect": "Millions lost jobs, businesses closed"
+            },
+            {
+              "scenario": "RBI's Response",
+              "description": "Cut repo rate from 5.15% to 4% (historic low). Reduced CRR. Provided ₹9 lakh crore liquidity to banks.",
+              "effect": "Cheap credit available for businesses and individuals"
+            },
+            {
+              "scenario": "Recovery",
+              "description": "Low rates encouraged borrowing and spending. Economy gradually recovered. By 2022, growth returned.",
+              "effect": "GDP growth positive again"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "RBI is India's monetary authority—controls money supply and rates",
+            "Repo rate is the master rate that influences all lending rates",
+            "Central banks balance inflation control with economic growth",
+            "CRR and SLR are tools to regulate bank lending capacity",
+            "Understanding monetary policy helps predict rate changes for your loans and savings"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "When RBI increases the repo rate, what typically happens?",
+        "options": [
+          "Bank lending rates decrease",
+          "Inflation increases further",
+          "Borrowing becomes more expensive",
+          "Money supply increases"
+        ],
+        "correct_answer": 2,
+        "explanation": "Higher repo rate makes borrowing costlier for banks, who then increase lending rates. This makes borrowing more expensive for customers, reducing spending and money supply growth."
+      }
+    },
+    {
+      "lesson_id": "1.2.5",
+      "lesson_number": 5,
+      "title": "Types of Banks",
+      "subtitle": "Different Banks, Different Purposes",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Not all banks are the same. Different types of banks serve different purposes and customers. Understanding these differences helps you choose the right banking services."
+        },
+        {
+          "type": "property_grid",
+          "properties": [
+            {
+              "property": "Commercial Banks",
+              "description": "Full-service banks for individuals and businesses",
+              "good_example": "HDFC, ICICI, SBI, Axis Bank",
+              "bad_example": "Offer savings, loans, cards, investments. Most common type.",
+              "icon": "building"
+            },
+            {
+              "property": "Co-operative Banks",
+              "description": "Member-owned banks serving specific communities",
+              "good_example": "District Co-op Banks, Urban Co-op Banks",
+              "bad_example": "Lower fees, focus on local communities, agricultural lending.",
+              "icon": "users"
+            },
+            {
+              "property": "Small Finance Banks",
+              "description": "Focus on underserved sections and small businesses",
+              "good_example": "Ujjivan, Equitas, AU Small Finance Bank",
+              "bad_example": "Higher interest on deposits, microfinance focus.",
+              "icon": "briefcase"
+            },
+            {
+              "property": "Payment Banks",
+              "description": "Limited banks for payments and remittances only",
+              "good_example": "Paytm Payments Bank, Airtel Payments Bank",
+              "bad_example": "Cannot give loans. Max ₹2 lakh deposit. Focus on digital payments.",
+              "icon": "smartphone"
+            },
+            {
+              "property": "Regional Rural Banks",
+              "description": "Government banks for rural and agricultural sectors",
+              "good_example": "Prathama Bank, Baroda UP Bank",
+              "bad_example": "Sponsored by commercial banks, serve rural areas.",
+              "icon": "leaf"
+            },
+            {
+              "property": "Investment Banks",
+              "description": "Not traditional banks—help companies raise capital",
+              "good_example": "Goldman Sachs, Kotak Investment Banking",
+              "bad_example": "IPO underwriting, M&A advisory, trading. Not for retail customers.",
+              "icon": "trending-up"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Public vs Private Banks",
+          "items": [
+            {
+              "name": "Public Sector Banks (PSBs)",
+              "ownership": "Government owned (>50% stake)",
+              "examples": "SBI, PNB, Bank of Baroda",
+              "strengths": "High trust, wide reach, government backing",
+              "weaknesses": "Slower service, legacy systems, NPA issues"
+            },
+            {
+              "name": "Private Banks",
+              "ownership": "Privately held by shareholders",
+              "examples": "HDFC, ICICI, Axis, Kotak",
+              "strengths": "Better service, technology, innovation",
+              "weaknesses": "Higher fees, aggressive selling"
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "Why Payment Banks Exist",
+          "content": "In 2015, RBI created payment bank licenses to boost financial inclusion. These banks:\n\n• Cannot give loans (only accept deposits)\n• Limited to ₹2 lakh per customer\n• Focus on payments, remittances, digital wallets\n• Lower regulatory requirements\n\nGoal: Bring millions of unbanked Indians into formal banking through mobile phones. Paytm, Airtel leveraged existing user bases to provide basic banking to underserved populations."
+        },
+        {
+          "type": "example",
+          "title": "Choosing the Right Bank Type",
+          "content": "• Young professional in city: Private bank (HDFC/ICICI) for digital convenience, good credit cards\n\n• Small business owner: Small Finance Bank for higher FD rates, understanding of small businesses\n\n• Rural farmer: Regional Rural Bank or Co-operative Bank for agricultural loans, local presence\n\n• Daily wage worker: Payment Bank for easy money transfers, no minimum balance\n\n• Startup raising capital: Investment Bank for IPO advisory (not for banking needs)"
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Commercial banks serve the general public—most common type",
+            "Payment banks revolutionize digital payments but can't give loans",
+            "Small Finance Banks offer higher deposit rates and focus on financial inclusion",
+            "Investment banks aren't retail banks—they serve corporations",
+            "Choose bank type based on your specific needs and location"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Which type of bank is NOT allowed to give loans?",
+        "options": [
+          "Commercial banks",
+          "Co-operative banks",
+          "Payment banks",
+          "Small finance banks"
+        ],
+        "correct_answer": 2,
+        "explanation": "Payment banks are restricted from lending. They can only accept deposits (up to ₹2 lakh) and provide payment services. This limitation is part of their regulatory framework."
+      }
+    },
+    {
+      "lesson_id": "1.2.6",
+      "lesson_number": 6,
+      "title": "Bank Accounts Explained",
+      "subtitle": "Savings, Current, and Fixed Deposits",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "Banks offer different types of accounts for different purposes. Each has unique features, benefits, and limitations. Choosing the right account type matters for your financial goals."
+        },
+        {
+          "type": "comparison",
+          "title": "Main Account Types Compared",
+          "items": [
+            {
+              "account": "Savings Account",
+              "purpose": "Store money, earn interest",
+              "interest": "3-4% per year",
+              "transactions": "Limited (4-5 free withdrawals/month)",
+              "ideal_for": "Salaried individuals, emergency fund"
+            },
+            {
+              "account": "Current Account",
+              "purpose": "Business transactions",
+              "interest": "0% (no interest)",
+              "transactions": "Unlimited",
+              "ideal_for": "Businesses, frequent transactions"
+            },
+            {
+              "account": "Fixed Deposit (FD)",
+              "purpose": "Lock money for higher returns",
+              "interest": "6-8% per year",
+              "transactions": "None (locked period)",
+              "ideal_for": "Short-term savings, risk-averse investors"
+            },
+            {
+              "account": "Recurring Deposit (RD)",
+              "purpose": "Save fixed amount monthly",
+              "interest": "6-7.5% per year",
+              "transactions": "Monthly deposits only",
+              "ideal_for": "Disciplined savings, goal-based investing"
+            }
+          ]
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Account Features Deep Dive",
+          "pillars": [
+            {
+              "pillar": "Savings Account",
+              "description": "Your everyday banking account",
+              "explanation": "Features:\n• Minimum balance requirement (₹5,000-25,000 in regular, ₹0 in some)\n• Interest paid quarterly (3-4% annually)\n• Free ATM withdrawals (5 from own bank, 3 from other banks)\n• Debit card, netbanking, UPI\n• Nominee facility\n\nPenalties: ₹300-750 per month if below minimum balance",
+              "strength": "Essential for everyone, good liquidity"
+            },
+            {
+              "pillar": "Current Account",
+              "description": "For businesses and traders",
+              "explanation": "Features:\n• No transaction limit\n• No interest earned\n• Higher minimum balance (₹25,000-1,00,000)\n• Overdraft facility available\n• Cash deposit and withdrawal limits higher\n\nBenefits: Unlimited check issuance, bulk payments",
+              "strength": "Necessary for business operations"
+            },
+            {
+              "pillar": "Fixed Deposit",
+              "description": "Locked savings for guaranteed returns",
+              "explanation": "Features:\n• Fixed tenure (7 days to 10 years)\n• Fixed interest rate (6-8%)\n• Premature withdrawal allowed (penalty applies)\n• Can be used as collateral for loans\n• Senior citizens get 0.5% extra\n\nTax: Interest >₹40,000/year is taxable (₹50k for seniors)",
+              "strength": "Safe, guaranteed returns, capital protected"
+            }
+          ]
+        },
+        {
+          "type": "formula",
+          "title": "FD Maturity Calculation",
+          "formula": "Maturity Amount = Principal × (1 + Rate/400)^(4 × Years)",
+          "example": "₹1,00,000 FD at 7% for 5 years (quarterly compounding):\n\nMaturity = 1,00,000 × (1 + 7/400)^(4×5)\n         = 1,00,000 × (1.0175)^20\n         = 1,00,000 × 1.4148\n         = ₹1,41,478\n\nInterest earned: ₹41,478",
+          "note": "Banks compound interest quarterly, not annually. This increases returns slightly."
+        },
+        {
+          "type": "real_world",
+          "title": "Zero Balance Accounts",
+          "scenarios": [
+            {
+              "scenario": "The Problem",
+              "description": "Traditional savings accounts require ₹5,000-25,000 minimum balance. Poor people couldn't afford this, staying unbanked.",
+              "effect": "Financial exclusion"
+            },
+            {
+              "scenario": "Jan Dhan Yojana (2014)",
+              "description": "Government launched zero-balance accounts. No minimum balance, free RuPay debit card, ₹2 lakh accident insurance.",
+              "effect": "47 crore accounts opened"
+            },
+            {
+              "scenario": "Result",
+              "description": "Millions got access to formal banking, direct benefit transfers, insurance. Financial inclusion increased dramatically.",
+              "effect": "Banking revolution for poor"
+            }
+          ]
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "Savings accounts are for individuals, current accounts for businesses",
+            "FDs offer higher interest but lock your money for a period",
+            "Choose account based on liquidity needs vs returns desired",
+            "Maintain minimum balance to avoid penalty charges",
+            "Zero balance accounts have enabled massive financial inclusion"
+          ]
+        }
+      ],
+      "quiz_check": {
+        "question": "Which account pays NO interest but allows unlimited transactions?",
+        "options": [
+          "Savings account",
+          "Current account",
+          "Fixed deposit",
+          "Recurring deposit"
+        ],
+        "correct_answer": 1,
+        "explanation": "Current accounts pay zero interest but allow unlimited transactions, making them ideal for businesses that need frequent deposits and withdrawals."
+      }
+    },
+    {
+      "lesson_id": "1.2.7",
+      "lesson_number": 7,
+      "title": "Banking Safety & Regulations",
+      "subtitle": "How Your Money Stays Safe",
+      "duration_minutes": 7,
+      "content_blocks": [
+        {
+          "type": "text",
+          "content": "When you deposit money in a bank, you're trusting it with your life savings. How do you know it's safe? Multiple layers of regulation and insurance protect your deposits."
+        },
+        {
+          "type": "definition",
+          "term": "Deposit Insurance",
+          "definition": "Government-backed guarantee that protects depositors' money even if the bank fails, up to a specified limit."
+        },
+        {
+          "type": "concept_breakdown",
+          "title": "Banking Safety Layers",
+          "pillars": [
+            {
+              "pillar": "1. RBI Regulation",
+              "description": "Continuous supervision of all banks",
+              "explanation": "RBI monitors banks through:\n• Capital adequacy requirements (banks must maintain 9%+ capital)\n• Regular audits and inspections\n• Stress tests to assess resilience\n• Prompt corrective action for weak banks\n• Banking license can be revoked",
+              "strength": "Primary line of defense"
+            },
+            {
+              "pillar": "2. DICGC Insurance",
+              "description": "Deposit Insurance and Credit Guarantee Corporation",
+              "explanation": "Covers up to ₹5 lakh per depositor per bank:\n• ₹5 lakh for savings + current combined\n• Covers principal + interest\n• Automatic—no need to apply\n• Separate ₹5 lakh limit per bank\n\nExample: If you have ₹6 lakh in one bank, ₹5 lakh is insured.",
+              "strength": "Protects small depositors from bank failure"
+            },
+            {
+              "pillar": "3. Banking Ombudsman",
+              "description": "Free grievance redressal mechanism",
+              "explanation": "If bank mistreats you:\n• File complaint with bank (30 days to respond)\n• If unsatisfied, approach Banking Ombudsman\n• Free service, no lawyer needed\n• Can award compensation up to ₹20 lakh\n\nCovers: Wrong charges, loan issues, card fraud, deposit problems",
+              "strength": "Customer protection without court"
+            }
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "What's Covered vs Not Covered by Insurance",
+          "items": [
+            {
+              "item": "Savings Account",
+              "covered": "✓ Yes, up to ₹5 lakh",
+              "notes": "Principal + interest insured"
+            },
+            {
+              "item": "Fixed Deposits",
+              "covered": "✓ Yes, up to ₹5 lakh",
+              "notes": "Combined with savings limit"
+            },
+            {
+              "item": "Shares, Mutual Funds",
+              "covered": "✗ No",
+              "notes": "Market investments not insured"
+            },
+            {
+              "item": "Bank Lockers",
+              "covered": "✗ No",
+              "notes": "Items in locker not covered (get separate insurance)"
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Yes Bank Crisis (2020)",
+          "content": "In March 2020, RBI placed Yes Bank under moratorium due to bad loans. Depositors couldn't withdraw more than ₹50,000.\n\nWhat happened:\n• RBI immediately arranged rescue by State Bank of India\n• Within 2 weeks, withdrawal limits lifted\n• No depositor lost money\n• Bank restructured and continues operating\n\nLessons:\n• Diversify across banks if you have >₹5 lakh\n• RBI acts quickly in crises\n• Deposits are safer than most people think"
+        },
+        {
+          "type": "key_point",
+          "points": [
+            "RBI regulates banks to prevent failures—strong supervision",
+            "DICGC insures deposits up to ₹5 lakh per depositor per bank",
+            "Banking Ombudsman provides free grievance redressal",
+            "Diversify large deposits across multiple banks for safety beyond ₹5 lakh",
+            "Bank investments (mutual funds, stocks) are NOT deposit-insured"
+          ]
+        },
+        {
+          "type": "insight",
+          "title": "How to Maximize Deposit Insurance",
+          "content": "If you have ₹15 lakh to save:\n\nStrategy 1 (Weak): Keep all in one bank\n• Only ₹5 lakh insured\n• ₹10 lakh at risk in bank failure\n\nStrategy 2 (Better): Split across 3 banks\n• ₹5 lakh in SBI → fully insured\n• ₹5 lakh in HDFC → fully insured\n• ₹5 lakh in ICICI → fully insured\n• All ₹15 lakh protected!\n\nAlso, insurance is per person—so ₹5 lakh in your name + ₹5 lakh in spouse's name = ₹10 lakh covered in one bank."
+        }
+      ],
+      "quiz_check": {
+        "question": "What is the maximum deposit insurance coverage per depositor per bank in India?",
+        "options": [
+          "₹1 lakh",
+          "₹2 lakh",
+          "₹5 lakh",
+          "₹10 lakh"
+        ],
+        "correct_answer": 2,
+        "explanation": "DICGC (Deposit Insurance and Credit Guarantee Corporation) insures deposits up to ₹5 lakh per depositor per bank, covering both principal and interest."
+      }
+    }
+  ],
+  "module_quiz": {
+    "quiz_id": "quiz_1.2",
+    "title": "Banking System Fundamentals - Final Assessment",
+    "description": "Test your understanding of banking concepts",
+    "time_limit_minutes": 18,
+    "passing_score": 70,
+    "questions": [
+      {
+        "question_id": "q1",
+        "question": "What is the primary function of commercial banks?",
+        "type": "multiple_choice",
+        "options": [
+          "Print currency notes",
+          "Intermediate between savers and borrowers",
+          "Set monetary policy",
+          "Regulate other banks"
+        ],
+        "correct_answer": 1,
+        "explanation": "Commercial banks primarily act as financial intermediaries, accepting deposits from savers and providing loans to borrowers, earning profit from the interest rate spread.",
+        "points": 8
+      },
+      {
+        "question_id": "q2",
+        "question": "If a bank pays 4% interest on deposits and charges 12% on loans, what is its gross interest spread?",
+        "type": "multiple_choice",
+        "options": [
+          "4%",
+          "8%",
+          "12%",
+          "16%"
+        ],
+        "correct_answer": 1,
+        "explanation": "Interest spread = Lending Rate - Deposit Rate = 12% - 4% = 8%. This spread is the bank's gross profit margin from lending activities.",
+        "points": 8
+      },
+      {
+        "question_id": "q3",
+        "question": "On ₹50,000 invested at 6% annual interest compounded yearly for 3 years, what is the approximate maturity amount?",
+        "type": "multiple_choice",
+        "options": [
+          "₹59,000",
+          "₹59,550",
+          "₹68,000",
+          "₹65,000"
+        ],
+        "correct_answer": 1,
+        "explanation": "Using compound interest formula: 50,000 × (1.06)³ = 50,000 × 1.191 = ₹59,550. Compounding grows money faster than simple interest.",
+        "points": 10
+      },
+      {
+        "question_id": "q4",
+        "question": "What happens when the RBI increases the repo rate?",
+        "type": "multiple_choice",
+        "options": [
+          "Banks reduce their lending rates",
+          "Inflation typically decreases",
+          "Money supply increases",
+          "Economic growth accelerates"
+        ],
+        "correct_answer": 1,
+        "explanation": "Higher repo rate makes borrowing expensive for banks, who then increase lending rates. This reduces borrowing and spending, cooling inflation—a contractionary monetary policy.",
+        "points": 8
+      },
+      {
+        "question_id": "q5",
+        "question": "If the Cash Reserve Ratio (CRR) is 4%, how much must a bank keep with RBI for every ₹1,00,000 deposited?",
+        "type": "multiple_choice",
+        "options": [
+          "₹400",
+          "₹4,000",
+          "₹40,000",
+          "₹96,000"
+        ],
+        "correct_answer": 1,
+        "explanation": "CRR of 4% means 4% of deposits must be kept with RBI. 4% of ₹1,00,000 = ₹4,000 must be kept as reserve, limiting lending capacity.",
+        "points": 8
+      },
+      {
+        "question_id": "q6",
+        "question": "Which type of bank is prohibited from giving loans?",
+        "type": "multiple_choice",
+        "options": [
+          "Commercial banks",
+          "Small finance banks",
+          "Payment banks",
+          "Co-operative banks"
+        ],
+        "correct_answer": 2,
+        "explanation": "Payment banks can only accept deposits (max ₹2 lakh per customer) and provide payment services. They are not allowed to give loans—a key regulatory restriction.",
+        "points": 8
+      },
+      {
+        "question_id": "q7",
+        "question": "Which account type pays zero interest but allows unlimited transactions?",
+        "type": "multiple_choice",
+        "options": [
+          "Savings account",
+          "Current account",
+          "Fixed deposit",
+          "Recurring deposit"
+        ],
+        "correct_answer": 1,
+        "explanation": "Current accounts are designed for businesses with frequent transactions. They pay no interest but have no transaction limits, unlike savings accounts.",
+        "points": 8
+      },
+      {
+        "question_id": "q8",
+        "question": "What is the DICGC deposit insurance limit per depositor per bank?",
+        "type": "multiple_choice",
+        "options": [
+          "₹1 lakh",
+          "₹2 lakh",
+          "₹5 lakh",
+          "Unlimited"
+        ],
+        "correct_answer": 2,
+        "explanation": "DICGC insures deposits up to ₹5 lakh per depositor per bank. This covers principal and interest across all account types (savings, current, FD) combined.",
+        "points": 8
+      },
+      {
+        "question_id": "q9",
+        "question": "What is the real interest rate if nominal interest is 7% and inflation is 5%?",
+        "type": "multiple_choice",
+        "options": [
+          "12%",
+          "7%",
+          "2%",
+          "-2%"
+        ],
+        "correct_answer": 2,
+        "explanation": "Real Rate = Nominal Rate - Inflation = 7% - 5% = 2%. This is your actual purchasing power gain after accounting for price increases.",
+        "points": 10
+      },
+      {
+        "question_id": "q10",
+        "question": "Which of the following is NOT a function of the Reserve Bank of India?",
+        "type": "multiple_choice",
+        "options": [
+          "Issuing currency notes",
+          "Setting repo rate",
+          "Providing personal loans to individuals",
+          "Regulating commercial banks"
+        ],
+        "correct_answer": 2,
+        "explanation": "RBI is the central bank that regulates the banking system, issues currency, and sets monetary policy. It does not provide retail banking services like personal loans—that's the role of commercial banks.",
+        "points": 8
+      },
+      {
+        "question_id": "q11",
+        "question": "If reserve ratio is 5%, what is the maximum money multiplier?",
+        "type": "multiple_choice",
+        "options": [
+          "5",
+          "10",
+          "20",
+          "25"
+        ],
+        "correct_answer": 2,
+        "explanation": "Money Multiplier = 1 / Reserve Ratio = 1 / 0.05 = 20. This means each rupee of reserves can theoretically support ₹20 in the money supply through fractional reserve banking.",
+        "points": 8
+      },
+      {
+        "question_id": "q12",
+        "question": "Why do credit cards charge much higher interest (36-42%) than personal loans (11-15%)?",
+        "type": "multiple_choice",
+        "options": [
+          "Credit cards are more profitable for banks",
+          "Unsecured, higher default risk, and small amounts costly to service",
+          "Government regulations require it",
+          "Card processing fees are very high"
+        ],
+        "correct_answer": 1,
+        "explanation": "Credit cards are unsecured (no collateral), have high default rates, small unpredictable amounts costly to manage, and offer instant revolving credit. All these factors combine to justify extremely high interest rates.",
+        "points": 8
+      }
+    ]
+  },
+  "completion_badge": {
+    "badge_id": "banking_expert",
+    "title": "Banking Pro",
+    "description": "Mastered banking system fundamentals",
+    "icon": "award",
+    "color": "#4169E1"
+  }
+}
